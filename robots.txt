@@ -1,0 +1,42 @@
+# robots.txt — weiwen0925.github.io 根目錄
+# 提供搜尋引擎索引指引，並擋住 AI 訓練爬蟲
+
+User-agent: *
+Allow: /
+
+# Sitemap 自動發現
+Sitemap: https://weiwen0925.github.io/dazhidulun-0/sitemap.xml
+
+# 封鎖 AI 訓練爬蟲
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
