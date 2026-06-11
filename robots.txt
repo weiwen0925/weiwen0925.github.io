@@ -1,11 +1,11 @@
-# robots.txt — weiwen0925.github.io 根目錄
-# 提供搜尋引擎索引指引，並擋住 AI 訓練爬蟲
+# robots.txt — 部署到 weiwen0925.github.io 根目錄
+# (即 https://weiwen0925.github.io/robots.txt)
 
 User-agent: *
 Allow: /
 
-# Sitemap 自動發現
-Sitemap: https://weiwen0925.github.io/dazhidulun-0/sitemap.xml
+# Sitemap 自動發現（根目錄版）
+Sitemap: https://weiwen0925.github.io/sitemap.xml
 
 # 封鎖 AI 訓練爬蟲
 User-agent: GPTBot
