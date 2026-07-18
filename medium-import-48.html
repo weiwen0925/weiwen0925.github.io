@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兩位注釋家，同一座論場——月稱《明句論》與青目《釋論》在觀三相品的對讀</title>
+    <meta name="description" content="《中論》觀三相品的研讀建議說：學術對讀者可參考月稱《明句論》與青目《釋論》之異同——前者重邏輯結構，後者重應病與藥的辯論修辭。本篇把這句話展開成一場可操作的對讀：應成歸謬的方法論、生生本生的無窮迴圈、燈喻的明闇不相及、7.16「緣生即寂滅」處月稱所引的無熱惱池經偈、終偈如幻如夢的收尾——逐題並排，附白話、綱要與完整對照表。明句論無古漢譯，引文依梵本義譯撮述並如實標注。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+</style>
+</head>
+<body>
+<h1>兩位注釋家，同一座論場</h1>
+<h2>月稱《明句論》與青目《釋論》在觀三相品的對讀——引文、白話、綱要與對照表</h2>
+<hr />
+<blockquote>
+<p>觀三相品的研讀建議裡有一行給「學術對讀者」的話：「可參考月稱《明句論》（Prasannapadā）與青目《釋論》在本品釋文上的異同。<strong>前者更重邏輯結構，後者更重應病與藥的辯論修辭</strong>。」這一行說的到底是什麼？本篇把它展開成一場真正可操作的對讀。</p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>48</strong> 篇。出處是《中論》觀三相品第七的「<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-15-2">研讀建議</a>」所點名的對讀功課。我們選五個本品的關鍵戰場——<strong>方法論、生生與本生、燈喻、「緣生即寂滅」、終偈幻喻</strong>——逐題把兩位注釋家並排：青目給引文（鳩摩羅什譯本現成可查），月稱給綱要與義譯，最後收成一張完整對照表。</p>
+<blockquote>
+<p><strong>版本學聲明（請先讀這一段）</strong>：青目《釋論》隨什譯《中論》傳世（大正藏 T30），引文皆為原文。月稱《明句論》成書於七世紀，<strong>古代並無漢譯</strong>，梵本今存（通行 La Vallée Poussin 校本），另有藏譯與多種現代語譯。本篇所出「明句論」文字，皆為<strong>依梵本義理之撮述義譯</strong>，供對讀提示之用，非嚴格逐句譯文；學術引用請覈梵本或可靠之現代譯本。</p>
+</blockquote>
+<hr />
+
+<h2>一、先認識兩位注釋家：藥師與建築師</h2>
+<p><strong>青目</strong>（梵志青目，約四世紀）：他的釋論隨鳩摩羅什 409 年譯出，是漢傳中觀一千六百年來的正門。風格是<strong>問答體</strong>——對手發問、論主應答，一問一藥；譬喻信手拈來（燈、乳酪、幻化人），句句衝著「病」去。讀青目像看一位<strong>老藥師坐堂</strong>：把脈、開方、看著你把藥喝下去。</p>
+<p><strong>月稱</strong>（Candrakīrti，約七世紀）：那爛陀學統的中觀大家，《明句論》是現存唯一完整保存梵本的《中論》古注，後世被尊為應成派（Prāsaṅgika）的定錘之作。風格是<strong>逐詞解析＋歸謬到底</strong>——先把偈頌的每個詞在文法與義理上釘牢，再窮盡對手的每一條退路，廣引經證壓陣。讀月稱像看一位<strong>結構工程師驗樓</strong>：不勸你搬家，只把每一根樑的受力算給你看，直到大樓自己宣告不能住人。</p>
+<p>同一部《中論》，一位讓你「服藥」，一位讓你「拆不回去」——這就是「應病與藥」與「邏輯結構」的分工。</p>
+<figure>
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="雙軌注釋對照">
+  <text class="dia-zh dia-gold" x="380" y="28" text-anchor="middle" font-size="17" font-weight="700">同一偈頌, 兩條注釋之路</text>
+  <rect class="dia-box-key" x="290" y="46" width="180" height="50" rx="10"/>
+  <text class="dia-zh" x="380" y="76" text-anchor="middle" font-size="15" font-weight="700">《中論》偈頌</text>
+  <line class="dia-line" x1="330" y1="96" x2="220" y2="136"/>
+  <line class="dia-line" x1="430" y1="96" x2="540" y2="136"/>
+  <rect class="dia-box" x="80" y="140" width="280" height="130" rx="10"/>
+  <text class="dia-zh" x="220" y="166" text-anchor="middle" font-size="14.5" font-weight="700">青目《釋論》(什譯 · T30)</text>
+  <text class="dia-zh dia-mute" x="220" y="192" text-anchor="middle" font-size="12">問答體 · 一問一藥</text>
+  <text class="dia-zh dia-mute" x="220" y="214" text-anchor="middle" font-size="12">譬喻直捷: 燈 · 幻人 · 乳酪</text>
+  <text class="dia-zh dia-mute" x="220" y="236" text-anchor="middle" font-size="12">衝著「病」: 應病與藥</text>
+  <text class="dia-zh" x="220" y="260" text-anchor="middle" font-size="12.5" font-weight="700">讀者: 把藥喝下去</text>
+  <rect class="dia-box" x="400" y="140" width="280" height="130" rx="10"/>
+  <text class="dia-zh" x="540" y="166" text-anchor="middle" font-size="14.5" font-weight="700">月稱《明句論》(梵本存世)</text>
+  <text class="dia-zh dia-mute" x="540" y="192" text-anchor="middle" font-size="12">逐詞釘牢 · 歸謬到底 (應成)</text>
+  <text class="dia-zh dia-mute" x="540" y="214" text-anchor="middle" font-size="12">不自立量 · 窮盡對手退路</text>
+  <text class="dia-zh dia-mute" x="540" y="236" text-anchor="middle" font-size="12">廣引經證壓陣</text>
+  <text class="dia-zh" x="540" y="260" text-anchor="middle" font-size="12.5" font-weight="700">讀者: 拆了就回不去</text>
+  <rect class="dia-box-key" x="230" y="292" width="300" height="40" rx="10"/>
+  <text class="dia-zh" x="380" y="317" text-anchor="middle" font-size="13.5" font-weight="700">互補: 藥方 + 結構驗算 = 完整讀法</text>
+</svg>
+<figcaption>圖一：同一偈頌的雙軌注釋——青目以問答與譬喻施藥，月稱以逐詞解析與歸謬驗算；對讀即是同時拿到藥方與結構計算書。</figcaption>
+</figure>
+
+<h2>二、方法論之別：應成——只借你的刀</h2>
+<p>《明句論》第一品有一場著名的方法論之辯：佛護注《中論》只用歸謬（prasaṅga）——「你主張自生？那生就無窮、也無意義」；清辨批評他不立正面比量、不合因明格式。<strong>月稱起而為佛護辯護</strong>，其立場可撮述為：</p>
+<blockquote>
+<p>中觀師不必自立比量。對手的命題自含崩潰的種子，注釋者只需把它推到底，讓它自己現出過失——<strong>破他即是立義，無自宗可立於戲論之中</strong>。（依梵本義撮）</p>
+</blockquote>
+<p>白話說：月稱<strong>只借對手的刀</strong>，不帶自己的刀進場。有趣的是，青目雖無此方法論宣言，實際操作卻高度一致——他的問答體從頭到尾都是「你說 X？那 X 導致 Y，Y 你自己也不要」。<strong>對讀眼目：月稱把青目「做出來」的事，升級成「說出來」的方法論自覺</strong>；漢傳讀者由青目入手早已在練應成，只是沒人告訴他這招有名字。</p>
+
+<h2>三、生生與本生：一個迴圈，兩種拆法</h2>
+<p>對手為了讓「生」自身也有生，提出七法共生的模型與生生／本生互生的巧計。青目原文：</p>
+<blockquote>
+<p>法生時通自體七法共生：一法、二生、三住、四滅、五生生、六住住、七滅滅。……「生生之所生，生於彼本生；本生之所生，還生於生生。」</p>
+</blockquote>
+<p>白話：一個法出生時，隨身帶著一整套配件——生、住、滅，還有照顧配件的配件（生生、住住、滅滅）；「生生」負責生「本生」，「本生」回頭生「生生」，互相拉拔，號稱不必無窮。龍樹的反擊偈直取要害：「若謂是生生，能生於本生；<strong>生生從本生，何能生本生</strong>？」——你還沒被生出來，拿什麼去生別人？</p>
+<p><strong>月稱的拆法（綱要，依梵本義撮）</strong>：他把這一段做成一堂「作用理論」的課——未成就者無作用能力（尚未生起的生生，無力生本生）；若謂「正生時能作用」，則落回三時檢驗；並詳細鋪陳有部與正量部關於「相與隨相」的實有主張，逐一以歸謬出過，末了點明：<strong>相（lakṣaṇa）若實有，規則必自我適用，自我適用即無窮或互跛</strong>——「互相拉拔」不過是兩個都還沒站起來的人彼此攙扶。</p>
+<p>對讀眼目：<strong>青目一偈見血，月稱把血路解剖成教科書</strong>——先讀青目知道「哪裡痛」，再讀月稱知道「為什麼非痛不可」。</p>
+
+<h2>四、燈喻：明闇不相及</h2>
+<p>對手救「生能自生亦生彼」的王牌是燈：「如燈能自照，亦能照彼；生亦如是，自生亦生彼。」龍樹與青目的回應：</p>
+<blockquote>
+<p class="verse">「燈中自無闇，住處亦無闇；<br>破闇乃名照，無闇則無照。」</p>
+<p>青目釋：燈體自無闇，明所及處亦無闇，明闇相違故。破闇故名照，無闇則無照，何得言燈自照亦照彼？</p>
+</blockquote>
+<p>白話：「照」的定義是「破闇」。可是燈裡沒有闇、燈光所到之處也沒有闇——無闇可破，那個叫「照」的動作根本沒有發生地點。喻既不成，被喻的「生自生」也垮。</p>
+<p><strong>月稱的處理（綱要，依梵本義撮）</strong>：同持「明闇相違、不相及」之刃，並補一刀三時檢驗——燈明「未至闇、已至闇、至闇時」三時皆不能破闇；若說「不相及而能破」，則天下之燈應破一切處之闇。末了點出：<strong>拿燈喻救生，是用一個先已破產的比喻替另一個破產的命題作保</strong>。對讀眼目：兩家同刀同鞘，月稱多出的是「三時」這一記回馬槍——把第二品的三時剃刀帶進了燈裡。</p>
+
+<h2>五、「緣生即寂滅」：月稱在這裡請出了佛語</h2>
+<p>本品最深一句「若法眾緣生，即是寂滅性」（上一篇第 47 篇的主角），青目只用一行注破：「眾緣所生法，無自性故寂滅。」乾淨俐落。而月稱在同一偈下，做了一件注釋史上著名的事——<strong>引經為證</strong>，請出《無熱惱池龍王請問經》的偈頌（依梵本義譯）：</p>
+<blockquote>
+<p class="verse">「若依緣生即是不生，彼中無有生之自性；<br>凡依緣者即說為空，知空性者乃不放逸。」</p>
+</blockquote>
+<p>白話：凡是依緣而生的，就其自性而言即是「不曾生」——因為找不到一個屬於它自己的生；依緣，所以空；<strong>懂得這個空的人，才是真正的不放逸者</strong>。這首偈在月稱筆下反覆出現（《入中論》亦引），幾乎是他的鎮山之寶。</p>
+<p>對讀眼目有二：其一，<strong>「緣起即無生」不是龍樹的發明，而是佛語的展開</strong>——月稱引經，是把《中論》釘回契經的地基上；其二，偈末「知空者不放逸」一句，把最玄的空性直接接到最樸素的修行德目上——<strong>空性的檢驗標準，是你有沒有因此更謹慎地活著</strong>。這與青目「應病與藥」的精神，殊途同歸。</p>
+
+<h2>六、終偈：如幻亦如夢</h2>
+<blockquote>
+<p class="verse">「如幻亦如夢，如乾闥婆城；<br>所說生住滅，其相亦如是。」</p>
+</blockquote>
+<p>全品收在這四句。青目順勢作結：生住滅三相如幻事、如夢境、如海市蜃樓——現象宛然而無實體。<strong>月稱的收法（綱要，依梵本義撮）</strong>：廣引諸經幻喻鋪陳，最後把全品安放進二諦：<strong>生住滅是世俗的假立名言，於勝義中如幻不可得</strong>——既不必在世俗中否認「有東西生了、住了、滅了」的說法，也不許在勝義中給它們一個實體。對讀眼目：青目給你一個意象（幻、夢、蜃樓），月稱給你一個檔案櫃（世俗諦一格、勝義諦一格）——<strong>意象讓人放下，檔案櫃讓人不再拿錯</strong>。</p>
+
+<h2>七、對照總表</h2>
+<table class="sdf-tbl">
+<caption>表一　觀三相品五大戰場——青目《釋論》×月稱《明句論》對照（月稱欄皆依梵本義撮）</caption>
+<thead><tr><th>戰場</th><th>青目《釋論》（什譯原文可查）</th><th>月稱《明句論》（義譯撮述）</th><th>對讀眼目</th></tr></thead>
+<tbody>
+<tr><td>注釋性格</td><td>問答體、譬喻直捷、應病與藥</td><td>逐詞釘牢、歸謬到底、廣引經證</td><td>藥師坐堂 vs 工程師驗樓</td></tr>
+<tr><td>方法論</td><td>實際操作即是歸謬，但無方法論宣言</td><td>明立「應成」：不自立量，只借對手的刀；為佛護辯護、駁自續比量</td><td>青目做出來的事，月稱說出名字</td></tr>
+<tr><td>生生本生</td><td>「生生從本生，何能生本生」——未有則不能生，一偈見血</td><td>作用理論解剖：未成無作用；詳破有部正量部「相實有」，示規則自我適用必無窮或互跛</td><td>先知哪裡痛，再知為何非痛不可</td></tr>
+<tr><td>燈喻</td><td>「燈中自無闇……無闇則無照」：明闇相違，照無發生地</td><td>同刀加三時回馬槍：未至已至至時皆不能破闇；不相及而能破則一燈破一切闇</td><td>同刀同鞘，月稱補三時一擊</td></tr>
+<tr><td class="hl">緣生即寂滅</td><td>一行注破：「眾緣所生法，無自性故寂滅」</td><td>引《無熱惱池經》：「依緣生即不生……知空者不放逸」——釘回佛語地基</td><td>簡注見骨 vs 引經見源；空性接上「不放逸」</td></tr>
+<tr><td>終偈幻喻</td><td>幻、夢、乾闥婆城——意象作結</td><td>廣引幻喻後收進二諦：世俗假立、勝義如幻</td><td>意象讓人放下，檔案櫃讓人不拿錯</td></tr>
+</tbody>
+</table>
+
+<h2>八、對讀的三個收穫</h2>
+<p><strong>第一，互補而非重複</strong>：青目短兵相接，適合第一遍讀——每一問都是你心裡真會冒出來的問題；月稱條分縷析，適合第二遍讀——把第一遍「被說服」的地方，變成「自己會證明」的地方。</p>
+<p><strong>第二，堵住「僥倖」</strong>：只讀青目，偶爾會覺得「也許還有別條路沒試」；月稱的窮盡式歸謬正是為此而生——每一條你以為的活路，他都替你走過並畫了叉。<strong>信心不再靠氣勢，靠的是路網真的封閉</strong>。</p>
+<p><strong>第三，把空性接回修行</strong>：月稱引經的末句「知空性者乃不放逸」值得抄在案頭——對讀的終點不是比較學問，而是這句檢驗：<strong>讀完三相皆幻，你是更散漫了，還是更珍重每一個緣起的當下？</strong>答案若是後者，兩位注釋家就都沒有白寫。</p>
+
+<hr />
+<h2>進一步閱讀</h2>
+<p>本篇對應原典在《中論》觀三相品第七，直達連結：</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-15-2">「研讀建議」（本篇緣起）・此節直達</a></strong>；生生本生之辯在<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-4-3">第四章</a>；燈喻在<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-6-2">第六章</a>；緣生即寂滅在<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-8-2">第八章第二節</a>；終偈幻喻在<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-13-1">第十三章</a>。　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">一百卷全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，歡迎在留言區聊聊：你是「先服藥」型的讀者，還是「先看結構計算書」型的？「知空性者乃不放逸」——這句對你當下的功課，說了什麼？</em></p>
+<hr />
+<p><strong>底本與出處</strong>：青目《釋論》＝《中論》大正藏 T30 No.1564（觀三相品第七・鳩摩羅什譯），引文皆原文。月稱《明句論》（Prasannapadā）梵本今存（通行 La Vallée Poussin 校本，1903–1913），古無漢譯；本篇月稱段落皆為依梵本義理之撮述義譯，非逐句譯文，學術引用請覈梵本或現代譯本。《無熱惱池龍王請問經》偈依《明句論》所引義譯。「藥師坐堂」「工程師驗樓」「檔案櫃」等通俗比喻為作者依義所作。</p>
+<hr />
+<p><strong>標籤</strong>：<code>#中論</code> <code>#龍樹</code> <code>#月稱</code> <code>#明句論</code> <code>#青目</code> <code>#中觀</code> <code>#佛學閱讀</code></p>
+<hr />
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 48 篇。上一篇 第 47 篇：<a href="https://weiwen0925.github.io/medium-import-47.html">寂滅不必等到滅——「若法眾緣生，即是寂滅性」：布縷麻席的借貸鏈、「滅時不應生」最難一偈，與把緣起性空背進骨子裡的三個口訣</a></em></p>
+</body>
+</html>
