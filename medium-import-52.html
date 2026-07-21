@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「壯不作老」，不是說人不會變老——觀行品第五、六偈：讓你變不了的是「自性」，不是「空」；種子必須先「死」，才長成樹</title>
+    <meta name="description" content="《中論》觀行品「如壯不作老，老亦不作壯」常被誤讀成「人不會變老」，跟常識、也跟「種子死了才變成樹」直接打架。本文用兩把鑰匙解開：一是「作」＝變成、變出；二是這一偈破的是「自性的變」，不是「緣起的變」。第五偈的兩難（有性不能異、無性也不能異）與第六偈的兩難（是法無異、異法亦無異）一路把「壯不作老」逼出來；再用二諦分判——自性層變不動、緣起層才變得動。附二難流程圖、二諦對照圖與整理總表。實修落點：抓著「我就是這樣」才真的動不了，空才是你能變、能長的空間。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+/* 圖示用類別（SVG <text> 內標點用半形） */
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+/* 整理總表用（可選） */
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+</style>
+</head>
+<body>
+<h1>「壯不作老」，不是說人不會變老——讓你變不了的是「自性」，不是「空」</h1>
+<h2>中論觀行品第五、六偈：有性不能異、無性也不能異，是法無異、異法亦無異——把「變」擺進自性就卡死，擺進空才動得了；種子必須先「死」，才長成樹</h2>
+<hr />
+<blockquote>
+<p>「是法則無異，異法亦無異，<strong>如壯不作老，老亦不作壯。</strong>」——《中論》觀行品第六偈。這句話讀起來像在說「壯不會變成老、老不會變成壯」，可是人明明會老；何況下一節龍樹自己還說「種子必須死掉，才長成樹」，明明在講變化。那「壯不作老」的「<strong>不作</strong>」，到底是什麼意思？</p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>52</strong> 篇。承上一篇觀苦品（「他作」坍縮鏈），這回換觀行品，龍樹把矛頭轉向「變異」本身。出處是《中論》觀行品第十三、第五、六偈的青目釋（<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-13-5-4">原典此節直達</a>）。會卡住，只差兩件事沒接上：一是「作」這個字的意思，二是這一偈到底在否認「哪一種變」。把這兩點插上，「壯不作老」不但不跟常識打架，反而會翻出一個很療癒的道理——<strong>讓你變不了的，從來不是「空」，而是「自性」。</strong></p>
+<hr />
+
+<h2>一、先定住一個字：「作」＝「變成、變出」</h2>
+<p>卡住的第一個原因，是把「作」讀成了「工作、造作」那個具體的做。這裡的「作」是<strong>「變作、變成、變出、造成」</strong>的意思。所以——</p>
+<p>「壯作老」＝「壯」變出、造出「老」；「壯不作老」＝「壯」並不真的變出「老」。「老不作壯」反過來也一樣。（對照梵文更直白：這裡用的字是 <em>anyathā-bhāva</em>「變成他樣」與 <em>jīryate</em>「變老」，原句直譯是「<strong>少壯者不衰老，已老者也不衰老</strong>」——不是說沒有老這回事，而是說：找不到誰正在「變老」這件事上當那個實實在在的主角。）</p>
+<p>抓住這個字義，整偈就從「一句怪話」變成「一個嚴謹的檢查」：龍樹要問的是——那個「變出老」的動作，究竟能不能找到一個真實的執行者？</p>
+
+<h2>二、第五偈：有性不能異、無性也不能異（先把兩頭堵住）</h2>
+<p>動手查之前，龍樹先在第五偈把兩條最粗的退路封死：</p>
+<blockquote>
+<p class="verse">「若諸法有性，云何而得異？<br/>若諸法無性，云何而有異？」</p>
+</blockquote>
+<p>青目的解說是：「<strong>若諸法決定有性，云何可得異？</strong>性名決定有，不可變異。如真金不可變，又如暗性不變為明、明性不變為暗。」意思是：如果一個東西有「決定的自性」，那自性就是「鎖死了的有」——真金永遠是真金，暗永遠是暗，<strong>它根本沒有變的餘地</strong>。所以「有自性」反而不能變。</p>
+<p>那反過來，什麼自性都沒有呢？青目接著說：那就更談不上變——連一個能承載變化的東西都立不起來，<strong>「無」是空無一物，也沒有什麼可變。</strong></p>
+<p>用一個比喻收一下：<strong>「有自性」像一顆焊死在鐵板上的螺絲——動不了；「純粹的無」像根本沒有螺絲——沒有東西可動。</strong>真正轉得動的，是那種「裝上去、但沒焊死」的螺絲。而那，正是中觀要指出的第三條路：<strong>無自性，卻能緣起</strong>——放下「自性有」和「斷滅無」兩端，走「不一不異」的中道。</p>
+
+<h2>三、第六偈：是法無異、異法亦無異——「壯不作老」是這樣逼出來的</h2>
+<p>第六偈是收網。既然「變」要成立，那個「變」總得安在某個東西上。龍樹說：能安的位子只有兩個，而兩個都放不下。</p>
+<blockquote>
+<p class="verse">「是法則無異，異法亦無異，<br/>如壯不作老，老亦不作壯。」</p>
+</blockquote>
+<p>青目把兩難拆得很乾脆：「若法有異者……<strong>為即是法異？為異法異？是二不然。</strong>若即是法異，則老應作老，而老實不作老；若異法異者，老與壯異，壯應作老，而壯實不作老。二俱有過。」翻成白話——</p>
+<p><strong>第一個位子，把「變」安在「同一個法自己」（是法異）。</strong>那就等於要求「老作老」：讓一個「已經是老的」，再去「變出老」來。可是它已經是老了，這個「作」空轉、沒有著力點，什麼也沒發生——<strong>老不作老</strong>。（就像你要求一班已經進站的火車，再開一次「進站」：它已經在站裡了，這個動作無處可施。）</p>
+<p><strong>第二個位子，把「變」安在「另一個不同的法」（異法異）。</strong>那就等於要求「壯作老」：老和壯既然是兩個各自獨立、井水不犯河水的東西，就該由壯去「變出」老。可是壯是壯、老是老，各站各的，壯並沒有走過去變成它——<strong>壯不作老</strong>。（就像月台上兩個陌生人，甲不會「變成」乙；他們只是兩個並排站著的不同的人。）</p>
+<p>兩個位子都放不下這個「變」，這就是「是法則無異，異法亦無異」，於是「<strong>壯不作老，老亦不作壯</strong>」。這裡最要緊的一句話是：<strong>被否掉的，是「有自性的變」。</strong>因為自性把每一個法都焊死成一塊——一焊死，同一個法只能原地空轉（老作老），不同的法只能各歸各（壯作老不成）。有自性，就沒有「變」的位置。</p>
+<figure>
+<svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="是法/異法二難逼出壯不作老">
+  <text class="dia-zh dia-gold" x="380" y="30" text-anchor="middle" font-size="19" font-weight="700">「變」要安在哪個位子? 是法 vs 異法, 二俱不然</text>
+  <rect class="dia-box-key" x="270" y="50" width="220" height="52" rx="12"/>
+  <text class="dia-zh" x="380" y="82" text-anchor="middle" font-size="16" font-weight="700">有自性的「變異」若實有</text>
+  <text class="dia-zh dia-mute" x="380" y="128" text-anchor="middle" font-size="12.5">只能安在兩個位子之一</text>
+  <line class="dia-line" x1="342" y1="104" x2="200" y2="148" stroke-width="1.5"/>
+  <line class="dia-line" x1="418" y1="104" x2="560" y2="148" stroke-width="1.5"/>
+  <!-- 左horn 是法 -->
+  <rect class="dia-box" x="58" y="150" width="314" height="150" rx="10"/>
+  <text class="dia-zh dia-blue" x="215" y="178" text-anchor="middle" font-size="15" font-weight="700">① 安在「同一個法自己」(是法異)</text>
+  <text class="dia-zh" x="215" y="210" text-anchor="middle" font-size="14">→ 等於要求「老作老」</text>
+  <text class="dia-zh dia-mute" x="215" y="234" text-anchor="middle" font-size="12.5">已經是老, 再去「作出老」—— 空轉, 無著力點</text>
+  <text class="dia-zh dia-x" x="215" y="264" text-anchor="middle" font-size="16" font-weight="700">∴ 老不作老</text>
+  <text class="dia-zh dia-mute" x="215" y="288" text-anchor="middle" font-size="12">(像已進站的火車, 再開一次「進站」)</text>
+  <!-- 右horn 異法 -->
+  <rect class="dia-box" x="388" y="150" width="314" height="150" rx="10"/>
+  <text class="dia-zh dia-blue" x="545" y="178" text-anchor="middle" font-size="15" font-weight="700">② 安在「另一個不同的法」(異法異)</text>
+  <text class="dia-zh" x="545" y="210" text-anchor="middle" font-size="14">→ 等於要求「壯作老」</text>
+  <text class="dia-zh dia-mute" x="545" y="234" text-anchor="middle" font-size="12.5">壯老各自獨立, 壯沒走過去變成老</text>
+  <text class="dia-zh dia-x" x="545" y="264" text-anchor="middle" font-size="16" font-weight="700">∴ 壯不作老</text>
+  <text class="dia-zh dia-mute" x="545" y="288" text-anchor="middle" font-size="12">(像月台上兩個陌生人, 甲不會「變成」乙)</text>
+  <!-- 匯流 -->
+  <line class="dia-line" x1="215" y1="300" x2="360" y2="344" stroke-width="1.5"/>
+  <line class="dia-line" x1="545" y1="300" x2="400" y2="344" stroke-width="1.5"/>
+  <text class="dia-zh dia-mute" x="380" y="326" text-anchor="middle" font-size="13">二俱有過</text>
+  <rect x="140" y="346" width="480" height="66" rx="14" fill="#f6e2dc" stroke="#c0392b" stroke-width="1.6"/>
+  <text class="dia-zh" x="380" y="374" text-anchor="middle" font-size="15" font-weight="700">是法則無異, 異法亦無異</text>
+  <text class="dia-zh" x="380" y="398" text-anchor="middle" font-size="17" font-weight="700">如壯不作老, 老亦不作壯</text>
+  <rect x="70" y="436" width="620" height="70" rx="8" fill="#e8efe3" stroke="#9ab88a"/>
+  <text class="dia-zh dia-ok" x="380" y="464" text-anchor="middle" font-size="14.5" font-weight="700">被否掉的, 是「有自性的變」——自性把每個法焊死成一塊</text>
+  <text class="dia-zh dia-mute" x="380" y="488" text-anchor="middle" font-size="12.5">同一個法只能空轉 (老作老), 不同的法只能各歸各 (壯作老) —— 兩個位子都放不下「變」</text>
+  <text class="dia-zh dia-mute" x="592" y="542" text-anchor="middle" font-size="12">《中論·觀行品第十三》第五、六偈青目釋</text>
+</svg>
+<figcaption>圖一：第六偈的兩難。「變」若實有，只能安在「同一個法」或「另一個法」上——前者成了「老作老」（空轉），後者成了「壯作老」（各歸各），二俱有過。所以「壯不作老」，破的正是「有自性的變」。</figcaption>
+</figure>
+
+<h2>四、翻面：破的是「自性的變」，不是「你會變老」</h2>
+<p>讀到這裡最容易誤會：龍樹是不是在否認人會老？不是。他否認的，只是「<strong>有一個不變的實體『壯』，保持著自己、又走到『老』去</strong>」。這件事要分兩層看（二諦）：</p>
+<p><strong>自性層（勝義）：壯不作老。</strong>若「壯」真有自性，它就被鎖死在「壯」，永遠變不出「老」——這一偈拆的，就是這個。<strong>緣起層（世俗）：壯確實會老。</strong>正因為壯、老都無自性、都是空，中間沒有任何東西被焊死，變化才跑得動。</p>
+<p>龍樹自己在緊接著的下一節，把這層講得最漂亮：「<strong>以有空義故，一切法得成。</strong>」他打了一個很好的比方——<strong>種子必須先「死」，失去「我是種子」的種子相，才長得成樹；如果種子死抱著「我就是種子」，樹永遠不會出現。</strong>空不是萬物的否定，反而是萬物得以生成、變化、解脫的「空間」。沒有空，就沒有變化；沒有變化，就沒有生命。</p>
+<figure>
+<svg viewBox="0 0 760 478" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="壯不作老的二諦分判">
+  <text class="dia-zh dia-gold" x="380" y="30" text-anchor="middle" font-size="18" font-weight="700">「壯不作老」分兩層看 (二諦)</text>
+  <!-- 左: 自性層 -->
+  <rect x="40" y="52" width="330" height="344" rx="14" fill="#f7e6e0" stroke="#cf9a86" stroke-width="1.5"/>
+  <rect x="58" y="68" width="294" height="34" rx="17" fill="#8b2500"/>
+  <text class="dia-zh" x="205" y="91" text-anchor="middle" font-size="15" font-weight="700" style="fill:#f7ecd2">自性層 · 勝義</text>
+  <text class="dia-zh dia-x" x="205" y="138" text-anchor="middle" font-size="16" font-weight="700">壯不作老</text>
+  <text class="dia-zh dia-mute" x="205" y="160" text-anchor="middle" font-size="12.5">(這一偈成立的層面)</text>
+  <text class="dia-zh" x="205" y="190" text-anchor="middle" font-size="13.5">若壯有自性 → 被鎖死在「壯」</text>
+  <text class="dia-zh" x="205" y="212" text-anchor="middle" font-size="13.5">保持自己, 永遠變不出「老」</text>
+  <rect x="60" y="230" width="290" height="70" rx="10" fill="#fbeee8" stroke="#e0b3a3"/>
+  <text class="dia-zh" x="205" y="258" text-anchor="middle" font-size="13">喻: 種子死抱「我是種子」</text>
+  <text class="dia-zh" x="205" y="282" text-anchor="middle" font-size="13">→ 永遠長不成樹</text>
+  <rect x="72" y="330" width="266" height="42" rx="8" fill="#f0dcd4"/>
+  <text class="dia-zh dia-x" x="205" y="357" text-anchor="middle" font-size="15" font-weight="700">× 有自性, 就變不動</text>
+  <!-- 右: 緣起層 -->
+  <rect x="390" y="52" width="330" height="344" rx="14" fill="#e8efe0" stroke="#a9bd93" stroke-width="1.5"/>
+  <rect x="408" y="68" width="294" height="34" rx="17" fill="#1d7a46"/>
+  <text class="dia-zh" x="555" y="91" text-anchor="middle" font-size="15" font-weight="700" style="fill:#eefaef">緣起層 · 世俗</text>
+  <text class="dia-zh dia-ok" x="555" y="138" text-anchor="middle" font-size="16" font-weight="700">壯確實會老</text>
+  <text class="dia-zh dia-mute" x="555" y="160" text-anchor="middle" font-size="12.5">(日常經驗如實發生)</text>
+  <text class="dia-zh" x="555" y="190" text-anchor="middle" font-size="13.5">壯、老都無自性 = 空</text>
+  <text class="dia-zh" x="555" y="212" text-anchor="middle" font-size="13.5">沒有東西被鎖死, 變化跑得動</text>
+  <rect x="410" y="230" width="290" height="70" rx="10" fill="#eef6ea" stroke="#b9caa4"/>
+  <text class="dia-zh" x="555" y="258" text-anchor="middle" font-size="13">喻: 種子「死」失去種子相</text>
+  <text class="dia-zh" x="555" y="282" text-anchor="middle" font-size="13">→ 才長成樹</text>
+  <rect x="422" y="330" width="266" height="42" rx="8" fill="#d9e5c8"/>
+  <text class="dia-zh dia-ok" x="555" y="352" text-anchor="middle" font-size="14.5" font-weight="700">✓ 空, 才變得動</text>
+  <text class="dia-zh dia-mute" x="555" y="368" text-anchor="middle" font-size="11">以有空義故, 一切法得成</text>
+  <!-- 底 strip -->
+  <rect x="60" y="410" width="640" height="52" rx="8" fill="#f0e8d8" stroke="#c4956a"/>
+  <text class="dia-zh" x="380" y="435" text-anchor="middle" font-size="14" font-weight="700">「不作」= 沒有一個自性實體在那裡完成這個變, 不是「變化不存在」</text>
+  <text class="dia-zh dia-mute" x="380" y="454" text-anchor="middle" font-size="12.5">困住你的, 是自性; 空, 才是你能變、能長的空間</text>
+</svg>
+<figcaption>圖二：二諦分判。左邊（自性／勝義）是這一偈成立的層面——有自性就被鎖死、變不動；右邊（緣起／世俗）是日常的變化——正因無自性、是空，種子才能捨去種子相而長成樹。「不作」否定的是自性實體的變，不是變化本身。</figcaption>
+</figure>
+
+<h2>五、實修落點：抓著「我就是這樣」，才真的動不了</h2>
+<p>把這一偈翻成生活話，會得到一個和直覺相反的結論。我們常常害怕「空」「無常」，覺得那是失去、是歸零、是不牢靠；可是這一偈說的剛好相反：<strong>讓你卡住、變不了的，不是空，而是自性</strong>——是那個「我就是這樣的人」「我這輩子就這樣了」「他就是爛」的死性。</p>
+<p>俗話說「江山易改，本性難移」。但若真有那個「本性」（自性），事情會更絕望：人就<strong>永遠</strong>改不了、傷就<strong>永遠</strong>好不了、關係就<strong>永遠</strong>解不開。好消息是——那個焊死的本性並不存在。正因為無自性，改變、療癒、成長才有可能發生。想長成樹，就得允許種子相脫落；想從一個舊角色裡走出來，就得鬆開「我一直都是這樣」的抓取。<strong>你不是被「空」困住，你是被「自性」困住。</strong></p>
+<p>一句收攏：<strong>壯不作老，破的是「有自性的變」；壯確實會老，靠的是「無自性的空」。空不是你的牢籠，空是你能變、能長、能好起來的那間房。</strong></p>
+
+<h2>六、整理總表</h2>
+<table class="sdf-tbl">
+<caption>觀行品 13-5-4：五個卡點與鑰匙</caption>
+<thead><tr><th>卡住的地方</th><th>誤讀在哪</th><th>解開的鑰匙</th><th>一句白話</th></tr></thead>
+<tbody>
+<tr><td>「不作」是什麼？</td><td>讀成「工作、造作」</td><td>作＝<span class="hl">變成、變出、造成</span></td><td>壯不作老＝壯並不變出老</td></tr>
+<tr><td>不是說人不會老嗎？</td><td>以為在否認「緣起的變」</td><td>它否認的是<span class="hl">「自性的變」</span>——實體的壯走到老</td><td>破的是「有個不變的你在變老」，不是「你會老」</td></tr>
+<tr><td>有性、無性怎麼都不能異？</td><td>只想到一種「有」與「無」</td><td>有性＝<span class="hl">焊死不可變</span>；純無＝無物可變</td><td>焊死的動不了，沒有的沒得動</td></tr>
+<tr><td>是法、異法怎麼都不成？</td><td>以為總有一邊能安放「變」</td><td>同一法→老作老（空轉）；不同法→壯作老（各歸各）</td><td>兩個位子都放不下「變」</td></tr>
+<tr><td>那到底是怎麼變的？</td><td>把空當成「什麼都沒有」</td><td><span class="hl">以有空義故，一切法得成</span></td><td>種子先死，才長成樹；空是變化的空間</td></tr>
+</tbody>
+</table>
+
+<hr />
+<h2>進一步閱讀</h2>
+<p>本篇所依的偈頌與青目釋原文，可線上直達對應的那一節：</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-13-5-4">《中論》觀行品第十三「若諸法有性／無性・是法無異・壯不作老」· 此節直達</a></strong>　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">龍樹論典全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，歡迎在留言區聊聊：你身上有沒有哪一個「我就是這樣」的自我設定，其實正是那顆讓你變不了、焊死在鐵板上的螺絲？</em></p>
+<hr />
+<p><strong>底本與出處</strong>：《中論》大正藏 T30 No.1564（觀行品第十三，龍樹菩薩造・梵志青目釋・鳩摩羅什譯）。術語依原典；「焊死的螺絲」「火車進站」「月台陌生人」「種子相」等通俗比喻與圖示，為作者依義所作。可於 CBETA 線上查閱。</p>
+<hr />
+<p><strong>標籤</strong>：<code>#中論</code> <code>#大智度論</code> <code>#龍樹</code> <code>#觀行品</code> <code>#中觀</code> <code>#空性</code> <code>#佛學閱讀</code></p>
+<hr />
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 52 篇。原典出處：《中論》觀行品第十三第五、六偈（若諸法有性／無性・壯不作老）。系列所有文章：<a href="https://weiwen0925.github.io/">《大智度論》研讀彙整</a>　｜　上一篇 第 51 篇：<a href="https://weiwen0925.github.io/medium-import-51.html">「是他害我的」，講到最後只剩一條死路——觀苦品的「他作」坍縮鏈</a></em></p>
+</body>
+</html>
