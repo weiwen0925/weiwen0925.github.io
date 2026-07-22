@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「什麼都沒了」也是一種執著——斷滅的「無」，偷偷替「無」立了一個定性；空不是把世界歸零</title>
+    <meta name="description" content="《中論》觀有無品「定有則著常，定無則著斷」「若法有定性，非無則是常，先有而今無，是則為斷滅」常讓人卡住：「無」明明像在否定自性，為什麼中論說它也是自性見？空會不會就是斷滅、就是把世界歸零？本文用兩把鑰匙解開：一是這一品的「有／無」都是「定性的有／定性的無」；二是斷滅其實替「無」再立了一個定性、還預設了先前的「定有」。常見與斷見是同一枚自性硬幣的兩面。最要緊的分辨是「斷滅無 vs 空無」：斷滅切斷相續、撥無因果，空則鬆開兩邊、成就因果（以有空義故，一切法得成）。附硬幣兩面圖、斷滅／空對照圖與整理總表。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+/* 圖示用類別（SVG <text> 內標點用半形） */
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+/* 整理總表用（可選） */
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+</style>
+</head>
+<body>
+<h1>「什麼都沒了」，也是一種執著——斷滅的「無」，偷偷替「無」立了一個定性</h1>
+<h2>中論觀有無品第十、十一偈：常執「定有」、斷執「定無」，是同一枚「自性」硬幣的兩面——空不是把世界歸零，離二邊是對因果的守護</h2>
+<hr />
+<blockquote>
+<p>「定有則著常，定無則著斷。」「若法有定性，非無則是常；先有而今無，是則為斷滅。」——《中論》觀有無品第十、十一偈。這裡有個很容易卡住的地方：<strong>「無」明明像是在否定自性（東西沒了、歸零），為什麼中論卻說它也是一種「自性見」？</strong>而且——如果連「無」都要破，那講「空」「無自性」，會不會其實就是把世界講成一場虛無、一場斷滅？</p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>53</strong> 篇。承上一篇觀行品（「壯不作老」談變異），這一品龍樹直接處理「有」與「無」本身。出處是《中論》觀有無品第十五、第十、十一偈的青目釋（<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-15-6-2">原典此節直達</a>）。上面兩個疑問，只差兩件事沒接上：一是這一品的「有／無」是什麼意思，二是「斷滅」到底偷偷夾帶了什麼。把這兩點插上，你會看見一個既精確又療癒的分辨：<strong>空，是鬆開兩邊的手；斷滅，才是把世界關燈。</strong></p>
+<hr />
+
+<h2>一、先定住一把鑰匙：這裡的「有」「無」都是「定性」</h2>
+<p>會卡住，多半是把這裡的「有」「無」讀成了日常的意思。日常的「有」是「桌上有杯子」，日常的「無」是「杯子被收走了」——這些中論從不否認。這一品要破的，是另一種東西：<strong>「定性的有（定有）」——認定一個東西有固定、自足、決定的本質</strong>；相對地，<strong>「定性的無（定無）」——認定一個真實、徹底、決定的「什麼都沒有」</strong>。</p>
+<p>第十一偈開頭那五個字「<strong>若法有定性</strong>」，就是整段的共同前提。你等一下會看到：常見和斷見，都是從這五個字長出來的兩根岔枝。</p>
+
+<h2>二、常見那一面：執「定有」，就墮入「常」</h2>
+<p>青目說：「若法性定有，則是有相非無相，終不應無。」意思是——如果一個東西的性是「決定的有」，那它就是焊死的有，<strong>永遠不該變成無</strong>；既然它永不壞、永不滅，你就落入了「常見」（認定有個東西恆常不變）。</p>
+<p>打個比方：這就像你認定手裡握的東西是焊死在掌心的，永遠不會壞、不會走、不會變。這是「有」那一邊的執著，多數人一聽就懂。真正繞人的是另一邊。</p>
+
+<h2>三、斷見那一面：執「定無」，就墮入「斷」——而它仍是自性見</h2>
+<p>青目接著說：「若法先有，敗壞而無者，是名斷滅。」——一個東西<strong>先前是真實地有，後來真的斷絕、歸於一個真實的無</strong>，這就叫斷滅（斷見）。</p>
+<p>關鍵來了：斷見看起來像在「否定自性」（東西沒了嘛），為什麼中論說它<em>還是</em>自性見？青目補的那句話最要命：「<strong>汝謂有無各有定相故。</strong>」斷見其實偷偷夾帶了兩個「定相」——</p>
+<p>其一，它<strong>預設那東西「先前是真實地有」</strong>：「先有」＝一個有自性的東西真的存在過。其二，它再<strong>主張這東西「如今真實地無」</strong>：把消滅當成一個真實、徹底、決定的「無」狀態（定無）。所以斷見骨子裡不是「沒有自性」，而是「<strong>一個定性的『有』，被真實地消滅成一個定性的『無』</strong>」——它是自性見的「無」版本。</p>
+<p>於是我們得到一個很乾淨的圖像：<strong>常見與斷見，是同一枚「自性」硬幣的兩面。</strong>常見執「定有」（東西焊死、永不壞，故常）；斷見執「定無」（東西先真有、後真斷成無，故斷）。根子都是那五個字「若法有定性」。</p>
+<figure>
+<svg viewBox="0 0 760 578" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="常見斷見是自性硬幣的兩面">
+  <text class="dia-zh dia-gold" x="380" y="30" text-anchor="middle" font-size="18" font-weight="700">常見 ↔ 斷見: 同一枚「自性」硬幣的兩面</text>
+  <rect class="dia-box-key" x="288" y="48" width="184" height="56" rx="12"/>
+  <text class="dia-zh" x="380" y="74" text-anchor="middle" font-size="17" font-weight="700">若法有定性</text>
+  <text class="dia-zh dia-mute" x="380" y="94" text-anchor="middle" font-size="11.5">有／無 各有「決定之相」</text>
+  <line class="dia-line" x1="344" y1="106" x2="200" y2="150" stroke-width="1.5"/>
+  <line class="dia-line" x1="416" y1="106" x2="560" y2="150" stroke-width="1.5"/>
+  <text class="dia-zh dia-mute" x="380" y="132" text-anchor="middle" font-size="12">分成兩根岔枝</text>
+  <!-- 常見 -->
+  <rect class="dia-box" x="40" y="152" width="320" height="104" rx="12"/>
+  <text class="dia-zh dia-blue" x="200" y="180" text-anchor="middle" font-size="16" font-weight="700">常見 ＝ 執「定有」</text>
+  <text class="dia-zh" x="200" y="208" text-anchor="middle" font-size="13" fill="#5a4e38">東西有固定實體、永不壞</text>
+  <text class="dia-zh dia-x" x="200" y="236" text-anchor="middle" font-size="14.5" font-weight="700">定有永不該變無 → 墮「常」</text>
+  <!-- 斷見 -->
+  <rect class="dia-box" x="400" y="152" width="320" height="104" rx="12"/>
+  <text class="dia-zh dia-blue" x="560" y="180" text-anchor="middle" font-size="16" font-weight="700">斷見 ＝ 執「定無」</text>
+  <text class="dia-zh" x="560" y="208" text-anchor="middle" font-size="13" fill="#5a4e38">先真有、後真的斷絕成「無」</text>
+  <text class="dia-zh dia-x" x="560" y="236" text-anchor="middle" font-size="14.5" font-weight="700">把「無」當定相 → 墮「斷」</text>
+  <!-- 紅條 -->
+  <rect x="50" y="272" width="660" height="56" rx="10" fill="#f6e2dc" stroke="#c0392b" stroke-width="1.5"/>
+  <text class="dia-zh dia-x" x="380" y="298" text-anchor="middle" font-size="14.5" font-weight="700">常、斷二見都是「自性見」—— 同一枚硬幣的兩面（定有面／定無面）</text>
+  <text class="dia-zh dia-mute" x="380" y="319" text-anchor="middle" font-size="12">一旦執二見, 便撥無罪福因果、破世間事（青目: 則無罪福等, 破世間事）</text>
+  <line class="dia-line" x1="380" y1="328" x2="380" y2="356" stroke-width="1.6"/>
+  <path d="M380 356 l-6 -11 h12 z" fill="#c8a05a"/>
+  <!-- 空 -->
+  <rect x="40" y="358" width="680" height="206" rx="14" fill="#e8efe0" stroke="#a9bd93" stroke-width="1.6"/>
+  <rect x="58" y="372" width="644" height="34" rx="17" fill="#1d7a46"/>
+  <text class="dia-zh" x="380" y="395" text-anchor="middle" font-size="15" font-weight="700" style="fill:#eefaef">空 · 中道 —— 鬆開「有」「無」兩邊的定性</text>
+  <text class="dia-zh" x="380" y="432" text-anchor="middle" font-size="13.5" fill="#3f4d2c">不立「定有」, 也不立「定無」: 兩邊的自性一起放下</text>
+  <text class="dia-zh" x="380" y="460" text-anchor="middle" font-size="13.5" fill="#3f4d2c">生是緣起地生、滅是緣起地滅 —— 中間沒有一個實體被「斷」</text>
+  <text class="dia-zh dia-ok" x="380" y="490" text-anchor="middle" font-size="15" font-weight="700">相續不斷 → 罪福因果得成</text>
+  <text class="dia-zh dia-mute" x="380" y="518" text-anchor="middle" font-size="12.5">「以有空義故, 一切法得成」—— 空是因果能成立的空間, 不是斷滅</text>
+  <text class="dia-zh dia-mute" x="380" y="540" text-anchor="middle" font-size="12">真正撥無因果的是「斷滅」, 不是「空」</text>
+</svg>
+<figcaption>圖一：常見執「定有」、斷見執「定無」，是同一枚「自性」硬幣的兩面，共同前提都是「若法有定性」。空／中道則把有、無兩邊的定性一起鬆開——相續不斷，因果反而得成。</figcaption>
+</figure>
+
+<h2>四、最要緊的分辨：空 ≠ 斷滅</h2>
+<p>這就回到你的第二個疑問：既然連「無」都破，那「空」會不會就是斷滅、就是虛無？——恰恰相反。把「空」誤讀成「斷滅」，是這一段最常見、也最危險的一個坑。兩者差在哪，一張表就看清：</p>
+<p><strong>斷滅無</strong>：真有一個東西（定有）→ 被真的消滅成真的「無」（定無）→ 相續被一刀切斷 → 撥無因果。這是<strong>自性見</strong>。<br/><strong>空無</strong>：那東西本來就沒有定性可被消滅 → 生是緣起地生、滅是緣起地滅 → 中間沒有實體被「斷」，相續照樣流動 → 因果成立。這是<strong>中道</strong>。</p>
+<p>一句話分辨：<strong>斷滅是「把有一刀砍成無」；空是「把有、無兩邊的定性一起鬆開」。</strong>一個是關燈，一個是鬆手。</p>
+<figure>
+<svg viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="斷滅無與空無對照">
+  <text class="dia-zh dia-gold" x="380" y="28" text-anchor="middle" font-size="18" font-weight="700">兩個「無」不一樣: 斷滅無 vs 空無</text>
+  <!-- 左 斷滅無 -->
+  <rect x="30" y="46" width="350" height="302" rx="14" fill="#f7e6e0" stroke="#cf9a86" stroke-width="1.5"/>
+  <rect x="48" y="58" width="314" height="32" rx="16" fill="#8b2500"/>
+  <text class="dia-zh" x="205" y="80" text-anchor="middle" font-size="14.5" font-weight="700" style="fill:#f7ecd2">斷滅無（自性見）</text>
+  <text class="dia-zh" x="50" y="122" font-size="13" fill="#7d5348">① 先真有一個東西（定有）</text>
+  <text class="dia-zh" x="50" y="152" font-size="13" fill="#7d5348">② 被真的消滅成真的「無」（定無）</text>
+  <text class="dia-zh" x="50" y="182" font-size="13" fill="#7d5348">③ 相續被一刀切斷</text>
+  <text class="dia-zh" x="50" y="212" font-size="13" fill="#7d5348">④ → 撥無罪福因果、破世間事</text>
+  <rect x="48" y="234" width="314" height="48" rx="9" fill="#f0dcd4"/>
+  <text class="dia-zh dia-x" x="205" y="256" text-anchor="middle" font-size="13.5" font-weight="700">× 替「無」再立一個定性</text>
+  <text class="dia-zh dia-mute" x="205" y="274" text-anchor="middle" font-size="11.5">把「有」一刀砍成「無」·「關燈」</text>
+  <text class="dia-zh dia-mute" x="205" y="308" text-anchor="middle" font-size="11.5">預設了先前的「定有」、又把「無」實體化</text>
+  <text class="dia-zh dia-mute" x="205" y="328" text-anchor="middle" font-size="11.5">—— 仍是自性見（自性見的「無」版本）</text>
+  <!-- 右 空無 -->
+  <rect x="380" y="46" width="350" height="302" rx="14" fill="#e8efe0" stroke="#a9bd93" stroke-width="1.5"/>
+  <rect x="398" y="58" width="314" height="32" rx="16" fill="#1d7a46"/>
+  <text class="dia-zh" x="555" y="80" text-anchor="middle" font-size="14.5" font-weight="700" style="fill:#eefaef">空無 · 中道</text>
+  <text class="dia-zh" x="400" y="122" font-size="13" fill="#3f5330">① 本來就無定性可被消滅</text>
+  <text class="dia-zh" x="400" y="152" font-size="13" fill="#3f5330">② 生是緣起生、滅是緣起滅</text>
+  <text class="dia-zh" x="400" y="182" font-size="13" fill="#3f5330">③ 沒有實體被「斷」, 相續照流</text>
+  <text class="dia-zh" x="400" y="212" font-size="13" fill="#3f5330">④ → 罪福因果得成</text>
+  <rect x="398" y="234" width="314" height="48" rx="9" fill="#d9e5c8"/>
+  <text class="dia-zh dia-ok" x="555" y="256" text-anchor="middle" font-size="13.5" font-weight="700">✓ 鬆開有、無兩邊的定性</text>
+  <text class="dia-zh dia-mute" x="555" y="274" text-anchor="middle" font-size="11.5">不砍、不立, 只是不執 ·「鬆手」</text>
+  <text class="dia-zh dia-mute" x="555" y="308" text-anchor="middle" font-size="11.5">沒有「定有」可斷, 也不立「定無」</text>
+  <text class="dia-zh dia-mute" x="555" y="328" text-anchor="middle" font-size="11.5">故非斷非常 ——（以有空義故, 一切法得成）</text>
+  <!-- 底 -->
+  <rect x="30" y="362" width="700" height="36" rx="8" fill="#f0e8d8" stroke="#c4956a"/>
+  <text class="dia-zh" x="380" y="385" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5c4a30">斷滅＝「把有砍成無」（關燈）; 空＝「把有、無兩邊的定性一起鬆開」（鬆手）</text>
+</svg>
+<figcaption>圖二：兩個「無」不一樣。斷滅無切斷相續、撥無因果，是替「無」再立定性的自性見；空無鬆開兩邊、相續照流，因果反而成立，是中道。別把「空」誤當成「斷滅」。</figcaption>
+</figure>
+
+<h2>五、離二邊，其實是對因果的守護</h2>
+<p>青目在這一段的收尾特別重：「<strong>若有斷常見者，則無罪福等，破世間事，是故應捨。</strong>」為什麼這麼嚴重？因為若一個法敗壞時是變成一個真實、徹底、斷了相續的「無」，那造業的人一滅就徹底沒了、什麼都不留，<strong>果報就無人可受、因果鏈就斷掉</strong>，整個世間的道德與事理秩序跟著垮。所以離斷常二邊，不只是玄妙的思辨，而是<strong>對因果的守護</strong>。</p>
+<p>這也正是佛陀本人的教法。同品第七偈引「佛能滅有無，如化迦旃延經中之所說，離有亦離無」——佛在《迦旃延經》裡教迦旃延正見：世間人總是依「有」與「無」兩種見地而住，而正見是<strong>離開這兩邊</strong>。龍樹只是把佛這句話，用邏輯一格一格兌現出來。</p>
+<p>而龍樹在〈觀四諦品〉那句名言「<strong>以有空義故，一切法得成</strong>」，講的正是同一件事的正面：空不但不破因果，反而是因果能成立的空間。<strong>真正撥無因果的，是斷滅，不是空。</strong>所以中論離「斷」這一邊，恰恰是為了保住因果，而不是把世界講成一場虛無。</p>
+
+<h2>六、實修落點：失去的時候，別掉進「歸零」</h2>
+<p>把這一品放回生活，會照見我們面對「失去」時最本能的兩種反應。失去一個人、一段關係、一個角色、一段健康或人生階段時，心很容易盪到兩個極端：一邊是「<strong>這不該變、我要抓住</strong>」（這是常，執定有）；另一邊是「<strong>全沒了、歸零了、一切都白費、再也沒有意義</strong>」（這是斷，執定無）。</p>
+<p>注意那個「全沒了、歸零」的塌陷感——在中觀看來，它並不是看破，反而是<strong>替「無」又立了一個定性</strong>：把「失去」硬化成一個真實、徹底、決定的終點。它跟「執著永恆」不是相反，而是同一種病的兩面。</p>
+<p>中道的下手處，是兩邊都不站：不抓「永遠不變」，也不塌進「徹底歸零」。承認相續還在——記憶還在、影響還在、你種下的因還在、那條緣起之流還在流動。<strong>它是空的，但不是零。</strong>你做過的、正在做的，依然算數（因果不斷），正因為它從來不是斷滅。一句收攏：<strong>空是鬆開兩邊的手，不是把世界關燈。失去會痛，但痛的是緣起的離散，不是掉進一個真實的「無」。</strong></p>
+
+<h2>七、整理總表</h2>
+<table class="sdf-tbl">
+<caption>觀有無品 15-6-2：五個卡點與鑰匙</caption>
+<thead><tr><th>卡住的地方</th><th>誤讀在哪</th><th>解開的鑰匙</th><th>一句白話</th></tr></thead>
+<tbody>
+<tr><td>這裡的「有／無」指什麼？</td><td>讀成日常的「有／沒有」</td><td>是<span class="hl">定性的有／定性的無</span></td><td>焊死的有，與徹底決定的無</td></tr>
+<tr><td>常見錯在哪？</td><td>以為只有執「有」才算執著</td><td>執「定有」→ 定有永不該變無 → 墮常</td><td>把東西當成焊死、永不壞</td></tr>
+<tr><td>斷見為何也是自性見？</td><td>以為「無」就是否定自性</td><td>它<span class="hl">預設先前「定有」、又把「無」實體化（定無）</span></td><td>自性見的「無」版本</td></tr>
+<tr><td>空＝斷滅嗎？</td><td>把空誤當歸零／虛無</td><td>斷滅切斷相續、撥無因果；空鬆開兩邊、相續照流</td><td>空是鬆手，斷滅是關燈</td></tr>
+<tr><td>離二邊為何重要？</td><td>以為只是思辨</td><td>斷常<span class="hl">撥無罪福因果、破世間事</span>；空成就因果</td><td>以有空義故，一切法得成</td></tr>
+</tbody>
+</table>
+
+<hr />
+<h2>進一步閱讀</h2>
+<p>本篇所依的偈頌與青目釋原文，可線上直達對應的那一節：</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-15-6-2">《中論》觀有無品第十五「定有則著常・先有而今無是則為斷滅」· 此節直達</a></strong>　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">龍樹論典全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，歡迎在留言區聊聊：你面對失去的時候，比較常盪到哪一邊——「這不該變」的常，還是「全沒了、歸零」的斷？</em></p>
+<hr />
+<p><strong>底本與出處</strong>：《中論》大正藏 T30 No.1564（觀有無品第十五，龍樹菩薩造・梵志青目釋・鳩摩羅什譯）。術語依原典；「自性硬幣」「關燈／鬆手」「歸零」等通俗比喻與圖示，為作者依義所作。可於 CBETA 線上查閱。</p>
+<hr />
+<p><strong>標籤</strong>：<code>#中論</code> <code>#大智度論</code> <code>#龍樹</code> <code>#觀有無品</code> <code>#中觀</code> <code>#空性</code> <code>#斷見</code> <code>#佛學閱讀</code></p>
+<hr />
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 53 篇。原典出處：《中論》觀有無品第十五第十、十一偈（常斷二見・斷滅）。系列所有文章：<a href="https://weiwen0925.github.io/">《大智度論》研讀彙整</a>　｜　上一篇 第 52 篇：<a href="https://weiwen0925.github.io/medium-import-52.html">「壯不作老」，不是說人不會變老——觀行品：讓你變不了的是「自性」，不是「空」</a></em></p>
+</body>
+</html>
