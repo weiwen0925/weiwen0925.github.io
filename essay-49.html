@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>只有「看」，沒有「看者」——觀本住品的五道關卡，與一個細微的發現</title>
+    <meta name="description" content="《中論》觀本住品第九拆的是最頑固的直覺：經驗背後坐著一位「駕駛員」。本篇沿五道關卡走一遍：指認關（以何可知本住）、閉環關（以法知人、以人知法）、一多關（眼者即聞者？耳應能見）、徵相關（呼吸眨眼不是靈魂證據）、三世關（今後亦復無）——並補上一個細微的發現：六情品早已否認「眼見」的自性，本住品再否認「見者」，雙重否定合觀，作用宛然而無自性、主體了不可得。有作用，不代表作用背後有一個作者。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+.bk-badge{font-family:"Noto Sans TC",system-ui,sans-serif;font-size:.72em;letter-spacing:3px;color:var(--gold);margin:0 0 12px;}.bk-bridge{margin-top:2.2em;padding:1.1em 1.4em;background:var(--verseBg);border:1px solid var(--border);border-radius:var(--r);font-size:.95em;color:var(--text2);line-height:1.95;}.bk-bridge b{color:var(--accent);font-weight:700;}
+.bk-thread{margin:1.6em 0 .4em;padding:.55em 1em;border-left:3px solid var(--goldL);background:rgba(184,134,11,.06);font-size:.94em;color:var(--muted);line-height:1.9;font-style:normal;}.bk-thread b{color:var(--accent);font-weight:700;}.bk-nav{margin-top:.75em;padding-top:.65em;border-top:1px dashed var(--border);font-size:.92em;letter-spacing:.3px;color:var(--muted);line-height:1.9;}
+.tagl{text-decoration:none;}.tagl code{cursor:pointer;}.tagl:hover code{border-color:#b8860b;color:#8a5a1e;}
+/*BKV3*/#bkProgress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#b8860b,#d4a84b);z-index:9999;}.bk-glance{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px 12px;margin:20px 0 8px;font-size:15px;line-height:1.85;}.bg-t{color:#8a5a1e;font-weight:700;letter-spacing:2px;margin-right:10px;}.bg-pos{color:#a8905f;font-size:13px;letter-spacing:1px;}.bg-kw{display:inline-block;margin:2px 5px 2px 0;padding:1px 9px 2px;background:#efe7d8;border:1px solid #ddcfb4;border-radius:4px;color:#6b5231;font-size:13.5px;text-decoration:none;}a.bg-kw:hover{border-color:#b8860b;color:#8a5a1e;}.bk-toc{margin-top:8px;font-size:14px;line-height:2;}.bk-toc b{color:#8a5a1e;font-weight:700;}.bk-toc a{color:#6b5231;text-decoration:none;border-bottom:1px dotted #c9b28a;margin-right:12px;white-space:nowrap;}.bk-toc a:hover{color:#8a5a1e;border-bottom-color:#b8860b;}@media (prefers-reduced-motion:no-preference){blockquote{transition:background .6s ease,border-color .6s ease,box-shadow .6s ease;}blockquote.bk-focus{background:rgba(212,168,75,.10);border-left-color:#b8860b;box-shadow:0 1px 8px rgba(184,134,11,.10);}}
+</style>
+</head>
+<body>
+<div class="bk-badge">《緣起性空》全書　·　第六部 · 正觀　·　ESSAY 49</div>
+
+<h1>只有「看」，沒有「看者」</h1>
+<h2>觀本住品的五道關卡，與一個細微的發現——有作用，不代表作用背後有一個作者</h2>
+<div class="bk-glance"><p style="margin:0 0 6px"><span class="bg-t">本篇一眼</span><span class="bg-pos">第六部・正觀｜全書第 49/55 篇</span></p><p style="margin:0">五道關卡逐一收緊：受用之前找不到本住者，感官背後沒有司令部。與定門「拆我在看X」同一結論、兩條進路。</p><p style="margin:7px 0 0"><a class="bg-kw" href="https://weiwen0925.github.io/tags.html#t-觀本住品">#觀本住品</a><a class="bg-kw" href="https://weiwen0925.github.io/tags.html#t-無我">#無我</a></p><nav class="bk-toc" aria-label="章節導覽"><b>章節</b>　</nav></div>
+
+<hr />
+<blockquote>
+<p>你正在讀這行字。現在請回答一個問題：<strong>是「誰」在讀？</strong>幾乎所有人都會指向同一個答案——「我啊」。一個坐在眼睛後面、透過眼睛往外看的小人，一位軀殼的駕駛員。《中論》觀本住品第九，整品只做一件事：把這位駕駛員請出來對質。</p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>49</strong> 篇。出處是《中論》觀本住品第九：「<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-1-4">龍樹的挑戰・只有看沒有看者</a>」與第二章的五波拆解（<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-2-3">相互依存</a>、<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-2-5">一與多</a>、<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-2-6">生理反證</a>、<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-2-7">三世推檢</a>）。本篇沿著一位讀者實際走過的研讀路徑，把五道關卡走一遍，並補上一個容易錯過的細節：<strong>觀六情品早已否認「眼見」的自性；本住品再否認「見者」——兩品合觀，才是完整的雙重否定</strong>。</p>
+<hr />
+
+<h2>一、先把靶立清楚：否認的是什麼，不否認的是什麼</h2>
+<p>對手的主張叫「本住」（prāg vyavasthita）——一個<strong>先於</strong>眼耳鼻舌、先於見聞覺知而存在的主體。先有這位主人，然後他配備了感官，開始看、開始聽。這就是「駕駛員直覺」的哲學版。</p>
+<p>龍樹的回應，先做一個極重要的分判：<strong>他不否認經驗</strong>。眼前有色、耳邊有聲、心中有苦有樂——這些「作用」如實發生，龍樹一概承認。他否認的是另一樣東西：那個被假設為<strong>獨立於經驗之外、躲在經驗背後</strong>的「看者」。經驗是真的；「經驗背後另有一位經驗的主人」這個<strong>推論</strong>，是假的。</p>
+<p>這裡就接上那個細微的發現。有讀者會問：觀六情品（第三品）不是連「眼見」這個作用都否認了嗎——「是眼則不能，自見其己體；若不能自見，云何見餘物」？那「不否認作用」還成立嗎？答案是兩品各拆一層：<strong>六情品拆的是「作用的自性」</strong>——「眼見」若是一個自足的實體功能，它應該先能看見自己，實則不能，故「見」無自性；<strong>本住品拆的是「作用背後的主體」</strong>——連無自性的作用，也不需要一位主人來持有。合起來是三層分判：<strong>經驗現起，承認；作用的自性，否認；作用背後的主體，否認</strong>。緣起的「看」宛然而有、了無自性——這正是中觀不落斷常的立足點。</p>
+<figure>
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三層分判">
+  <text class="dia-zh dia-gold" x="380" y="30" text-anchor="middle" font-size="17" font-weight="700">三層分判: 承認什麼, 否認什麼</text>
+  <rect class="dia-box-key" x="60" y="60" width="640" height="62" rx="10"/>
+  <text class="dia-zh" x="120" y="97" text-anchor="middle" font-size="15" font-weight="700">經驗現起</text>
+  <text class="dia-zh dia-mute" x="430" y="88" text-anchor="middle" font-size="12.5">看在發生 · 聽在發生 · 苦樂在發生 (緣起宛然)</text>
+  <polyline points="648,92 658,102 674,80" fill="none" stroke="#1d7a46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect class="dia-box" x="60" y="140" width="640" height="62" rx="10"/>
+  <text class="dia-zh" x="120" y="177" text-anchor="middle" font-size="15" font-weight="700">作用自性</text>
+  <text class="dia-zh dia-mute" x="430" y="168" text-anchor="middle" font-size="12.5">「見」是自足實體? 六情品: 眼不能自見 (第三品已破)</text>
+  <line x1="649" y1="160" x2="671" y2="182" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/><line x1="649" y1="182" x2="671" y2="160" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <rect class="dia-box" x="60" y="220" width="640" height="62" rx="10"/>
+  <text class="dia-zh" x="120" y="257" text-anchor="middle" font-size="15" font-weight="700">背後主體</text>
+  <text class="dia-zh dia-mute" x="430" y="248" text-anchor="middle" font-size="12.5">作用背後另有「看者/本住」? 本住品: 五關全破 (本品)</text>
+  <line x1="649" y1="240" x2="671" y2="262" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/><line x1="649" y1="262" x2="671" y2="240" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <text class="dia-zh dia-mute" x="380" y="312" text-anchor="middle" font-size="12">六情品破「作用的自性」+ 本住品破「作用的主人」= 雙重否定, 而經驗不廢</text>
+</svg>
+<figcaption>圖一：三層分判——經驗現起（承認）、作用自性（六情品已破）、背後主體（本品所破）。「不否認作用」指的是緣起現起的作用，不是作用的自性。</figcaption>
+</figure>
+
+<p class="bk-thread"><b>中觀接榫</b>　靶立清楚了——破的是本住者、不是經驗——圍剿開始：五道關卡，層層收緊。</p>
+<h2>二、五道關卡：本住的全面圍剿</h2>
+<h3>關卡一・指認關——「以何可知本住？」</h3>
+<p>龍樹的第一問最樸素：你說有一個先於見聞的本住，<strong>請問你是憑什麼知道它的？</strong>（偈三「以何而可知」）所有對「我」的指認，用的全是見聞覺知這些作用；一個「先於一切作用」的東西，連被指認的管道都沒有。<strong>它若可知，就不在作用之先；若在作用之先，就不可知</strong>——第一關就把「本住」逼進了認識論的死角。</p>
+<h3>關卡二・閉環關——「以法知人，以人知法」</h3>
+<blockquote>
+<p class="verse">「以法知有人，以人知有法；<br>離法何有人？離人何有法？」</p>
+</blockquote>
+<p>對手的邏輯是單向的：先有人（本住），人再生出法（作用）。龍樹點破：這關係根本是<strong>雙向互相定義的閉環</strong>。因為有作用，我們才知道有人；因為立了人，我們才把作用歸給他——兩者綁在同一條環線上，無起點、無先後、不能切開獨存。既然不能切開，「先有人、後有法」的單向主張就垮了。<strong>離法無人，離人無法</strong>。順帶一提：連「看者隨身體大小而變化」這件事本身，就已經是緣起的自白——一個會隨緣變化的東西，還算什麼「先於一切、常一自在」的本住？</p>
+<h3>關卡三・一多關——主人是一個，還是很多個？</h3>
+<p>退一步：就算有主人，他是「一」還是「多」？<strong>若是一</strong>——見者即聞者，操作者同一位，那麼<strong>眼睛應該也能聽、耳朵應該也能看</strong>，換個窗口而已；實則眼不能聞、耳不能見。<strong>若是多</strong>——見者、聞者、受者各是一位，那麼一具身體裡住著好幾個神，<strong>一個人裂解成許多人</strong>；實則人是一個整體。一與多兩條路都走不通，「全知的主人」連數目都無法安立。這一關的深義是：所謂「同一個我」，其實是跨感官經驗<strong>事後歸納出來的假名</strong>，不是先在的實體。</p>
+<h3>關卡四・徵相關——呼吸眨眼，不是靈魂的證據</h3>
+<p>對手祭出經驗派的王牌：出入息、視眴（眨眼）、壽命、思惟、苦樂——這些總是「神相」了吧？沒有神，誰在呼吸？龍樹釜底抽薪：<strong>這些活動全部可以用「無神」的方式完整解釋</strong>。呼吸是風大的機械運作，眨眼與感知是因緣和合的訊號反應——它們的存在只證明「有作用」，<strong>並不證明作用背後有一個作者</strong>。他還補一個銳利的反例：風狂病人不能自主、「不應作而作」——身體裡若真有一位作主的神，為何此人不能作主？可見活動的生起，本來就不需要神。把生理機能誤認作靈魂證據，是倒果為因。</p>
+<h3>關卡五・三世關——「眼等無本住，今後亦復無」</h3>
+<p>最後把檢驗推向時間。<strong>過去</strong>（感官未生之前）：遍尋不著本住——那段「空白期」裡它無法被指認；<strong>現在</strong>：當下是因緣和合的暫時聚合，其中無一獨立實體；<strong>未來</strong>（感官壞滅之後）：「今後亦復無」。三世遍檢俱不可得，龍樹由此推出全品最深的一步：<strong>「以三世無故，無有無分別」</strong>——本住既然三世中不曾「有」過，連說「它是無」也失去了對象。不是先有後無，是本來無生；<strong>破斥的終點不是換一個「無我」的立場，而是有無戲論一齊止息</strong>。</p>
+
+<h2>三、五關總表</h2>
+<table class="sdf-tbl">
+<caption>表一　觀本住品五道關卡——對手主張與龍樹拆解</caption>
+<thead><tr><th>關卡</th><th>對手主張</th><th>龍樹拆解</th><th>一句心法</th></tr></thead>
+<tbody>
+<tr><td>指認關</td><td>先於見聞，有本住</td><td>離開作用，拿什麼指認它？可知則不在先，在先則不可知</td><td class="hl">說得出它，就已經用了作用</td></tr>
+<tr><td>閉環關</td><td>先有人，後有法</td><td>以法知人、以人知法——彼此定義的閉環，非單向因果；隨身變化即是緣起自白</td><td class="hl">離法無人，離人無法</td></tr>
+<tr><td>一多關</td><td>身內有一位全知主人</td><td>是一？眼應能聽。是多？一人成多人。數目無法安立</td><td class="hl">「同一個我」是事後歸納的假名</td></tr>
+<tr><td>徵相關</td><td>呼吸眨眼壽命＝神相</td><td>皆是風火四大、因緣和合的機能；風狂病人不能自主，反證無主</td><td class="hl">有作用，不代表有作者</td></tr>
+<tr><td>三世關</td><td>總在某個時候有吧</td><td>先於？無法指認。現在？和合無實。今後？亦復無。三世俱不可得</td><td class="hl">本來無生，有無戲論俱息</td></tr>
+</tbody>
+</table>
+
+<h2>四、方法論的收束：整品就是一場「三者關係」的戰爭</h2>
+<p>回頭看，五道關卡其實共用同一個戰場：<strong>神我（本住）—諸根（眼耳鼻舌身意）—作用（見聞覺知）三者的關係</strong>。指認關問「離作用如何知我」，閉環關問「我與作用誰先」，一多關問「一我如何配多根」，徵相關問「作用可否推出我」，三世關問「三世何時有我」——<strong>每一關都是相待邏輯的展開</strong>：凡是依賴另一端才能成立的，就不是獨立自存的。這個結論下得完全正確；只需補上最後一步——偈十一、十二的收束不停在「證明無我」，而是連「有我／無我」的分別網一齊放下（「戲論則滅」）。中觀的破，破到立足點本身，不留一個新立場給人抓。</p>
+<figure>
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三者關係戰場">
+  <text class="dia-zh dia-gold" x="380" y="30" text-anchor="middle" font-size="17" font-weight="700">同一個戰場: 神我 — 諸根 — 作用</text>
+  <rect class="dia-box" x="290" y="52" width="180" height="56" rx="10"/>
+  <text class="dia-zh" x="380" y="80" text-anchor="middle" font-size="15" font-weight="700">神我 (本住)</text>
+  <text class="dia-zh dia-mute" x="380" y="98" text-anchor="middle" font-size="11">被假設的駕駛員</text>
+  <rect class="dia-box" x="80" y="200" width="180" height="56" rx="10"/>
+  <text class="dia-zh" x="170" y="228" text-anchor="middle" font-size="15" font-weight="700">諸根</text>
+  <text class="dia-zh dia-mute" x="170" y="246" text-anchor="middle" font-size="11">眼耳鼻舌身意</text>
+  <rect class="dia-box" x="500" y="200" width="180" height="56" rx="10"/>
+  <text class="dia-zh" x="590" y="228" text-anchor="middle" font-size="15" font-weight="700">作用</text>
+  <text class="dia-zh dia-mute" x="590" y="246" text-anchor="middle" font-size="11">見聞覺知 · 呼吸眨眼</text>
+  <line class="dia-dash" x1="330" y1="108" x2="200" y2="198"/>
+  <line class="dia-dash" x1="430" y1="108" x2="560" y2="198"/>
+  <line class="dia-line" x1="260" y1="228" x2="498" y2="228"/>
+  <text class="dia-zh dia-mute" x="196" y="138" text-anchor="middle" font-size="11.5">一多關: 一我配多根?</text>
+  <text class="dia-zh dia-mute" x="574" y="138" text-anchor="middle" font-size="11.5">指認/徵相: 作用推得出我?</text>
+  <text class="dia-zh dia-mute" x="380" y="218" text-anchor="middle" font-size="11.5">根塵和合而有作用 (緣起)</text>
+  <rect class="dia-box-key" x="180" y="300" width="400" height="62" rx="10"/>
+  <text class="dia-zh" x="380" y="326" text-anchor="middle" font-size="14" font-weight="700">五關皆相待邏輯: 依他而立者, 非獨立自存</text>
+  <text class="dia-zh dia-mute" x="380" y="348" text-anchor="middle" font-size="12">終點不是「無我論」, 而是有無戲論俱息</text>
+</svg>
+<figcaption>圖二：五道關卡共用的戰場——神我、諸根、作用的三角關係；虛線（對手假設的統攝）全被拆除，實線（根塵和合的緣起）保留。</figcaption>
+</figure>
+
+<p class="bk-thread"><b>中觀接榫</b>　五關既過、三角戰場清空，實修接手——把「我」從名詞讀回動詞，箭即無靶可中。</p>
+<h2>五、拆掉駕駛員之後：實修的接軌</h2>
+<p>本品第三章給出了心法：把「我」<strong>從名詞讀回動詞</strong>。痛苦這個經驗存在，但那個「長期承擔痛苦的受苦者」是幻覺——有看而無看者，有受而無受者，有苦而無主宰苦的人。實修上這不是玄談：下一次情緒上來，試著把「我很痛苦」改寫成「<strong>痛苦，正在發生</strong>」——只是改一個文法，重量就不一樣了。因為前者把痛苦釘在一位常住的主人身上，後者讓它回到緣起的流動裡，生滅有時。無靶，箭就無處可中。</p>
+<p>龍樹在本品拆掉的，是我們最捨不得的一樣東西；但他同時保住了我們真正擁有的一切——<strong>經驗本身，一樣不少</strong>。少掉的只是那位從來不曾存在的房客。</p>
+
+<div class="bk-bridge"><b>承先啟後</b>　<b>承・第 48 篇</b>——注釋家對讀之後，回到正破：受用之前，無本住者。<b>應・第 12 篇</b>——定門「拆我在看X」與本品同一結論、兩條進路。<div class="bk-nav">◀ 書序上一篇　<a href="https://weiwen0925.github.io/essay-48.html">第 48 篇・月稱與青目，同一座論場</a>　｜　書序下一篇　<a href="https://weiwen0925.github.io/essay-50.html">第 50 篇・新鞋出廠，就已經在變舊</a> ▶</div></div>
+<hr />
+<hr />
+<p><strong>標籤</strong>：<a class="tagl" href="https://weiwen0925.github.io/tags.html#t-中論"><code>#中論</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-大智度論"><code>#大智度論</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-龍樹"><code>#龍樹</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-觀本住品"><code>#觀本住品</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-無我"><code>#無我</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-中觀"><code>#中觀</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-佛學閱讀"><code>#佛學閱讀</code></a></p>
+<hr />
+<p><em>本文為「《大智度論》系列」第 49 篇。原典出處：《中論》觀本住品第九（<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-1-4">龍樹的挑戰</a>・<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-9-2-8">邏輯判決</a>）。系列所有文章：<a href="https://weiwen0925.github.io/">《大智度論》研讀彙整</a>　｜　上一篇 第 48 篇：<a href="https://weiwen0925.github.io/essay-48.html">兩位注釋家，同一座論場——月稱《明句論》與青目《釋論》在觀三相品的對讀</a>　｜　下一篇 第 50 篇：<a href="https://weiwen0925.github.io/essay-50.html">新鞋出廠，就已經在變舊——著屐喻與薪火喻</a></em></p>
+<script id="bkv3-js">/*BKV3*/(function(){"use strict";var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);var tick=false;function upd(){var h=document.documentElement;var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);bar.style.width=(p*100).toFixed(2)+"%";tick=false;}window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();var toc=document.querySelector(".bk-toc");if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}document.documentElement.style.scrollBehavior="smooth";})();</script>
+</body>
+</html>

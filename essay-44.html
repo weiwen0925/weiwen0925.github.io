@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>為什麼報生心不由遍因生？——六因四緣的帳看似繁瑣，其實只有三把尺：染不染、是不是心、有沒有前件</title>
+    <meta name="description" content="《大智度論》卷三十二六因四緣導讀:報生心為何除遍因(不隱沒無記、非垢,遍因只生染污法)、諸煩惱為何除報因(煩惱是隱沒、報是不隱沒,報因只生無記果)、色法為何除相應因(相應因限心心所之間)、四緣運算規則(心法四緣、無想滅盡定三緣除緣緣、色法二緣除次第緣緣緣,無有法從一緣生)。本文先校正讀表方向——矩陣說的是「此法由哪些因生」不是「此法當什麼因」;再用三把尺(垢尺、心尺、前件尺)把八條排除規則一次讀通,附六因速查表、由幾因生總矩陣、四緣運算規則表與阿羅漢末後心例外。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+.bk-badge{font-family:"Noto Sans TC",system-ui,sans-serif;font-size:.72em;letter-spacing:3px;color:var(--gold);margin:0 0 12px;}.bk-bridge{margin-top:2.2em;padding:1.1em 1.4em;background:var(--verseBg);border:1px solid var(--border);border-radius:var(--r);font-size:.95em;color:var(--text2);line-height:1.95;}.bk-bridge b{color:var(--accent);font-weight:700;}
+.bk-thread{margin:1.6em 0 .4em;padding:.55em 1em;border-left:3px solid var(--goldL);background:rgba(184,134,11,.06);font-size:.94em;color:var(--muted);line-height:1.9;font-style:normal;}.bk-thread b{color:var(--accent);font-weight:700;}.bk-nav{margin-top:.75em;padding-top:.65em;border-top:1px dashed var(--border);font-size:.92em;letter-spacing:.3px;color:var(--muted);line-height:1.9;}
+.tagl{text-decoration:none;}.tagl code{cursor:pointer;}.tagl:hover code{border-color:#b8860b;color:#8a5a1e;}
+/*BKV3*/#bkProgress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#b8860b,#d4a84b);z-index:9999;}.bk-glance{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px 12px;margin:20px 0 8px;font-size:15px;line-height:1.85;}.bg-t{color:#8a5a1e;font-weight:700;letter-spacing:2px;margin-right:10px;}.bg-pos{color:#a8905f;font-size:13px;letter-spacing:1px;}.bg-kw{display:inline-block;margin:2px 5px 2px 0;padding:1px 9px 2px;background:#efe7d8;border:1px solid #ddcfb4;border-radius:4px;color:#6b5231;font-size:13.5px;text-decoration:none;}a.bg-kw:hover{border-color:#b8860b;color:#8a5a1e;}.bk-toc{margin-top:8px;font-size:14px;line-height:2;}.bk-toc b{color:#8a5a1e;font-weight:700;}.bk-toc a{color:#6b5231;text-decoration:none;border-bottom:1px dotted #c9b28a;margin-right:12px;white-space:nowrap;}.bk-toc a:hover{color:#8a5a1e;border-bottom-color:#b8860b;}@media (prefers-reduced-motion:no-preference){blockquote{transition:background .6s ease,border-color .6s ease,box-shadow .6s ease;}blockquote.bk-focus{background:rgba(212,168,75,.10);border-left-color:#b8860b;box-shadow:0 1px 8px rgba(184,134,11,.10);}}
+</style>
+</head>
+<body>
+<div class="bk-badge">《緣起性空》全書　·　第五部 · 判攝　·　ESSAY 44</div>
+
+<h1>為什麼報生心不由遍因生？——六因四緣的帳看似繁瑣，其實只有三把尺：染不染、是不是心、有沒有前件</h1>
+
+<p class="lead">這是「《大智度論》系列」的第 <strong>44</strong> 篇。出處是卷三十二第一品的<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-4-6">五因適用矩陣</a>到<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-5-3">四緣運算規則</a>。這段阿毘曇有四個著名的卡點：報生心為什麼「除遍因」？諸煩惱為什麼「除報因」？色法為什麼「除相應因」？四緣的 4／3／2 到底怎麼算？逐條硬背很苦；但只要先校正一個<strong>讀表方向</strong>，再拿好<strong>三把尺</strong>，整張矩陣就變成可以自己推出來的東西——本篇把它整理成三張表。</p>
+
+<h2>一、先把工具擺齊：六因與四緣是兩套帳，接口只有一句話</h2>
+<div class="bk-glance"><p style="margin:0 0 6px"><span class="bg-t">本篇一眼</span><span class="bg-pos">第五部・判攝｜全書第 44/55 篇</span></p><p style="margin:0">六因四緣的帳看似繁瑣，其實只有三把尺：染不染、是不是心、有沒有前後。判攝門的收官之作。</p><p style="margin:7px 0 0"><a class="bg-kw" href="https://weiwen0925.github.io/tags.html#t-六因四緣">#六因四緣</a><a class="bg-kw" href="https://weiwen0925.github.io/tags.html#t-阿毘達磨">#阿毘達磨</a></p><nav class="bk-toc" aria-label="章節導覽"><b>章節</b>　</nav></div>
+
+<p>卷三十二用的六因是：<strong>相應因、共生因、自種因、遍因、報因、無障因</strong>；四緣是：<strong>因緣、次第緣、緣緣、增上緣</strong>。兩套帳的接口，原典一句話說完——「<strong>若六因生，是名四緣</strong>」的第一緣：六因全部收進「因緣」這一格，再加上管心念相續的「次第緣」、管所緣對象的「緣緣」、管不擋路的「增上緣」，就是四緣。所以讀法是：<strong>先用六因算「因緣」的細帳，再用四緣算總帳</strong>。</p>
+<table class="sdf-tbl">
+<caption>表一　六因速查（管什麼・收貨條件・比喻）</caption>
+<thead><tr><th>因</th><th>管什麼</th><th>它能生出什麼樣的果</th><th>一句話比喻</th></tr></thead>
+<tbody>
+<tr><td>相應因</td><td>心與心所<span class="hl">同時同緣、互相扶持</span></td><td>只在「心・心數法」之間成立</td><td>同一條船上的隊友——划槳必須同步</td></tr>
+<tr><td>共生因</td><td>同時生起、互為依靠</td><td>幾乎人人有份（心、色皆可）</td><td>三根蘆葦互靠而立</td></tr>
+<tr><td>自種因</td><td>同類前件生同類後件</td><td>前面要先有「同類的自己」</td><td>昨天的我是今天的我的因</td></tr>
+<tr><td>遍因</td><td>遍行煩惱作前導</td><td><span class="hl">只生染污法</span>（垢法）</td><td>疫區的源頭——傳出去的都帶病</td></tr>
+<tr><td>報因</td><td>善惡業感異熟果</td><td><span class="hl">生出的果必是不隱沒無記</span>（報本身無善惡）</td><td>種子有甜苦，長出的果實只是果實</td></tr>
+<tr><td>無障因</td><td>不障礙其生起</td><td>最寬：不擋路者皆算</td><td>你出門時，沒攔你的人都幫了你</td></tr>
+</tbody>
+</table>
+
+<h2>二、鑰匙：讀表方向——矩陣說的是「由誰生」，不是「當什麼因」</h2>
+<p>四個卡點裡有兩個，其實卡在方向。原典的句式是「報生心心數法，<strong>從</strong>五因<strong>生</strong>，……除遍因」——主詞是果，問的是<strong>這類法「由哪些因生出來」</strong>，不是「這類法能不能當某種因」。方向讀對，排除的理由立刻透明：</p>
+<p><strong>卡點一・報生心除遍因</strong>：遍因的「出貨」全是染污法（垢法）；而報生心是<strong>不隱沒無記</strong>——業報結出來的心，本身不帶善惡、不覆聖道，「非垢法故」。一個只出染貨的工廠，生不出無記的產品，所以報生心的來源清單裡<strong>劃掉遍因</strong>。</p>
+<p><strong>卡點二・諸煩惱除報因</strong>：報因的「出貨」全是不隱沒無記（報無善惡）；而煩惱是<strong>隱沒</strong>（染污、覆蔽）。原典理由一句話：「諸煩惱是隱沒，報是不隱沒，故除報因」——染污的煩惱不可能是「報」這種無記果，所以煩惱的來源清單裡<strong>劃掉報因</strong>。注意：這不是說煩惱與因果無關——煩惱照樣「從五因生」、照樣造業感報；只是<strong>它本身不是報因所生的那種果</strong>。</p>
+<p><strong>卡點三・色法除相應因</strong>：這把尺最簡單——相應因只在「心・心數法」的隊伍內部成立（同時、同緣、互應）；色法「非心心數法」，根本不在這條船上，所以<strong>劃掉相應因</strong>。心不相應諸行同理。</p>
+
+<p class="bk-thread"><b>中觀接榫</b>　讀表方向對了，就不必背表——三把尺在手，整張矩陣可以自己推出來。</p>
+<h2>三、三把尺：整張矩陣自己推</h2>
+<p>把上面的理由抽出來，其實只有三個判準，依次過關即可：</p>
+<p><strong>尺一・垢尺（染不染）</strong>：這類法是染污（垢、隱沒）還是無記／善淨？——染污才可能由遍因生；不隱沒無記才可能由報因生；兩頭不沾就兩個都劃掉。<strong>尺二・心尺（是不是心）</strong>：是心・心數法才有相應因；色與不相應行一律劃掉。<strong>尺三・前件尺（有沒有同類前件)</strong>：前面有同類者才有自種因——所以「初無漏心」最特別：無始以來第一次無漏，<strong>找不到同類前件</strong>，自種因劃掉。而<strong>共生因、無障因人人有份</strong>，是地板。原典底線：「<strong>無有法從一因生</strong>」。</p>
+<table class="sdf-tbl">
+<caption>表二　「由幾因生」總矩陣（原典八條・附三把尺的理由）</caption>
+<thead><tr><th>法類</th><th>因數</th><th>排除</th><th>為什麼（用尺）</th></tr></thead>
+<tbody>
+<tr><td>報生心・心數法</td><td>5</td><td>遍因</td><td>垢尺：不隱沒無記、非垢——遍因只生染</td></tr>
+<tr><td>諸煩惱</td><td>5</td><td>報因</td><td>垢尺：煩惱是隱沒，報是不隱沒——報因只生無記果</td></tr>
+<tr><td>報生色・心不相應行</td><td>4</td><td>相應因、遍因</td><td>心尺：非心心數法；垢尺：不隱沒無記</td></tr>
+<tr><td>染污色・心不相應行</td><td>4</td><td>相應因、報因</td><td>心尺：非心；垢尺：是垢，非報之無記</td></tr>
+<tr><td>諸餘心・心數法（除初無漏心）</td><td>4</td><td>報因、遍因</td><td>垢尺兩頭不沾：非無記故除報因，非垢故除遍因</td></tr>
+<tr><td>諸餘不相應法（有自種因者）</td><td>3</td><td>相應因、報因、遍因</td><td>心尺＋垢尺；前件尺：有同類前件，自種因保留</td></tr>
+<tr><td>諸餘不相應法（無自種因者）</td><td>2</td><td>（只剩共生因、無障因）</td><td>前件尺：無同類前件——只剩地板兩因</td></tr>
+<tr><td>初無漏心・心數法</td><td>3</td><td>（相應因、共生因、無障因）</td><td>前件尺：史上第一次無漏，無同類前件故無自種；垢尺：非染非報</td></tr>
+<tr><td>初無漏心中色・心不相應行</td><td>2</td><td>（共生因、無障因）</td><td>心尺再劃掉相應因——只剩地板</td></tr>
+</tbody>
+</table>
+<p>矩陣的底部是兩句總則：<strong>無有法從一因生</strong>（孤因不成事）；<strong>若六因生，是名四緣</strong>（這整張細帳，收進四緣的第一格「因緣」）。</p>
+<figure>
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三把尺判定流程">
+  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="18" font-weight="700">三把尺,一張矩陣自己推</text>
+  <text class="dia-zh dia-mute" x="380" y="48" text-anchor="middle" font-size="12.5">方向先讀對:問的是「這類法由哪些因生」</text>
+  <rect x="60" y="72" width="200" height="92" rx="8" fill="#fff" stroke="#8B2500" stroke-width="1.8"/>
+  <text class="dia-zh" x="160" y="96" text-anchor="middle" font-size="13" fill="#8B2500" font-weight="700">尺一 · 垢尺</text>
+  <text class="dia-zh" x="160" y="116" text-anchor="middle" font-size="11.5">染污(隱沒)→才可由遍因生</text>
+  <text class="dia-zh" x="160" y="134" text-anchor="middle" font-size="11.5">不隱沒無記→才可由報因生</text>
+  <text class="dia-zh dia-mute" x="160" y="152" text-anchor="middle" font-size="10.5">兩頭不沾→兩個都劃掉</text>
+  <rect x="280" y="72" width="200" height="92" rx="8" fill="#fff" stroke="#b8860b" stroke-width="1.8"/>
+  <text class="dia-zh dia-gold" x="380" y="96" text-anchor="middle" font-size="13" font-weight="700">尺二 · 心尺</text>
+  <text class="dia-zh" x="380" y="116" text-anchor="middle" font-size="11.5">是心·心數法→有相應因</text>
+  <text class="dia-zh" x="380" y="134" text-anchor="middle" font-size="11.5">色·不相應行→劃掉</text>
+  <text class="dia-zh dia-mute" x="380" y="152" text-anchor="middle" font-size="10.5">相應因只在心的船上</text>
+  <rect x="500" y="72" width="200" height="92" rx="8" fill="#fff" stroke="#7a8a6e" stroke-width="1.8"/>
+  <text class="dia-zh" x="600" y="96" text-anchor="middle" font-size="13" fill="#5d6b4e" font-weight="700">尺三 · 前件尺</text>
+  <text class="dia-zh" x="600" y="116" text-anchor="middle" font-size="11.5">有同類前件→有自種因</text>
+  <text class="dia-zh" x="600" y="134" text-anchor="middle" font-size="11.5">初無漏心→史上首次,劃掉</text>
+  <text class="dia-zh dia-mute" x="600" y="152" text-anchor="middle" font-size="10.5">昨天沒有同類的自己</text>
+  <line class="dia-line" x1="160" y1="164" x2="160" y2="196"/>
+  <line class="dia-line" x1="380" y1="164" x2="380" y2="196"/>
+  <line class="dia-line" x1="600" y1="164" x2="600" y2="196"/>
+  <rect x="120" y="200" width="520" height="56" rx="8" fill="#faf4e8" stroke="#b8862f" stroke-width="2"/>
+  <text class="dia-zh dia-gold" x="380" y="224" text-anchor="middle" font-size="13" font-weight="700">地板:共生因+無障因,人人有份</text>
+  <text class="dia-zh" x="380" y="244" text-anchor="middle" font-size="11.5">三把尺劃完剩下的,就是「由幾因生」</text>
+  <rect x="180" y="288" width="400" height="56" rx="8" fill="#2a2218"/>
+  <text x="380" y="312" text-anchor="middle" font-size="13" font-weight="700" class="dia-zh" style="fill:#e3c085">無有法從一因生</text>
+  <text x="380" y="333" text-anchor="middle" font-size="11.5" class="dia-zh" style="fill:#d4c4a8">孤因不成事;六因生,是名四緣(收進「因緣」一格)</text>
+</svg>
+<figcaption>圖一：三把尺（垢尺・心尺・前件尺）依次劃掉不合格的因，剩下的就是該法類的「由幾因生」；地板是共生＋無障，底線是無一因生。</figcaption>
+</figure>
+
+<h2>四、四緣運算規則：4／3／2 的算法一張表</h2>
+<p>六因收進「因緣」之後，剩下三緣先各自報到：<strong>次第緣</strong>——「心心數法次第相續無間」，前念滅引後念，中間無隔（著名例外：<strong>阿羅漢末後心</strong>——入無餘涅槃的最後一念，其後不再生念，無間之流就此斷流，不作次第緣：無間既斷，不再相續，即是解脫）；<strong>緣緣</strong>——「心心數法，緣塵故生」，意識必須有所緣的對象；<strong>增上緣</strong>——「諸法生時不相障礙」，最寬鬆的一格。於是運算規則只看兩個問題：<strong>有沒有心念之流（用不用次第緣）、有沒有所緣對象（用不用緣緣）</strong>：</p>
+<table class="sdf-tbl">
+<caption>表三　四緣運算規則（原典：心法四緣・定三緣・色二緣）</caption>
+<thead><tr><th>法類</th><th>緣數</th><th>用到的緣</th><th>排除與理由</th></tr></thead>
+<tbody>
+<tr><td>心・心數法</td><td>4</td><td>因緣＋次第緣＋緣緣＋增上緣</td><td>不排除——有念流、有所緣，四緣俱足</td></tr>
+<tr><td>無想定・滅盡定</td><td>3</td><td>因緣＋次第緣＋增上緣</td><td>除<span class="hl">緣緣</span>：深定中心不緣外境，無所緣可言（但入定前後有念流，次第緣保留）</td></tr>
+<tr><td>色法・心不相應行</td><td>2</td><td>因緣＋增上緣</td><td>除<span class="hl">次第緣</span>（物質無心念相續）、除<span class="hl">緣緣</span>（物質不緣境）</td></tr>
+<tr><td>——</td><td>1</td><td>（不存在）</td><td>「有為法性羸故，<span class="hl">無有從一緣生</span>」——孤緣不成事</td></tr>
+</tbody>
+</table>
+<figure>
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="四緣運算階梯">
+  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="18" font-weight="700">四緣運算:只問兩件事</text>
+  <text class="dia-zh dia-mute" x="380" y="48" text-anchor="middle" font-size="12.5">有沒有心念之流(次第緣)?有沒有所緣對象(緣緣)?因緣與增上緣是地板</text>
+  <rect x="70" y="80" width="190" height="120" rx="8" fill="#faf4e8" stroke="#b8862f" stroke-width="2"/>
+  <text class="dia-zh dia-gold" x="165" y="106" text-anchor="middle" font-size="14" font-weight="700">心·心數法 = 4緣</text>
+  <text class="dia-zh" x="165" y="130" text-anchor="middle" font-size="11.5">因緣+增上(地板)</text>
+  <text class="dia-zh" x="165" y="150" text-anchor="middle" font-size="11.5">+次第緣(有念流)</text>
+  <text class="dia-zh" x="165" y="170" text-anchor="middle" font-size="11.5">+緣緣(有所緣)</text>
+  <rect x="285" y="80" width="190" height="120" rx="8" fill="#fff" stroke="#b8860b" stroke-width="1.6"/>
+  <text class="dia-zh dia-gold" x="380" y="106" text-anchor="middle" font-size="14" font-weight="700">無想·滅盡定 = 3緣</text>
+  <text class="dia-zh" x="380" y="130" text-anchor="middle" font-size="11.5">因緣+增上(地板)</text>
+  <text class="dia-zh" x="380" y="150" text-anchor="middle" font-size="11.5">+次第緣(入出定有念流)</text>
+  <text class="dia-zh" x="380" y="170" text-anchor="middle" font-size="11.5" fill="#8B2500">−緣緣(定中不緣境)</text>
+  <rect x="500" y="80" width="190" height="120" rx="8" fill="#fff" stroke="#c4956a" stroke-width="1.6"/>
+  <text class="dia-zh dia-gold" x="595" y="106" text-anchor="middle" font-size="14" font-weight="700">色·不相應行 = 2緣</text>
+  <text class="dia-zh" x="595" y="130" text-anchor="middle" font-size="11.5">因緣+增上(地板)</text>
+  <text class="dia-zh" x="595" y="150" text-anchor="middle" font-size="11.5" fill="#8B2500">−次第緣(無念流)</text>
+  <text class="dia-zh" x="595" y="170" text-anchor="middle" font-size="11.5" fill="#8B2500">−緣緣(無所緣)</text>
+  <line class="dia-line" x1="70" y1="232" x2="690" y2="232"/>
+  <text class="dia-zh dia-mute" x="380" y="226" text-anchor="middle" font-size="11">地板線:因緣+增上緣,人人有份</text>
+  <rect x="180" y="252" width="400" height="52" rx="8" fill="#2a2218"/>
+  <text x="380" y="274" text-anchor="middle" font-size="13" font-weight="700" class="dia-zh" style="fill:#e3c085">無有法從一緣生</text>
+  <text x="380" y="294" text-anchor="middle" font-size="11" class="dia-zh" style="fill:#d4c4a8">有為法性羸——例外:阿羅漢末後心斷次第之流,即是解脫</text>
+</svg>
+<figcaption>圖二：四緣的 4／3／2 階梯——扣掉「不用的緣」就是答案；地板之下無物（無一緣生），流的盡頭是解脫（末後心）。</figcaption>
+</figure>
+
+<p class="bk-thread"><b>中觀接榫</b>　因與緣的帳算到極細，收束只有一句——精密是為了防執：沒有一個環節住著自性的因。</p>
+<h2>五、收束：精密是為了防執，不是為了背誦</h2>
+<p>把四個卡點收攏：<strong>報生心除遍因</strong>——垢尺（無記非垢，遍因只出染貨）；<strong>煩惱除報因</strong>——垢尺（煩惱隱沒，報必無記；煩惱照樣造業感報，只是它本身不是報因之果）；<strong>色除相應因</strong>——心尺（不在心的船上）；<strong>4／3／2</strong>——只問有沒有念流、有沒有所緣，地板人人有、孤緣不成事。三把尺在手，這張矩陣不必背，可以推。</p>
+<p>最後別忘了原典自己的警告：這套分析愈精密，愈容易被執為「實有」——若把六因四緣抓成一顆顆真實的珠子，就會重新追問「緣從何來」，再墮無窮過。龍樹在<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-6-1">第六章</a>的回應是「<strong>但除邪見而不破四緣</strong>」：帳照算、尺照用（不壞假名），但知道每一格都是緣起施設、無自性（而說實相）。<strong>智不住有，悲不滯空</strong>——這正是「欲知四緣，當學般若」的本意。</p>
+
+<div class="bk-bridge"><b>承先啟後</b>　<b>承・第 36 篇</b>——羅盤在手，收官示範規則重建：表可丟，尺常在。<b>應・第 31 篇</b>——同族的解壓術；並與正觀部〈觀因緣品〉的四緣之破遙相對讀。<div class="bk-nav">◀ 書序上一篇　<a href="https://weiwen0925.github.io/essay-36.html">第 36 篇・十六觀行記不住？收成三個問題</a>　｜　書序下一篇　<a href="https://weiwen0925.github.io/essay-45.html">第 45 篇・「去者去」怎麼會說出兩個「去」？</a> ▶</div></div>
+<hr />
+<h2>進一步閱讀</h2>
+<p>本篇對應原典在卷三十二第一品，直達連結：</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-4-6">《大智度論》卷三十二「五因適用矩陣」· 此節直達</a></strong>；次第緣與阿羅漢末後心在<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-5-1">第五章第一節</a>；緣緣與增上緣在<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-5-2">第二節</a>；四緣運算規則在<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-5-3">第三節</a>；般若的回應（不壞假名而說實相）在<a href="https://weiwen0925.github.io/dazhidulun-32/#chapter-1-6-1">第六章</a>。　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">一百卷全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，歡迎在留言區聊聊：三把尺（垢尺・心尺・前件尺）哪一把最幫你解卡？「初無漏心無自種因」——史上第一次、沒有同類前件，這個設定你讀出味道了嗎？</em></p>
+<hr />
+<p><strong>標籤</strong>：<a class="tagl" href="https://weiwen0925.github.io/tags.html#t-大智度論"><code>#大智度論</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-般若"><code>#般若</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-阿毘達磨"><code>#阿毘達磨</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-六因四緣"><code>#六因四緣</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-中觀"><code>#中觀</code></a> <a class="tagl" href="https://weiwen0925.github.io/tags.html#t-佛學閱讀"><code>#佛學閱讀</code></a></p>
+<hr />
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 44 篇。上一篇 第 43 篇：<a href="https://weiwen0925.github.io/essay-43.html">念佛要不要背熟三十二相、八十種好？——五部經論拼出一條完整路線：從稱名到觀相，從觀相到實相</a>　｜　下一篇 第 45 篇：<a href="https://weiwen0925.github.io/essay-45.html">「去者去」怎麼會說出兩個「去」？——中論觀去來品：從一句日常話，走進「一與異」的本體論死巷</a></em></p>
+<script id="bkv3-js">/*BKV3*/(function(){"use strict";var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);var tick=false;function upd(){var h=document.documentElement;var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);bar.style.width=(p*100).toFixed(2)+"%";tick=false;}window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();var toc=document.querySelector(".bk-toc");if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}document.documentElement.style.scrollBehavior="smooth";})();</script>
+</body>
+</html>
