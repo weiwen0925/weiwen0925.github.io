@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一格一格倒帶——〈觀去來品〉四把刀，其實是同一個動作</title>
+    <meta name="description" content="《中論》觀去來品用了四個看似各自獨立的論證：去時無厚度、二去過、無發、無住。把運動想成一卷電影底片，四者立刻合而為一——每一格不是已去就是未去，沒有一格叫「去時」，沒有一格裝得下兩個「去」，也沒有一格標得上「正在開始」或「正在停」。文末把同一套檢查搬到呼吸上，並提醒：底片本身也是假名，切莫落入剎那實有。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+/* ===== v3 全書版面（BKV3；勿刪） ===== */
+.bk-badge{font-family:"Noto Serif TC",serif;font-size:12.5px;letter-spacing:3px;color:#9a7b3f;margin:0 0 14px;}
+.bk-glance{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px 12px;margin:20px 0 8px;font-size:15px;line-height:1.85;}
+.bg-t{color:#8a5a1e;font-weight:700;letter-spacing:2px;margin-right:10px;}
+.bg-pos{color:#a8905f;font-size:13px;letter-spacing:1px;}
+.bg-kw{display:inline-block;margin:2px 5px 2px 0;padding:1px 9px 2px;background:#efe7d8;border:1px solid #ddcfb4;border-radius:4px;color:#6b5231;font-size:13.5px;text-decoration:none;}
+a.bg-kw:hover{border-color:#b8860b;color:#8a5a1e;}
+.bk-toc{margin-top:8px;font-size:14px;line-height:2;}
+.bk-toc b{color:#8a5a1e;font-weight:700;}
+.bk-toc a{color:#6b5231;text-decoration:none;border-bottom:1px dotted #c9b28a;margin-right:12px;white-space:nowrap;}
+.bk-toc a:hover{color:#8a5a1e;border-bottom-color:#b8860b;}
+#bkProgress{position:fixed;top:0;left:0;height:6px;width:0;background:linear-gradient(90deg,#8a5a1e,#c8963c 55%,#f0c060);box-shadow:0 0 8px rgba(212,168,75,.65);border-radius:0 3px 3px 0;z-index:9999;}
+@media (prefers-reduced-motion:no-preference){blockquote{transition:background .6s ease,border-color .6s ease,box-shadow .6s ease;}
+blockquote.bk-focus{background:rgba(212,168,75,.10);border-left-color:#b8860b;box-shadow:0 1px 8px rgba(184,134,11,.10);}}
+.bk-bridge{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px;margin:26px 0;font-size:15px;line-height:1.9;}
+.bk-nav{margin-top:10px;padding-top:9px;border-top:1px dashed #d8c8ac;font-size:14px;}
+.tagl{text-decoration:none;}.tagl code{cursor:pointer;}.tagl:hover code{border-color:#b8860b;color:#8a5a1e;}
+</style>
+</head>
+<body>
+<div class="bk-badge">《緣起性空》全書　·　第六部 · 正觀　·　ESSAY 59</div>
+<h1>一格一格倒帶——〈觀去來品〉四把刀，其實是同一個動作</h1>
+<h2>從「沒有一格叫去時」，到「沒有一格叫正在停」</h2>
+<div class="bk-glance"><p style="margin:0 0 6px"><span class="bg-t">本篇一眼</span><span class="bg-pos">第六部・正觀｜全書第 46/59 篇</span></p>
+<p style="margin:0">品2 四把刀看似各自為政。把運動想成一卷底片，它們立刻合一：每一格不是已去就是未去——沒有一格叫「去時」、裝不下兩個「去」、標不上「正在開始」或「正在停」。末了連底片也要丟。</p>
+<p style="margin:7px 0 0"><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=觀去來品#series-guides">#觀去來品</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=二去難題#series-guides">#二去難題</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=止觀雙運#series-guides">#止觀雙運</a></p>
+<nav class="bk-toc" aria-label="章節導覽"><b>章節</b>　</nav></div>
+<hr />
+<blockquote>
+<p>銀幕上的人正在奔跑。可是你把底片抽出來，對著光一格一格看——<strong>每一格都是靜止的</strong>。</p>
+<p>跑步在哪裡？不在任何一格裡。那它在哪？</p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>59</strong> 篇。〈觀去來品第二〉用了四個看起來各不相干的論證，初讀像四道獨立難題。本篇提出一個統一的讀法：<strong>把「運動」想成一卷電影底片</strong>——四把刀立刻收攏成同一個動作，而且這個動作，你今天就能在自己的呼吸上做一遍。</p>
+<hr />
+
+<h2>一、先把品2 想成一卷底片</h2>
+<p>〈觀去來品〉開宗明義那一偈，其實已經把整品的做法交代完了：</p>
+<blockquote>
+<p class="verse">已去無有去，　　未去亦無去，<br>離已去未去，　　去時亦無去。</p>
+</blockquote>
+<p>龍樹要檢查的是「去」——運動、變化、一切「正在發生」的事。而他的辦法始終只有一個：<strong>把它切開來看</strong>。切時間、切事件、切身分，然後問：你說的那個「正在」，究竟落在哪一片？</p>
+<p>電影正好是現成的模型。銀幕上人在奔跑，但底片上<strong>沒有任何一格是「奔跑」</strong>——每一格都是一個靜止的姿勢。所謂運動，是格與格之間的關係，不是任何一格裡的東西。</p>
+<p>接下來四節，我們就拿著這卷底片，把品2 的四把刀走一遍。你會發現它們問的<strong>是同一個問題</strong>：那個「正在」的影格，到底在哪裡？</p>
+
+<figure>
+<svg viewBox="0 0 760 268" role="img" aria-label="底片示意圖：每一格不是已去就是未去，沒有一格是正在">
+  <text x="380" y="26" text-anchor="middle" font-size="17" font-weight="700" font-family="Noto Serif TC, serif" fill="#9a6a1c">底片上沒有一格是「正在」</text>
+  <rect x="40" y="66" width="680" height="112" rx="6" fill="#fffdf7" stroke="#8b5e3c" stroke-width="2"/>
+  <rect x="52" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="152" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="252" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="352" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="452" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="552" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="652" y="74" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="52" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="152" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="252" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="352" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="452" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="552" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="652" y="160" width="14" height="10" rx="2" fill="#e0d4b8"/>
+  <rect x="52" y="94" width="100" height="56" rx="4" fill="#f4ece0" stroke="#c8a05a" stroke-width="1.2"/>
+  <text x="102" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#8b5e3c">已去</text>
+  <rect x="164" y="94" width="100" height="56" rx="4" fill="#f4ece0" stroke="#c8a05a" stroke-width="1.2"/>
+  <text x="214" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#8b5e3c">已去</text>
+  <rect x="276" y="94" width="100" height="56" rx="4" fill="#f4ece0" stroke="#c8a05a" stroke-width="1.2"/>
+  <text x="326" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#8b5e3c">已去</text>
+  <rect x="392" y="94" width="100" height="56" rx="4" fill="#eef1ea" stroke="#7a8a6e" stroke-width="1.2"/>
+  <text x="442" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#5d6b4e">未去</text>
+  <rect x="504" y="94" width="100" height="56" rx="4" fill="#eef1ea" stroke="#7a8a6e" stroke-width="1.2"/>
+  <text x="554" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#5d6b4e">未去</text>
+  <rect x="616" y="94" width="100" height="56" rx="4" fill="#eef1ea" stroke="#7a8a6e" stroke-width="1.2"/>
+  <text x="666" y="128" text-anchor="middle" font-size="15" font-family="Noto Serif TC, serif" fill="#5d6b4e">未去</text>
+  <line x1="384" y1="60" x2="384" y2="188" stroke="#c0392b" stroke-width="2.4"/>
+  <text x="384" y="52" text-anchor="middle" font-size="14" font-weight="700" font-family="Noto Serif TC, serif" fill="#c0392b">「正在」?</text>
+  <text x="384" y="208" text-anchor="middle" font-size="13" font-family="Noto Serif TC, serif" fill="#c0392b">落在格與格之間 —— 而那裡沒有影格</text>
+  <text x="380" y="248" text-anchor="middle" font-size="14.5" font-weight="700" font-family="Noto Serif TC, serif" fill="#9a6a1c">四把刀問的都是同一件事: 那一格在哪裡?</text>
+</svg>
+<figcaption>圖一：底片模型。切得再細，每一格仍然不是「已去」就是「未去」——「正在」不是某一格，它落在格與格之間，而那裡什麼也沒有。</figcaption>
+</figure>
+
+<h2>二、第一刀 · 沒有一格叫「去時」</h2>
+<p>常識最直覺的退路是：過去已經過去、未來還沒到，但總有個「<strong>現在</strong>」吧？我正在走的這個當下。</p>
+<p>龍樹讓你放大這個當下。放大再放大——你會發現它只是「已去」與「未去」的<strong>交界線</strong>。青目說得極簡：「<strong>去時名半去半未去</strong>」：一半已經去了，一半還沒去，那還剩什麼是「正在去」？</p>
+<p>換成底片：無論你把影格切得多細，每一格拿起來看，都只能歸給「已經到這裡了」或「還沒到那裡」。<strong>沒有一格能標上「正在移動」</strong>。所謂「去時」，是兩格之間的接縫——而接縫沒有厚度，裝不下東西。</p>
+<p>這裡有個常見誤讀要先擋住：<strong>問題不在「當下太短」。</strong>不是說時間切得夠粗就有救了。就算你給我一格寬達一小時的影格，那一格裡的內容仍然只能是「已去」或「未去」的某種組合——這是結構問題，不是精度問題。</p>
+<p>🔗 <a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-2-2">《中論》〈觀去來品〉第二章第二節「捕捉不到的『去時』」· 此節直達</a></p>
+
+<h2>三、第二刀 · 一格裝不下兩個「去」</h2>
+<p>對手還有一招：「好，那我就說『<strong>去時去</strong>』——正在去的時候有去。」</p>
+<p>這句話聽起來天經地義，卻藏著一筆重複記帳。「去時」這個名稱是怎麼來的？<strong>是靠「去」才叫去時的</strong>——沒有去，哪來「正在去的時候」？所以這個詞裡<strong>已經含著一個「去」</strong>。你接著又說「有去」，那是<strong>第二個</strong>。</p>
+<blockquote>
+<p class="verse">若去時有去，　　則有二種去：<br>一謂為去時，　　二謂去時去。</p>
+</blockquote>
+<p>青目把兩個去點得更明白：「一者<strong>因去有去時</strong>；二者<strong>去時中有去</strong>。」——第一個去用來<strong>立名</strong>，第二個去才是你要說的那個動作。</p>
+<p>換成底片：你想指著某一格說「這格是去時，而且這格裡有去」。可是這一格之所以能被命名為「去時」，本來就靠那個去；<strong>一格被要求同時承載兩個去</strong>——一個把它變成這一格，一個發生在它裡面。</p>
+<p>同一招換個對象再來一次，就是「去者」：</p>
+<blockquote>
+<p class="verse">若去者有去，　　則有二種去：<br>一謂去者去，　　二謂去法去。</p>
+</blockquote>
+<p>青目：「<strong>於一去者中</strong>而有二去：一以去法成去者、二以去者成去法。」注意「於一去者中」——兩個去都落在<strong>同一個人身上</strong>，不是「去者有一個、去法有一個」那樣各自獨立。<strong>一個去給你「走路者」的身分，一個去是你這個走路者正在執行的動作，而走路只有一次。</strong></p>
+<p>🔗 <a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-3-2">《中論》〈觀去來品〉第三章第二節「二去難題」· 此節直達</a></p>
+
+<h2>四、第三刀 · 沒有一格標得上「正在開始」</h2>
+<p>既然「正在」找不到，那就退到端點吧——總有一個「<strong>開始</strong>」（發）吧？</p>
+<p>用跑步最清楚。槍響<strong>之前</strong>：還沒跑。槍響<strong>之後</strong>：已經在跑。那麼「正在起跑」的那一刻呢？——那正是我們要找的東西，不能拿它當答案。</p>
+<p>把起跑錄影一格一格倒帶：每一格不是「還沒跑」就是「已經在跑」，<strong>你找不到哪一格可以標上「正在開始跑」</strong>。格數再細也一樣，因為那不是精度問題。</p>
+<p>龍樹的論證比這更緊。這不是「三個地方都找過了都沒有」的清點，而是<strong>一個循環</strong>：</p>
+<blockquote>
+<p class="verse">未發無去時，　　亦無有已去，<br>是二應有發，　　未去何有發？</p>
+</blockquote>
+<p><strong>「未去」的沒有，是定義上的</strong>——未去就是還沒起步；在「還沒起步」裡找「起步」，等於問「還沒開始的時候開始在哪」，是問題本身取消了答案。</p>
+<p><strong>另外兩處的沒有，是循環</strong>——起點只剩「去時」與「已去」兩個候選，可是這兩者都要等起步發生了才存在。青目說「若有發當在二處：去時、已去中，<strong>二俱不然</strong>」，不是說這兩處剛好空著，而是<strong>它們的存在本身以「發」為前提</strong>，不能反過來當發的容身處。</p>
+<p>一句話：<strong>「開始」總是回頭追認的，不是當場可指的。</strong></p>
+<p>🔗 <a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-5-1">《中論》〈觀去來品〉第五章第一節「無發 · 找不到的起點」· 此節直達</a></p>
+
+<h2>五、第四刀 · 也沒有一格標得上「正在停」</h2>
+<p>起點安不上，那終點呢？——「<strong>住</strong>」，停下來的那一刻。</p>
+<p>這裡讀者通常會冒出一句很有力的反駁：<strong>我明明可以停下來啊。</strong>本品也正是為這句話設的。</p>
+<p>把同一支影片倒過來放：你是在哪一步<strong>停下來</strong>的？每一格不是「還在走」就是「已經停了」，<strong>沒有一格可以標上「正在停」</strong>。</p>
+<p>而龍樹把主詞的候選一次列完：</p>
+<blockquote>
+<p class="verse">去者則不住，　　不去者不住，<br>離去不去者，　　何有第三住？</p>
+</blockquote>
+<p><strong>去者不住</strong>——他是靠「去」才叫去者，一停就不再是去者了（這與二去過是同一家病：那個詞裡已經含著去）。<strong>不去者不住</strong>——「住」的意思是「去的止息」；沒在去，就沒有東西可以止息，不是「他停著」，而是根本無停可言。<strong>沒有第三者</strong>——不去也不不去的人不存在。</p>
+<p>於是「住」找不到任何主詞可以安放。<strong>起點安不上，終點也安不上</strong>，中間那段「去」自然無從說起。</p>
+<p>🔗 <a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-5-2">《中論》〈觀去來品〉第五章第二節「無住 · 雨停了嗎」· 此節直達</a></p>
+
+<table class="sdf-tbl">
+<caption>四把刀 · 同一個動作——底片上都在找那一格</caption>
+<thead><tr><th>刀</th><th>在找什麼</th><th>底片上怎麼問</th><th>結果</th></tr></thead>
+<tbody>
+<tr><td>無厚度</td><td>「正在去」的時段</td><td>哪一格標得上「正在移動」？</td><td>每格非已去即未去，<span class="hl">接縫無厚度</span></td></tr>
+<tr><td>二去過</td><td>「去時去」這句話的帳</td><td>這一格要裝幾個「去」？</td><td>立名一個、執行一個，<span class="hl">一格裝兩個</span></td></tr>
+<tr><td>無發</td><td>動作的<strong>起點</strong></td><td>哪一格標得上「正在開始」？</td><td>未去定義排除，另二者<span class="hl">互為前提</span></td></tr>
+<tr><td>無住</td><td>動作的<strong>終點</strong></td><td>哪一格標得上「正在停」？</td><td>去者、不去者、第三者<span class="hl">主詞全空</span></td></tr>
+</tbody>
+</table>
+
+<h2>六、搬上座 · 用呼吸把四刀走一遍</h2>
+<p>底片不必去電影院找，你身上就有一卷：<strong>呼吸</strong>。它一分鐘給你二三十次轉折，而且失敗沒有成本——這一息走神了，下一息立刻又是新的一格。</p>
+<p>心穩之後（先數息或隨息，讓心落地；沒有定，所謂的觀只是在腦中演戲），依序試這四問。<strong>一次只挑一把刀</strong>，不要四把一起。</p>
+<h3>第一刀 · 哪一格是「正在轉換」</h3>
+<p>把注意力放到入息盡處與出息盡處。前一息確實已滅，後一息還沒生。<strong>那個「正在轉換」的瞬間在哪一格？</strong>——你會發現找不到；只有「已經吸完了」與「還沒開始呼」。</p>
+<h3>第二刀 · 「我在呼吸」這句話裡有幾個呼吸</h3>
+<p>這是本篇最想請你試的一環。在息與息之間，輕輕提起這一問：</p>
+<blockquote>
+<p class="verse">「我在呼吸」——<br>這句話裡，有幾個「呼吸」？</p>
+</blockquote>
+<p><strong>第一個</strong>：那個「我」之所以能被稱為「呼吸的人」，正是靠呼吸才成立的——不呼吸的東西不叫呼吸者。這個去給了他身分。<strong>第二個</strong>：你接著說他「在呼吸」，那是他正在執行的動作。</p>
+<p>可是<strong>呼吸只有一次</strong>。身分要用掉一個，動作又要用掉一個，而你只有一口氣。這正是「於一去者中而有二去」，縮到一息之間——<strong>不用等一輩子，兩秒鐘就驗完了</strong>。</p>
+<p>兩邊都站不住的那一刻，不要急著下結論。<strong>那個「找不到」本身就是觀的成果</strong>：呼吸是相續的流動，「呼吸者」只是掛在流動上的假名。</p>
+<h3>第三刀 · 這口氣是什麼時候變成「我的息」的</h3>
+<p>入息時問：這團空氣，是在鼻孔外一公分變成「我的息」的？剛過鼻毛？進到肺泡？——<strong>找不到一條線</strong>。它之所以叫「息」，是吸完之後才追認的，正如「發」是回頭才指認的。</p>
+<h3>第四刀 · 呼氣是哪一刻「停」的</h3>
+<p>出息將盡時留意：哪一格是「正在停」？——只有「還在呼」與「已經停了」。<strong>連停止也沒有那一格。</strong></p>
+<p>四刀走完，你會注意到一件事：<strong>不是呼吸不見了，是「一口實有的氣」不見了。</strong>呼吸照常進出，身體照常得氧；被看破的只是那個「有一團自帶息性的東西在進出」的想像。</p>
+<p>🔗 <a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-26-6-4">《中論》〈觀十二因緣品〉第六章第四節「實修步驟四 · 體驗『正滅』」· 此節直達</a></p>
+
+<h2>七、最後一步 · 把底片也丟掉</h2>
+<p>底片是個好用的模型，但它有一個真實的危險，必須在收尾時拆掉。</p>
+<p><strong>不要以為世界真的是由一格一格的剎那拼成的。</strong>若你讀完覺得「原來實相是一連串靜止的瞬間」，那你剛剛換了一個新的實有論——說一切有部的「剎那實有」正是這個樣子：法體恆有，只是一格一格地現行。</p>
+<p>龍樹連影格也破。理由很簡單：<strong>拿任何一格出來，它自己也有「已」與「未」</strong>——這一格的前半與後半。你若說它不可再分，那它就沒有內部時間，也就承載不了任何「發生」；你若說它可分，那剛才四把刀原封不動再砍一次。<strong>影格不是最小的實體，只是我們為了說話而畫的線。</strong></p>
+<p>所以底片這個比喻的正確用法是：<strong>用它看破「正在」的實有，然後連它一起放下。</strong>它是渡河的筏，不是對岸。</p>
+<blockquote>
+<p>如果連運動都不成立，人還走得動嗎？</p>
+<p>走得動。〈觀四諦品〉說「<strong>以有空義故，一切法得成</strong>」——正因為「去」沒有固定不變的自性，走路這件事才可能發生。被否定的從來不是「走路」，而是<strong>「有一個實有的『去』被某個實有的『去者』執行於某個實有的『去時』」</strong>這幅圖像。</p>
+</blockquote>
+<p>拆掉那幅圖像之後，走路還在，只是不再有人被困在裡面。</p>
+
+<hr />
+<h2>進一步閱讀</h2>
+<p>四把刀的原典段落如下；建議依序讀，最後回到第二章第二節重看一次「去時」，感受會不一樣。</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-2-2">捕捉不到的「去時」</a></strong>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-3-2">二去難題</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-5-1">無發</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-2-5-2">無住</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/">《中論》二十七品全本</a>　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">一百卷全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，不妨帶著這個問題離開：此刻你正在做的那件事——它是哪一格「開始」的？<br>想交流心得，歡迎到 YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen/posts" target="_top">@chengweiwen 社群</a> 的對應貼文下留言聊聊。</em></p>
+<hr />
+<p><strong>標籤</strong>：<a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=大智度論#series-guides"><code>#大智度論</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=中論#series-guides"><code>#中論</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=龍樹#series-guides"><code>#龍樹</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=觀去來品#series-guides"><code>#觀去來品</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=二去難題#series-guides"><code>#二去難題</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=中觀#series-guides"><code>#中觀</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=實修#series-guides"><code>#實修</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=止觀雙運#series-guides"><code>#止觀雙運</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=佛學閱讀#series-guides"><code>#佛學閱讀</code></a></p>
+<hr />
+<div class="bk-bridge"><b>承先啟後</b>　<b>承・第 45 篇</b>——那一篇單刀直入「去者去」的二去難題與一異死巷；本篇把它放回全品，讓它與無厚度、無發、無住合成同一個動作。<b>應・第 58 篇</b>——那一篇用六環扣把八不縮進一息之間；本篇的第六節，正是同一座道場的另一種走法：把品2 的四把刀也搬上座。<div class="bk-nav">◀ 書序上一篇　<a href="https://weiwen0925.github.io/essay-45.html">第 45 篇・「去者去」怎麼會說出兩個「去」？</a>　｜　書序下一篇　<a href="https://weiwen0925.github.io/essay-46.html">第 46 篇・怒火現場的四個步驟</a> ▶</div></div>
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 59 篇。原典出處：《中論》觀去來品第二（全品二十五偈）。系列所有文章：<a href="https://weiwen0925.github.io/">《大智度論》研讀彙整</a>　｜　上一篇 第 58 篇：<a href="https://weiwen0925.github.io/essay-58.html">一想留住，它就沒了——觀十二因緣品實修四：用呼吸練習「微型正滅」</a></em></p>
+<script id="bkv3-js">/*BKV3*/(function(){"use strict";
+var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);
+var tick=false;function upd(){var h=document.documentElement;
+var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);
+bar.style.width=(p*100).toFixed(2)+"%";tick=false;}
+window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
+var toc=document.querySelector(".bk-toc");
+if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){
+return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});
+if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){
+if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");
+if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";
+var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}
+if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});
+[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}
+document.documentElement.style.scrollBehavior="smooth";
+})();</script>
+</body>
+</html>
