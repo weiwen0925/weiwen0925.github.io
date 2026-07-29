@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一根手指，破了兩品——《中論》換招換不停，其實只有一套工具</title>
+    <meta name="description" content="《中論》二十七品讀起來像二十七套武功，其實龍樹只有一個問題：拿掉別的，它還在嗎？本篇從一個怪事進場——同一根手指在〈觀染染者品〉與〈觀合品〉各出現一次，破的卻是兩件不同的事。順著這條線排開，生、住、滅、見、合、作六個動作全在同一個地方失效：自X 要求同一個東西同時當能與所。文中另分辨兩種常被混為一談的論證（伸手就知道的，與推出來的），還原對手兩條方向相反的救援路線，並補上一手極少被講的破法——把燈換成闇的對稱歸謬。附全論自X 族譜表。">
+    <meta name="author" content="Chengweiwen">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
+  --accent:#8b5e3c; --accentL:#b07d4f; --red:#8b2500;
+  --gold:#b8860b; --goldL:#caa23f;
+  --border:#d8c8ac; --border-light:#e7ddc9; --card:#fffdf7;
+  --verseBg:#f0e8d8; --verseBd:#c4956a; --r:8px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"Noto Serif TC","Source Han Serif TC","Songti TC",Georgia,serif;
+  line-height:1.9; max-width:820px; margin:0 auto; padding:3rem 1.5rem 4.5rem;
+  color:var(--text); background:var(--bg); font-size:19px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+h1,h2,h3{ line-height:1.5; }
+h1{ font-family:"Noto Serif TC",serif; font-weight:900; font-size:2em;
+  color:var(--accent); margin:0 0 .25em; padding-bottom:.5em;
+  border-bottom:2px solid var(--gold); letter-spacing:.5px; }
+h1 + h2{ border:none; padding:0; margin:.2em 0 0; color:var(--accentL);
+  font-weight:500; font-size:1.24em; letter-spacing:.3px; }
+h2{ font-family:"Noto Serif TC",serif; font-weight:700; font-size:1.4em;
+  color:var(--accent); margin-top:2em; padding-left:.62em; border-left:4px solid var(--gold); }
+h3{ font-family:"Noto Sans TC",system-ui,sans-serif; font-weight:700;
+  font-size:1.1em; color:var(--accent); margin-top:1.7em; letter-spacing:.3px; }
+p{ margin:1.05em 0; }
+.lead{ font-size:1.08em; color:var(--text2); }
+strong,b{ color:var(--red); font-weight:700; }
+a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,134,11,.35); transition:color .2s,border-color .2s; }
+a:hover{ color:var(--accent); border-bottom-color:var(--accent); }
+blockquote{ margin:1.7em 0; padding:1.15em 1.5em; background:var(--verseBg);
+  border-left:4px solid var(--verseBd); border-radius:0 var(--r) var(--r) 0; color:var(--text2); font-style:normal; }
+blockquote p{ margin:.35em 0; }
+.verse{ text-align:center; font-size:1.05em; line-height:2.1; color:var(--accent); letter-spacing:1.5px; }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4em 0; }
+code{ font-family:"Noto Sans TC",ui-monospace,monospace; background:#efe6d4; color:var(--accent); padding:.12em .5em; border-radius:4px; font-size:.82em; letter-spacing:.5px; }
+figure{ margin:2.1em 0; text-align:center; }
+figure svg{ width:100%; height:auto; max-width:760px; background:var(--card); border:1px solid var(--border-light); border-radius:var(--r); padding:12px; }
+figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.75; }
+.dia-box{ fill:#ffffff; stroke:#c8a05a; stroke-width:1.5; }
+.dia-box-key{ fill:#faf4e8; stroke:#b8862f; stroke-width:2; }
+.dia-zh{ font-family:"Noto Serif TC",serif; fill:#2b2b2b; }
+.dia-gold{ fill:#9a6a1c; } .dia-mute{ fill:#888; }
+.dia-line{ stroke:#c8a05a; stroke-width:1.5; fill:none; }
+.dia-dash{ stroke:#c0392b; stroke-width:2; stroke-dasharray:6 5; fill:none; }
+.dia-x{ fill:#c0392b; font-weight:700; } .dia-ok{ fill:#1d7a46; font-weight:700; } .dia-blue{ fill:#2a5a8b; }
+.sdf-tbl{ width:100%; border-collapse:collapse; margin:1em 0; font-size:.9em; font-family:"Noto Sans TC",system-ui,sans-serif; }
+.sdf-tbl caption{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--accent); font-size:1.05em; margin-bottom:.5em; text-align:left; }
+.sdf-tbl th,.sdf-tbl td{ border:1px solid var(--border); padding:.5em .7em; text-align:left; vertical-align:top; }
+.sdf-tbl thead th{ background:var(--accent); color:#f7ecd2; font-weight:700; letter-spacing:.5px; }
+.sdf-tbl td:first-child{ white-space:nowrap; color:var(--accent); font-weight:700; background:var(--verseBg); }
+.sdf-tbl tbody tr:nth-child(even) td{ background:#fbf7ee; }
+.sdf-tbl .hl{ color:var(--red); font-weight:700; }
+/* ===== v3 全書版面（BKV3；勿刪） ===== */
+.bk-badge{font-family:"Noto Serif TC",serif;font-size:12.5px;letter-spacing:3px;color:#9a7b3f;margin:0 0 14px;}
+.bk-glance{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px 12px;margin:20px 0 8px;font-size:15px;line-height:1.85;}
+.bg-t{color:#8a5a1e;font-weight:700;letter-spacing:2px;margin-right:10px;}
+.bg-pos{color:#a8905f;font-size:13px;letter-spacing:1px;}
+.bg-kw{display:inline-block;margin:2px 5px 2px 0;padding:1px 9px 2px;background:#efe7d8;border:1px solid #ddcfb4;border-radius:4px;color:#6b5231;font-size:13.5px;text-decoration:none;}
+a.bg-kw:hover{border-color:#b8860b;color:#8a5a1e;}
+.bk-toc{margin-top:8px;font-size:14px;line-height:2;}
+.bk-toc b{color:#8a5a1e;font-weight:700;}
+.bk-toc a{color:#6b5231;text-decoration:none;border-bottom:1px dotted #c9b28a;margin-right:12px;white-space:nowrap;}
+.bk-toc a:hover{color:#8a5a1e;border-bottom-color:#b8860b;}
+#bkProgress{position:fixed;top:0;left:0;height:6px;width:0;background:linear-gradient(90deg,#8a5a1e,#c8963c 55%,#f0c060);box-shadow:0 0 8px rgba(212,168,75,.65);border-radius:0 3px 3px 0;z-index:9999;}
+@media (prefers-reduced-motion:no-preference){blockquote{transition:background .6s ease,border-color .6s ease,box-shadow .6s ease;}
+blockquote.bk-focus{background:rgba(212,168,75,.10);border-left-color:#b8860b;box-shadow:0 1px 8px rgba(184,134,11,.10);}}
+.bk-bridge{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px;margin:26px 0;font-size:15px;line-height:1.9;}
+.bk-nav{margin-top:10px;padding-top:9px;border-top:1px dashed #d8c8ac;font-size:14px;}
+.tagl{text-decoration:none;}.tagl code{cursor:pointer;}.tagl:hover code{border-color:#b8860b;color:#8a5a1e;}
+</style>
+</head>
+<body>
+<div class="bk-badge">《緣起性空》全書　·　第六部 · 正觀　·　ESSAY 61</div>
+<h1>一根手指，破了兩品——《中論》換招換不停，其實只有一套工具</h1>
+<h2>招數的數量，等於對手退路的數量</h2>
+<div class="bk-glance"><p style="margin:0 0 6px"><span class="bg-t">本篇一眼</span><span class="bg-pos">第六部・正觀｜全書第 45/61 篇</span></p>
+<p style="margin:0">同一根手指在〈觀染染者品〉與〈觀合品〉各出現一次，破的卻是兩件事。順著這條線排開，生、住、滅、見、合、作六個動作全在同一處失效：自X 要求同一個東西同時當能與所。招數會換，問題不換。</p>
+<p style="margin:7px 0 0"><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=論法#series-guides">#論法</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=能所#series-guides">#能所</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=中觀#series-guides">#中觀</a></p>
+<nav class="bk-toc" aria-label="章節導覽"><b>章節</b>　</nav></div>
+<hr />
+<blockquote>
+<p>剛開始讀《中論》的人，最常卡在一個地方：<strong>它好像一直在換招</strong>。這一品用「兩者性質互斥不能共存」，下一品用「你要靠我我要靠你」，再下一品又變成「已經、還沒、正在，三個時候都找不到」。</p>
+<p>於是產生一種錯覺：<strong>龍樹是不是也沒有定見，只是很會辯？</strong></p>
+<p>本篇要說的正好相反。<strong>他只有一個問題，問了二十七遍。</strong>招數之所以多，是因為對手的退路多——<strong>每一招堵一條。</strong></p>
+</blockquote>
+<hr />
+<p class="lead">這是「《大智度論》系列」的第 <strong>61</strong> 篇，也是進入《中論》各品之前的<strong>工具篇</strong>。不從理論開始，先從一個怪事進場：<strong>同一根手指，在《中論》裡出現了兩次，破的卻是兩件不同的事</strong>。順著這根手指往下拉，會拉出整套工具。</p>
+<hr />
+
+<h2>一、先看一個怪事：同一根手指，出現在兩品</h2>
+
+<p>〈觀染染者品〉在破「染」與「染者」能不能合在一起時，青目寫下這麼一句：</p>
+
+<blockquote>
+<p class="verse">一法云何自合？<strong>如指端不能自觸</strong>。</p>
+</blockquote>
+
+<p>意思很白：一個東西怎麼跟自己「相合」呢？就像<strong>指尖再靈巧，也碰不到它自己</strong>。</p>
+
+<p>然後隔了八品，到〈觀合品〉收尾的地方，同一根手指又來了：</p>
+
+<blockquote>
+<p class="verse">是法自體不合，以一故，<strong>如一指不自合</strong>。</p>
+</blockquote>
+
+<p>如果只讀其中一品，會以為這是隨手取的一個比方。但兩品放在一起就不對勁了——<strong>那不是隨手取的比方，是刻意保留的標準零件。</strong></p>
+
+<p>更值得注意的是：<strong>兩次破的不是同一件事。</strong>〈觀染染者品〉破的是「染與染者能不能接在一起」，〈觀合品〉破的是「『合』這個概念本身能不能成立」。<strong>不同的靶，同一把槍。</strong></p>
+
+<p>一把槍能打不同的靶，只有一種可能：<strong>它打的不是靶的內容，是靶的結構。</strong></p>
+
+<h2>二、把它們排開：六個動作，同一種失效</h2>
+
+<p>順著這條線在全論掃一遍，會撿到一整族：</p>
+
+<blockquote>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-1-3-1">〈觀因緣品〉</a>　諸法<strong>不自生</strong>，亦不從他生</p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-3-2-2">〈觀六情品〉</a>　是眼則不能，<strong>自見其己體</strong></p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-6-9-1">〈觀染染者品〉</a>　一法云何自合？<strong>如指端不能自觸</strong></p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-9-5">〈觀三相品〉</a>　<strong>住不自相住</strong>，亦不異相住</p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-10-5">〈觀三相品〉</a>　<strong>法不自相滅</strong>，他相亦不滅</p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-12-12-8">〈觀苦品〉</a>　苦不名自作，<strong>法不自作法</strong>——如刀不能自割</p>
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-14-2-10">〈觀合品〉</a>　<strong>是法不自合</strong>，異法亦不合</p>
+</blockquote>
+
+<p><strong>生、住、滅、見、合、作。</strong>六個完全不同的動作，散在七個地方，卻在同一個位置失效。</p>
+
+<p>這時候有兩種讀法。一種是把它們當成龍樹的<strong>七個結論</strong>，一條一條記下來——那會記得很辛苦，而且用不出來。另一種是問：<strong>它們為什麼會一起壞掉？</strong></p>
+
+<h2>三、底層只有一句話：它要求同一個東西同時當「能」與「所」</h2>
+
+<p>先把兩個字說清楚，因為後面全靠它們。</p>
+
+<blockquote>
+<p><strong>「能」是做的那一邊，「所」是被做的那一邊。</strong></p>
+<p>一個字訣就夠：<strong>「所」就是「被」</strong>。所見＝被看的，所觸＝被碰的，所割＝被切開的。</p>
+</blockquote>
+
+<p>有了這組字，剛才那七句話就變成同一句話：</p>
+
+<p>自<strong>見</strong>——眼要同時是能見與所見。<br />
+自<strong>觸</strong>——指要同時是能觸與所觸。<br />
+自<strong>割</strong>——刀要同時是能割與所割。<br />
+自<strong>住</strong>——住要同時是能住與所住。</p>
+
+<p>問題不在於「做不到」，而在於<strong>「能」與「所」是互相對照才站得住的一對</strong>。有被看的，才說得上看；有被切開的，才說得上切。一旦要求兩邊合成一個，<strong>對照的另一邊消失了，這一邊也就跟著消失。</strong></p>
+
+<p>刀不是不夠利。<strong>再利的刀，也切不出「刀」與「非刀」的那一刀</strong>——因為它得先站到自己外面去，而它站不出去。</p>
+
+<figure>
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="能與所是相待安立的一對，要求合一則兩邊同時塌陷">
+  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="17" font-weight="700">為什麼「自X」一定失效</text>
+
+  <text class="dia-zh dia-mute" x="150" y="58" text-anchor="middle" font-size="13">正常情況: 兩邊互相對照</text>
+  <rect class="dia-box" x="52" y="72" width="88" height="46" rx="8"/>
+  <text class="dia-zh" x="96" y="101" text-anchor="middle" font-size="15" font-weight="700">能</text>
+  <rect class="dia-box" x="160" y="72" width="88" height="46" rx="8"/>
+  <text class="dia-zh" x="204" y="101" text-anchor="middle" font-size="15" font-weight="700">所</text>
+  <path class="dia-line" d="M140 88 L160 88"/>
+  <path class="dia-line" d="M160 102 L140 102"/>
+  <text class="dia-zh dia-ok" x="150" y="140" text-anchor="middle" font-size="13">互相對照, 兩邊都成立</text>
+  <text class="dia-zh dia-mute" x="150" y="162" text-anchor="middle" font-size="12.5">刀切木頭 / 眼看杯子</text>
+
+  <path class="dia-line" d="M270 105 L322 105" marker-end="url(#ar61a)"/>
+  <defs><marker id="ar61a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#c8a05a"/></marker></defs>
+  <text class="dia-zh dia-mute" x="296" y="96" text-anchor="middle" font-size="12">要求</text>
+  <text class="dia-zh dia-mute" x="296" y="128" text-anchor="middle" font-size="12">自X</text>
+
+  <text class="dia-zh dia-mute" x="470" y="58" text-anchor="middle" font-size="13">要求合一: 對照消失</text>
+  <rect class="dia-box-key" x="404" y="72" width="132" height="46" rx="8"/>
+  <path class="dia-dash" d="M404 72 L536 118"/>
+  <path class="dia-dash" d="M536 72 L404 118"/>
+  <rect x="437" y="82" width="66" height="26" rx="5" fill="#faf4e8"/>
+  <text class="dia-zh" x="470" y="101" text-anchor="middle" font-size="15" font-weight="700">能＝所</text>
+  <text class="dia-zh dia-x" x="470" y="140" text-anchor="middle" font-size="13">沒有另一邊可以對照</text>
+  <text class="dia-zh dia-x" x="470" y="162" text-anchor="middle" font-size="13">兩邊同時塌</text>
+
+  <rect class="dia-box-key" x="100" y="196" width="560" height="76" rx="10"/>
+  <text class="dia-zh dia-gold" x="380" y="222" text-anchor="middle" font-size="15" font-weight="700">刀不是不夠利</text>
+  <text class="dia-zh" x="380" y="248" text-anchor="middle" font-size="14.5">再利的刀, 也切不出「刀」與「非刀」的那一刀</text>
+  <text class="dia-zh dia-mute" x="380" y="266" text-anchor="middle" font-size="12.5">它得先站到自己外面去, 而它站不出去</text>
+</svg>
+<figcaption>圖一：「能」與「所」是相待安立的一對。要求同一個東西同時佔住兩邊，對照的另一邊就消失了——這一邊也跟著消失。全論七處「自X 不成立」，壞的都是這個地方。</figcaption>
+</figure>
+
+<p>所以那七句不是七個各別的觀察，是<strong>同一個結構的七次現身</strong>。看懂一次，七處全通。</p>
+
+<h2>四、但要分兩種，別混：伸手就知道的，和推出來的</h2>
+
+<p>這一節是本篇最想留給你的東西，因為它最容易被略過，而略過的代價是<strong>把龍樹讀成一個訴諸常識的人</strong>——那正好是他最不做的事。</p>
+
+<p>把那七句再看一遍，會發現它們的「憑什麼」其實不一樣：</p>
+
+<table class="sdf-tbl">
+<caption>兩種性質不同的論證</caption>
+<thead><tr><th>類型</th><th>例子</th><th>憑什麼成立</th><th>你能怎麼查</th></tr></thead>
+<tbody>
+<tr><td>經驗型</td><td>眼不自見、刀不自割、指不自觸</td><td class="hl">可驗證的事實</td><td>伸手就知道</td></tr>
+<tr><td>邏輯型</td><td>生不自生、住不自相住、法不自相滅</td><td class="hl">推論的結果</td><td>順著條件推一遍</td></tr>
+</tbody>
+</table>
+
+<p>「眼睛看不見自己」是<strong>一件事實</strong>，你現在就可以試。但「住不能自己住住」不是事實，是<strong>推出來的</strong>——原典給的理由是：一切有為法從眾緣生，<strong>若住法自住則不名有為</strong>。那是從「有為」的定義推的，不是從經驗看的。</p>
+
+<p>而原典常常<strong>把前者當作後者的橋</strong>。〈觀三相品〉破「住」的時候，就在推論旁邊補了一句「<strong>如眼不能自見，住亦如是</strong>」——拿一件人人可驗的事，替一段抽象的推論帶路。</p>
+
+<p><strong>那是類比引導，不是證明。</strong>真正的證明在推論那一側。如果把它讀成「因為眼睛看不見自己，所以住不能自住」，就等於把龍樹讀成一個靠日常經驗類推的人；而只要有人反問一句「眼睛做不到，不代表所有東西都做不到」，這個讀法立刻垮掉。</p>
+
+<p>看清這一層，讀法會變得很穩：<strong>比喻是拿來看懂的，不是拿來承重的。</strong>下面第六節會看到，龍樹自己就是這樣對待比喻的——包括對手的比喻。</p>
+
+<h2>五、對手也用「自X」，而且兩條路方向相反</h2>
+
+<p>如果「自X 不成立」是龍樹的專用武器，那對手應該避開它才對。事實正好相反：<strong>對手也用，而且用了兩種完全相反的方式。</strong></p>
+
+<p><strong>第一條路——「不自X 卻能X他」是正常的。</strong>〈觀六情品〉裡，對手一被指出「眼睛看不見自己」，立刻反擊：</p>
+
+<blockquote>
+<p>眼雖不能自見，而能見他。<strong>如火能燒他，不能自燒。</strong></p>
+</blockquote>
+
+<p>意思是：你舉的那個限制根本不是問題。火不燒自己，可是火照樣燒別的東西啊——所以眼睛看不見自己，也照樣能看別的。</p>
+
+<p><strong>第二條路——「能自X 又能X他」才是常態。</strong>到了〈觀三相品〉，對手改用另一個方向：</p>
+
+<blockquote>
+<p class="verse">如燈能自照，　　亦能照於彼；<br />生法亦如是，　　自生亦生彼。</p>
+</blockquote>
+
+<p>燈進到暗室，照亮了屋裡的東西，<strong>同時也照亮了它自己</strong>。既然燈做得到，「生」為什麼不能既生別的又生自己？</p>
+
+<p>這兩條路是<strong>相反的</strong>：一條說「不能自X 很正常」，一條說「能自X 才對」。但它們要保住的是<strong>同一樣東西</strong>——那個能自己站住的它。</p>
+
+<figure>
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="對手兩條方向相反的救援路線與龍樹各自的回應">
+  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="17" font-weight="700">對手的兩條救援路線, 方向相反</text>
+
+  <rect class="dia-box" x="40" y="52" width="310" height="120" rx="10"/>
+  <text class="dia-zh dia-blue" x="195" y="78" text-anchor="middle" font-size="14.5" font-weight="700">路線一 · 火喻 (觀六情品)</text>
+  <text class="dia-zh" x="195" y="104" text-anchor="middle" font-size="14">「不自X 卻能X他」是正常的</text>
+  <text class="dia-zh dia-mute" x="195" y="128" text-anchor="middle" font-size="13">火能燒他, 不能自燒</text>
+  <text class="dia-zh dia-mute" x="195" y="152" text-anchor="middle" font-size="13">所以眼不自見也能見他</text>
+
+  <rect class="dia-box" x="410" y="52" width="310" height="120" rx="10"/>
+  <text class="dia-zh dia-blue" x="565" y="78" text-anchor="middle" font-size="14.5" font-weight="700">路線二 · 燈喻 (觀三相品)</text>
+  <text class="dia-zh" x="565" y="104" text-anchor="middle" font-size="14">「能自X 又能X他」才是常態</text>
+  <text class="dia-zh dia-mute" x="565" y="128" text-anchor="middle" font-size="13">如燈能自照, 亦能照於彼</text>
+  <text class="dia-zh dia-mute" x="565" y="152" text-anchor="middle" font-size="13">所以生也能自生亦生彼</text>
+
+  <path class="dia-line" d="M195 172 L195 208" marker-end="url(#ar61b)"/>
+  <path class="dia-line" d="M565 172 L565 208" marker-end="url(#ar61b)"/>
+  <defs><marker id="ar61b" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#c8a05a"/></marker></defs>
+
+  <rect class="dia-box-key" x="40" y="212" width="310" height="76" rx="10"/>
+  <text class="dia-zh dia-x" x="195" y="238" text-anchor="middle" font-size="14" font-weight="700">龍樹: 先拆靠山</text>
+  <text class="dia-zh" x="195" y="262" text-anchor="middle" font-size="13.5">已燒 / 未燒 / 燒時, 三處都無燒</text>
+  <text class="dia-zh dia-mute" x="195" y="280" text-anchor="middle" font-size="12.5">「去未去去時, 已總答是事」</text>
+
+  <rect class="dia-box-key" x="410" y="212" width="310" height="76" rx="10"/>
+  <text class="dia-zh dia-x" x="565" y="238" text-anchor="middle" font-size="14" font-weight="700">龍樹: 直接拆喻體</text>
+  <text class="dia-zh" x="565" y="262" text-anchor="middle" font-size="13.5">燈中自無闇, 無闇則無照</text>
+  <text class="dia-zh dia-mute" x="565" y="280" text-anchor="middle" font-size="12.5">「自照」這個動作沒發生過</text>
+
+  <text class="dia-zh dia-gold" x="380" y="308" text-anchor="middle" font-size="13.5" font-weight="700">兩條路相反, 要保的是同一樣東西: 那個能自己站住的它</text>
+</svg>
+<figcaption>圖二：對手的兩條救援路線方向完全相反，龍樹的回應也各不相同——火喻是先拆它的靠山（三時破燒），燈喻是直接拆喻體本身。</figcaption>
+</figure>
+
+<p>對火喻，龍樹沒有正面談眼睛，而是<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-3-4-3">先把火拆掉</a>：已燒的時候燒完了，未燒的時候還沒燒，正燒的時候你指不出那一刻——<strong>三處都沒有「燒」</strong>。原典明說這在〈觀去來品〉就答過了：「<strong>去未去去時，已總答是事</strong>。」靠山一倒，救援自然落空。</p>
+
+<h2>六、同一盞燈，兩邊都用過</h2>
+
+<p>燈喻更有意思，因為它<strong>在《中論》裡被兩邊都用過，而且方向相反</strong>。</p>
+
+<p>在〈觀六情品〉，燈是<strong>龍樹這一側</strong>拿來當對照組的：</p>
+
+<blockquote>
+<p><strong>如燈能自照亦能照他。</strong>眼若是見相，亦應自見亦應見他。<strong>而實不爾。</strong></p>
+</blockquote>
+
+<p>邏輯是：如果「看」真是眼睛自帶的性質，它應該像燈一樣——自己也照得到，別人也照得到。<strong>燈做得到，眼做不到，所以「見」不是眼的自性。</strong></p>
+
+<p>可是到了〈觀三相品〉，<strong>同一盞燈變成對手的武器</strong>：燈能自照，所以生能自生。</p>
+
+<p>這時候有一個很自然、卻是錯誤的反應：去爭「這個類比合不合理」。爭類比會落入比高低，而且永遠爭不完——你說燈跟生不一樣，對手就說哪裡不一樣，然後兩邊各舉例子到天亮。</p>
+
+<p><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-6-1">龍樹不爭類比，他直接拆喻體</a>：</p>
+
+<blockquote>
+<p class="verse">燈中自無闇，　　住處亦無闇；<br />破闇乃名照，　　<strong>無闇則無照</strong>。</p>
+</blockquote>
+
+<p>先問一句：「照」是什麼意思？<strong>照就是破暗。</strong>沒有暗，就沒有「照」這個動作可言。</p>
+
+<p>那麼燈裡有暗嗎？沒有。燈所在的地方有暗嗎？也沒有——它一在那裡，那裡就亮了。<strong>既然從頭到尾沒有暗可破，「燈照亮了自己」這件事根本沒有發生過。</strong></p>
+
+<p>請注意結論的形狀：不是「燈自照這個例子不夠格當自生的證據」，而是<strong>燈從來就沒有自照過</strong>。喻體一垮，類比自然無從談起。</p>
+
+<p>這也回頭說明了第四節那句話：<strong>譬喻只負責帶路，不負責承重。</strong>結論若靠譬喻撐著，譬喻一倒結論就倒。而龍樹的結論從來不靠譬喻——他靠的始終是那一句「拿掉別的，它還在嗎」。</p>
+
+<p>（順帶一提：燈被拆掉之後，〈觀六情品〉那個「燈做得到、眼做不到」的對照組也一併失效。<strong>但那裡的結論不動搖</strong>——因為那裡要的本來就是「眼做不到」，燈只是拿來反襯的背景。）</p>
+
+<h2>七、第二把刀：把燈換成闇</h2>
+
+<p>拆完喻體，龍樹其實還留了一手，而且是全品最漂亮的一手。它<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-6-5">緊接在燈喻之後</a>，卻常常被讀者略過。</p>
+
+<p>這一手不再從自己的立場說話，而是<strong>照對手的規則，把喻體換成它的反面</strong>：</p>
+
+<blockquote>
+<p class="verse">若燈能自照，　　亦能照於彼；<br /><strong>闇亦應自闇</strong>，　　亦能闇於彼。</p>
+</blockquote>
+
+<p>推理是這樣的。你說燈能自照又能照他，理由是什麼？<strong>因為燈與暗相違</strong>——相違才談得上破，破了才叫照。</p>
+
+<p>好。那麼<strong>暗與燈也相違</strong>啊。照你的規則，暗也應該能「自暗」又能「暗他」——它應該可以把自己藏起來，也把別的東西藏起來。</p>
+
+<p>可是暗不會把自己藏起來。原典講得很直白：</p>
+
+<blockquote>
+<p><strong>若闇與燈相違，不能自蔽蔽彼</strong>；燈與闇相違，亦不應自照亦照彼。<strong>是故燈喻非也。</strong></p>
+</blockquote>
+
+<p>對稱的那一邊做不到，這一邊憑什麼做得到？<strong>兩邊靠的是同一條理由，倒一邊就倒兩邊。</strong></p>
+
+<p>這一手值得記住，因為它示範了中論最核心的手法：<strong>全程使用對手的規則，自己一物不立。</strong>龍樹沒有宣稱「暗有什麼性質」，也沒有主張「照的正確定義是什麼」——他只是接過對方給的理由，往對稱的那一邊推一步，讓它自己撞牆。</p>
+
+<p>所謂「破而不立」，具體長的就是這個樣子。</p>
+
+<h2>八、招數的數量，等於退路的數量</h2>
+
+<p>現在可以回答開頭那個錯覺了：<strong>為什麼要換這麼多招？</strong></p>
+
+<p>因為對手的退路不只一條。<strong>每一招堵一條：</strong></p>
+
+<figure>
+<svg viewBox="0 0 760 296" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="對手的五條退路與各自對應的堵法">
+  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="17" font-weight="700">五條退路, 五種堵法</text>
+  <text class="dia-zh dia-mute" x="180" y="52" text-anchor="middle" font-size="13">對手可能說</text>
+  <text class="dia-zh dia-mute" x="580" y="52" text-anchor="middle" font-size="13">龍樹就用</text>
+
+  <rect class="dia-box" x="40" y="64" width="280" height="34" rx="7"/>
+  <text class="dia-zh" x="180" y="86" text-anchor="middle" font-size="13.5">這兩個東西同時都是實有的</text>
+  <rect class="dia-box-key" x="440" y="64" width="280" height="34" rx="7"/>
+  <text class="dia-zh dia-gold" x="580" y="86" text-anchor="middle" font-size="13.5" font-weight="700">相違 · 性質互斥不能共存</text>
+  <path class="dia-line" d="M320 81 L440 81"/>
+
+  <rect class="dia-box" x="40" y="106" width="280" height="34" rx="7"/>
+  <text class="dia-zh" x="180" y="128" text-anchor="middle" font-size="13.5">它們各自獨立地成立</text>
+  <rect class="dia-box-key" x="440" y="106" width="280" height="34" rx="7"/>
+  <text class="dia-zh dia-gold" x="580" y="128" text-anchor="middle" font-size="13.5" font-weight="700">相待 · 要靠對方就不是自己站住</text>
+  <path class="dia-line" d="M320 123 L440 123"/>
+
+  <rect class="dia-box" x="40" y="148" width="280" height="34" rx="7"/>
+  <text class="dia-zh" x="180" y="170" text-anchor="middle" font-size="13.5">它在「正在發生」的那一刻</text>
+  <rect class="dia-box-key" x="440" y="148" width="280" height="34" rx="7"/>
+  <text class="dia-zh dia-gold" x="580" y="170" text-anchor="middle" font-size="13.5" font-weight="700">三時 · 已 / 未 / 正, 三處俱無</text>
+  <path class="dia-line" d="M320 165 L440 165"/>
+
+  <rect class="dia-box" x="40" y="190" width="280" height="34" rx="7"/>
+  <text class="dia-zh" x="180" y="212" text-anchor="middle" font-size="13.5">是同一個 / 是兩個</text>
+  <rect class="dia-box-key" x="440" y="190" width="280" height="34" rx="7"/>
+  <text class="dia-zh dia-gold" x="580" y="212" text-anchor="middle" font-size="13.5" font-weight="700">一異 · 兩邊都封, 沒有第三種</text>
+  <path class="dia-line" d="M320 207 L440 207"/>
+
+  <rect class="dia-box" x="40" y="232" width="280" height="34" rx="7"/>
+  <text class="dia-zh" x="180" y="254" text-anchor="middle" font-size="13.5">再找一個同類的來撐它</text>
+  <rect class="dia-box-key" x="440" y="232" width="280" height="34" rx="7"/>
+  <text class="dia-zh dia-gold" x="580" y="254" text-anchor="middle" font-size="13.5" font-weight="700">無窮 · 那個又要靠下一個</text>
+  <path class="dia-line" d="M320 249 L440 249"/>
+
+  <text class="dia-zh dia-x" x="380" y="286" text-anchor="middle" font-size="14" font-weight="700">五招問的是同一句: 拿掉別的, 它還在嗎</text>
+</svg>
+<figcaption>圖三：招數的數量，等於對手退路的數量。五種論法問的其實是同一句話，而「自己站得住」正是「自性」的定義——所以每一招的結論都只有一個：無自性。</figcaption>
+</figure>
+
+<p>五招問的都是同一句：<strong>拿掉別的，它還在嗎？</strong>而「自己站得住」正是<strong>自性</strong>的定義。所以每一招走到最後，結論都只有一個——<strong>無自性</strong>。</p>
+
+<h3>順手擋一個很容易的混淆</h3>
+
+<p>常有人把「八不」也算進論法裡，於是愈數愈亂。這裡分清楚：</p>
+
+<table class="sdf-tbl">
+<caption>破什麼，與怎麼破——兩者不在同一層</caption>
+<thead><tr><th>層次</th><th>內容</th><th>身分</th></tr></thead>
+<tbody>
+<tr><td>破什麼</td><td>八不：不生不滅、不常不斷、不一不異、不來不出</td><td class="hl">被破的對象</td></tr>
+<tr><td>怎麼破</td><td>論法：相違、相待、三時、一異、無窮</td><td class="hl">使用的工具</td></tr>
+</tbody>
+</table>
+
+<p>八不是<strong>要拆的東西</strong>，論法是<strong>拆的方式</strong>。舉例來說，八不裡的「不來不出」要破的是運動，而〈觀去來品〉用來破它的工具是<strong>三時</strong>。</p>
+
+<p>細心的讀者會發現「一異」兩邊都出現了。這不是筆誤：<strong>在八不裡它是被破的執</strong>（不要認定兩者是同一個、或是兩個），<strong>在論法裡它是窮舉的框架</strong>（兩個東西之間只能是一或是異，兩邊都封就沒有第三種可能）。</p>
+
+<p>為什麼可以兩用？正因為「一或異」窮盡了兩者之間的所有關係——<strong>唯其窮盡，它既是最頑固的執，也是最好用的刀。</strong></p>
+
+<h2>九、三步讀法，帶著走</h2>
+
+<p>把整篇收成一個可以隨身帶的東西。任何一段論證，照這三步走就不會迷路：</p>
+
+<blockquote>
+<p><strong>一</strong>　對手主張什麼東西「<strong>自己站得住</strong>」？——是「住」？是「生」？是「我」？</p>
+<p><strong>二</strong>　龍樹用哪一招去問「它靠不靠別的」？——<strong>那只是問法，不是新主張。</strong></p>
+<p><strong>三</strong>　答案永遠是「靠」　→　<strong>無自性</strong>。</p>
+</blockquote>
+
+<p>第二步是最關鍵的一步。看到相違、相待、三時、一異、無窮，不要以為龍樹又提出了什麼新學說——<strong>那些全是問句，不是答案。</strong>他從頭到尾沒有主張任何東西存在或不存在，只是不斷把對方的主張放回它自己的條件裡，看它站不站得住。</p>
+
+<h3>最後一步，也是最容易掉下去的一步</h3>
+
+<p>破完之後，被拿掉的只是「它自己站得住」這件事，<strong>不是那個現象</strong>。</p>
+
+<p>眼睛仍然在看，刀仍然在切，乳仍然會變成酪，人仍然會老。<strong>被否認的從來不是變化，是那個「有一個它在做」的獨立主角。</strong></p>
+
+<p>〈觀三相品〉說生命是一條河——河確實在流；被否認的只是「河裡有一格是靜止的」。而<strong>無自性而宛然，就是緣起</strong>。〈觀四諦品〉那句「<strong>以有空義故，一切法得成</strong>」講的正是這件事：破自性，護緣起，全論一以貫之。</p>
+
+<hr />
+
+<h2>附錄：全論「自X 不成立」族譜</h2>
+
+<p>掃過《中論》二十七品原典區之後的完整清單。左欄是出處，右欄是它在破什麼——<strong>同一把槍，七個靶</strong>。</p>
+
+<table class="sdf-tbl">
+<caption>「自X 不成立」在《中論》裡的七次現身</caption>
+<thead><tr><th>品</th><th>原文</th><th>破的動作</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td>觀因緣品</td><td>諸法<span class="hl">不自生</span>，亦不從他生</td><td>生</td><td>邏輯型</td></tr>
+<tr><td>觀六情品</td><td>是眼則不能，<span class="hl">自見其己體</span></td><td>見</td><td>經驗型</td></tr>
+<tr><td>觀染染者品</td><td>一法云何自合？<span class="hl">如指端不能自觸</span></td><td>合（染與染者）</td><td>經驗型</td></tr>
+<tr><td>觀三相品</td><td><span class="hl">住不自相住</span>，亦不異相住</td><td>住</td><td>邏輯型</td></tr>
+<tr><td>觀三相品</td><td><span class="hl">法不自相滅</span>，他相亦不滅</td><td>滅</td><td>邏輯型</td></tr>
+<tr><td>觀苦品</td><td>法不自作法——<span class="hl">如刀不能自割</span></td><td>作（苦的自作）</td><td>經驗型</td></tr>
+<tr><td>觀合品</td><td><span class="hl">是法不自合</span>——如一指不自合</td><td>合（概念本身）</td><td>經驗型</td></tr>
+</tbody>
+</table>
+
+<p>另有兩處是<strong>對手</strong>用的，方向相反：〈觀六情品〉的「火能燒他，不能自燒」，與〈觀三相品〉的「如燈能自照，亦能照於彼」。兩者的破法見本篇第五、六、七節。</p>
+
+<hr />
+<h2>進一步閱讀</h2>
+<p>建議把本篇當成工具，讀各品時隨時回來對照。中論閱讀頁右下工具櫃另有一顆「◈ 讀法定錨」，是本篇第八、九節的隨身版，任何一品都打得開。</p>
+<p>🔗 <strong><a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-9-5">自相住與異相住雙破（族譜總表所在）</a></strong>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-6-1">對手最強類比・燈喻</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-7-6-5">收網・自照悖論的鏡像</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-12-12-8">法不自作（刀不自割）</a>　｜　<a href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/#chapter-14-2-10">觀合品・終極結論</a>　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">一百卷全本網路彙編</a></p>
+<hr />
+<p><em>若這篇對你有幫助，不妨帶著這個問題離開：<strong>你最近一次確信「這件事就是這樣」，那個「就是這樣」拿掉別的之後，還在嗎？</strong><br />想交流心得，歡迎到 YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen/posts" target="_top">@chengweiwen 社群</a> 的對應貼文下留言聊聊。</em></p>
+<hr />
+<p><strong>標籤</strong>：<a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=大智度論#series-guides"><code>#大智度論</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=中論#series-guides"><code>#中論</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=龍樹#series-guides"><code>#龍樹</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=論法#series-guides"><code>#論法</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=能所#series-guides"><code>#能所</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=中觀#series-guides"><code>#中觀</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=自性#series-guides"><code>#自性</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=佛學閱讀#series-guides"><code>#佛學閱讀</code></a></p>
+<hr />
+<div class="bk-bridge"><b>承先啟後</b>　<b>承・第 44 篇</b>——那一篇處理「報生心為什麼不由遍因生」，是判攝工具的最後一題；本篇同樣是工具，但改為進入《中論》各品前的隨身裝備。<b>應・第 45 篇</b>——〈觀去來品〉是全論第一次密集展示「三時」這把刀，正好是本篇第八節那張表的第一個實戰場。<div class="bk-nav">◀ 書序上一篇　<a href="https://weiwen0925.github.io/essay-44.html">第 44 篇・報生心為什麼不由遍因生？</a>　｜　書序下一篇　<a href="https://weiwen0925.github.io/essay-45.html">第 45 篇・「去者去」怎麼會說出兩個「去」？</a> ▶</div></div>
+<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
+<p><em>本文為「《大智度論》系列」第 61 篇。原典出處：《中論》觀因緣品第一、觀六情品第三、觀染染者品第六、觀三相品第七、觀苦品第十二、觀合品第十四。系列所有文章：<a href="https://weiwen0925.github.io/">《大智度論》研讀彙整</a>　｜　上一篇 第 60 篇：<a href="https://weiwen0925.github.io/essay-60.html">不是「我在感覺」，是感覺自己明白著——把〈觀六情品〉搬上呼吸</a></em></p>
+<script id="bkv3-js">/*BKV3*/(function(){"use strict";
+var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);
+var tick=false;function upd(){var h=document.documentElement;
+var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);
+bar.style.width=(p*100).toFixed(2)+"%";tick=false;}
+window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
+var toc=document.querySelector(".bk-toc");
+if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){
+return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});
+if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){
+if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");
+if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";
+var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}
+if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});
+[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}
+document.documentElement.style.scrollBehavior="smooth";
+})();</script>
+</body>
+</html>
