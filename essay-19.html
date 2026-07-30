@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帶業修行的數學模型——菩薩如何「與闇共住」而仍能照見</title>
-    <meta name="description" content="《大智度論》卷十八「闇室燃燈喻」:破闇不需全明。前燈(菩薩)雖與闇共住,在燈光的絕對範圍內依然能皆悉分了(照見實相);後燈(佛)盡諸煩惱,倍復明了。關鍵通則是——見性是「局部功能成立」,不是「全域開關」:只要光區非空,照見就在該範圍內真實有效,不因外圍無明而被剝奪。這正是「帶業修行」「煩惱即菩提」可以成立的動態機制與數學模型:域Ω上的照見函數 φ 在光區 L 上恆真,成立條件是 L 非空(而非 L=全域);修行是光區逐步擴大、趨近全域(佛)的單調過程。">
-    <meta name="author" content="Chengweiwen">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>帶業修行的數學模型——菩薩如何「與闇共住」而仍能照見</title>
+<meta content="《大智度論》卷十八「闇室燃燈喻」:破闇不需全明。前燈(菩薩)雖與闇共住,在燈光的絕對範圍內依然能皆悉分了(照見實相);後燈(佛)盡諸煩惱,倍復明了。關鍵通則是——見性是「局部功能成立」,不是「全域開關」:只要光區非空,照見就在該範圍內真實有效,不因外圍無明而被剝奪。這正是「帶業修行」「煩惱即菩提」可以成立的動態機制與數學模型:域Ω上的照見函數 φ 在光區 L 上恆真,成立條件是 L 非空(而非 L=全域);修行是光區逐步擴大、趨近全域(佛)的單調過程。" name="description"/>
+<meta content="Chengweiwen" name="author"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&amp;family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#f7f3ec; --text:#2c2416; --text2:#5a4e3a; --muted:#6b5b4b;
@@ -69,109 +70,243 @@ figcaption{ font-size:.9em; color:var(--muted); margin-top:.75em; line-height:1.
 .tagl{text-decoration:none;}.tagl code{cursor:pointer;}.tagl:hover code{border-color:#b8860b;color:#8a5a1e;}
 /*BKV3*/#bkProgress{position:fixed;top:0;left:0;height:6px;width:0;background:linear-gradient(90deg,#8a5a1e,#c8963c 55%,#f0c060);box-shadow:0 0 8px rgba(212,168,75,.65);border-radius:0 3px 3px 0;z-index:9999;}#bkProgress::after{content:"";position:fixed;top:0;left:0;right:0;height:6px;background:rgba(184,134,11,.12);z-index:-1;}.bk-glance{border:1px solid #ddcfb4;background:#f3ecdd;border-radius:8px;padding:14px 18px 12px;margin:20px 0 8px;font-size:15px;line-height:1.85;}.bg-t{color:#8a5a1e;font-weight:700;letter-spacing:2px;margin-right:10px;}.bg-pos{color:#a8905f;font-size:13px;letter-spacing:1px;}.bg-kw{display:inline-block;margin:2px 5px 2px 0;padding:1px 9px 2px;background:#efe7d8;border:1px solid #ddcfb4;border-radius:4px;color:#6b5231;font-size:13.5px;text-decoration:none;}a.bg-kw:hover{border-color:#b8860b;color:#8a5a1e;}.bk-toc{margin-top:8px;font-size:14px;line-height:2;}.bk-toc b{color:#8a5a1e;font-weight:700;}.bk-toc a{color:#6b5231;text-decoration:none;border-bottom:1px dotted #c9b28a;margin-right:12px;white-space:nowrap;}.bk-toc a:hover{color:#8a5a1e;border-bottom-color:#b8860b;}@media (prefers-reduced-motion:no-preference){blockquote{transition:background .6s ease,border-color .6s ease,box-shadow .6s ease;}blockquote.bk-focus{background:rgba(212,168,75,.10);border-left-color:#b8860b;box-shadow:0 1px 8px rgba(184,134,11,.10);}}
 </style>
-</head>
+<meta name="wy-full-protection" content="v2-silent">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,noai,noimageai,noarchive">
+<meta name="googlebot" content="index,follow,max-snippet:-1,noai,noimageai">
+<meta name="GPTBot" content="noai">
+<meta name="ChatGPT-User" content="noai,noimageai">
+<meta name="CCBot" content="noai">
+<meta name="anthropic-ai" content="noai">
+<meta name="Claude-Web" content="noai">
+<meta name="cohere-ai" content="noai">
+<style id="wy-preguard">html:not(.wy-revealed){background:#ffffff!important;}html:not(.wy-revealed) body{display:none!important;}@media print{html,body{background:#ffffff!important;}body *{display:none!important;visibility:hidden!important;}iframe,iframe.ch-frame{display:none!important;visibility:hidden!important;}@page{margin:0;size:auto;}}</style>
+<script id="wy-guard">
+(function(){
+  var ALLOWED_HOST = "weiwen0925.github.io";
+  var ALLOWED_PATH = "/essay-19.html";
+  var _resolve;
+  window.__wyReady = new Promise(function(res){ _resolve = res; });
+
+  function _silent(){
+    function wipe(){
+      try{
+        if(document.body){
+          document.querySelectorAll("iframe.ch-frame").forEach(function(f){
+            try{f.removeAttribute("data-c"); f.removeAttribute("srcdoc"); f.remove();}catch(e){}
+          });
+          document.querySelectorAll("[data-wytext]").forEach(function(el){
+            try{el.removeAttribute("data-wytext"); el.textContent="";}catch(e){}
+          });
+          try{document.body.innerHTML = "";}catch(e){}
+        }
+      }catch(e){}
+    }
+    wipe();
+    if(document.readyState === "loading"){
+      document.addEventListener("DOMContentLoaded", wipe);
+    }
+    function startObs(){
+      if(document.body){
+        try{
+          new MutationObserver(wipe).observe(document.body,
+            {childList:true, subtree:true, characterData:true});
+        }catch(e){}
+      } else { setTimeout(startObs, 10); }
+    }
+    startObs();
+  }
+
+  try{
+    if(location.hostname !== ALLOWED_HOST){ _silent(); return; }
+    if(location.pathname.indexOf(ALLOWED_PATH) !== 0){ _silent(); return; }
+    if(location.protocol !== "https:" && location.protocol !== "http:"){ _silent(); return; }
+  }catch(e){ _silent(); return; }
+
+  try{
+    if(navigator.webdriver === true){ _silent(); return; }
+    var ua = (navigator.userAgent || "");
+    if(/HeadlessChrome|PhantomJS|Selenium|puppeteer|playwright|bot|crawler|spider|scrap/i.test(ua)){
+      _silent(); return;
+    }
+    if(typeof navigator.languages === "undefined" || navigator.languages.length === 0){
+      _silent(); return;
+    }
+  }catch(e){ _silent(); return; }
+
+  function _liveness(){
+    return new Promise(function(res){
+      try{
+        var url = "https://" + ALLOWED_HOST + ALLOWED_PATH +
+                  "?_wyping=" + Date.now() + "." + Math.random().toString(36).slice(2,8);
+        var ctrl = (typeof AbortController !== "undefined") ? new AbortController() : null;
+        var timer = setTimeout(function(){ if(ctrl){try{ctrl.abort();}catch(e){}} res(false); }, 6000);
+        var opts = {method:"HEAD", cache:"no-store", credentials:"omit"};
+        if(ctrl) opts.signal = ctrl.signal;
+        fetch(url, opts)
+          .then(function(r){ clearTimeout(timer); res(!!r && (r.ok || r.type === "opaque" || (r.status >= 200 && r.status < 400))); })
+          .catch(function(){ clearTimeout(timer); res(false); });
+      }catch(e){ res(false); }
+    });
+  }
+
+  _liveness().then(function(ok){
+    if(!ok){ _silent(); return; }
+    document.documentElement.classList.add("wy-revealed");
+    window.__wyOriginOK = true;
+    _resolve(true);
+  });
+})();
+</script>
+<meta name="keywords" content="煩惱即菩提,帶業修行,闇室燃燈,破無明,大智度論,般若,局部功能,佛學與數學,佛學思辨,佛學閱讀"><link rel="canonical" href="https://weiwen0925.github.io/essay-19.html"><meta property="og:type" content="article"><meta property="og:site_name" content="《大智度論》研讀彙整"><meta property="og:locale" content="zh_TW"><meta property="og:title" content="帶業修行的數學模型——菩薩如何「與闇共住」而仍能照見"><meta property="og:description" content="《大智度論》卷十八「闇室燃燈喻」:破闇不需全明。前燈(菩薩)雖與闇共住,在燈光的絕對範圍內依然能皆悉分了(照見實相);後燈(佛)盡諸煩惱,倍復明了。關鍵通則是——見性是「局部功能成立」,不是「全域開關」:只要光區非空,照見就在該範圍內真實有效,不因外圍無明而被剝奪。這正是「帶業修行」「煩惱即菩提」可以成立的動態機制與數"><meta property="og:url" content="https://weiwen0925.github.io/essay-19.html"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="帶業修行的數學模型——菩薩如何「與闇共住」而仍能照見"><meta name="twitter:description" content="《大智度論》卷十八「闇室燃燈喻」:破闇不需全明。前燈(菩薩)雖與闇共住,在燈光的絕對範圍內依然能皆悉分了(照見實相);後燈(佛)盡諸煩惱,倍復明了。關鍵通則是——見性是「局部功能成立」,不是「全域開關」:只要光區非空,照見就在該範圍內真實有效,不因外圍無明而被剝奪。這正是「帶業修行」「煩惱即菩提」可以成立的動態機制與數"><script id="wy-frameguard">(function(){try{if(window.top===window.self)return;var ok=false;try{ok=(window.top.location.hostname==="weiwen0925.github.io");}catch(e){ok=false;}if(ok)return;var w=function(){try{if(document.body)document.body.innerHTML="";}catch(e){}};w();document.addEventListener("DOMContentLoaded",w);try{new MutationObserver(w).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}}catch(e){}})();</script></head>
 <body>
-<div class="bk-badge">《緣起性空》全書　·　第四部 · 慧門　·　ESSAY 19</div>
-
-<h1>帶業修行的數學模型——菩薩如何「與闇共住」而仍能照見</h1>
-<h2>《大智度論》卷十八「闇室燃燈喻」：破闇不需全明——只要燈亮，光的絕對範圍內就能皆悉分了；無明外圍仍在，但局部功能成立。這就是「煩惱即菩提」可以成立的動態機制</h2>
-<div class="bk-glance"><p style="margin:0 0 6px"><span class="bg-t">本篇一眼</span><span class="bg-pos">第四部・慧門｜全書第 23/62 篇</span></p><p style="margin:0">菩薩不等斷惑清零才上路——與闇共住而仍能照見，因為煩惱與觀照皆無自性，比例可以改寫。慧門從凡夫的起點開講。</p><p style="margin:7px 0 0"><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=煩惱即菩提#series-guides">#煩惱即菩提</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=帶業修行#series-guides">#帶業修行</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=闇室燃燈#series-guides">#闇室燃燈</a><a class="bg-kw" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=破無明#series-guides">#破無明</a></p><nav class="bk-toc" aria-label="章節導覽"><b>章節</b>　</nav></div>
-
-<hr />
-<blockquote>
-<p>你不必等到整間屋子全亮，才開始看見。點一盞小燈，在它照到的範圍內，你當下就「皆悉分了」——哪怕四周仍是一片黑。破闇，從來不是一個「全有全無」的開關。</p>
-</blockquote>
-<hr />
-<p class="lead">這是「《大智度論》系列」的第 19 篇。卷十八用一個很現代的畫面講般若：<strong>闇室燃燈</strong>。前燈（菩薩）雖與闇共住，卻已能照物；後燈（佛）盡諸煩惱，倍復明了。關鍵洞見是——<strong>破闇無需「全明」</strong>：即使周圍充滿黑暗，在燈光的絕對範圍內，依然能「皆悉分了」（照見實相）。這一篇，把這個直覺完成成一條<strong>通則</strong>，再把它寫成一個<strong>數學模型</strong>，看清「帶業修行」「煩惱即菩提」為什麼不是安慰話，而是嚴格成立的。</p>
-<hr />
-
-<h2>一、先看那盞燈：與闇共住，而亦能照物</h2>
-<p>論主給了兩盞燈。<strong>前燈，是菩薩</strong>：煩惱習氣還沒斷盡，所以它「與闇共住」——燈的四周仍是黑的；但在它照到的地方，已經清清楚楚照見了。<strong>後燈，是佛</strong>：盡諸煩惱，整間屋子倍復明了。</p>
-<p>兩盞燈的差別，不在「有沒有照見的能力」，而在<strong>照見的範圍大小</strong>。前燈的光圈小、後燈的光圈大——但只要是光，在它的範圍內，見物的功能就<strong>完全成立</strong>，不打折扣。這就是整個模型的種子。</p>
-<hr />
-
-<h2>二、通則：破闇是「局部功能」，不是「全域開關」</h2>
-<p>先把通則講清楚。一般人對「開悟／破無明」有個隱藏的預設：以為它是一個<strong>全域開關</strong>——要嘛全屋亮（成就），要嘛全屋黑（凡夫），中間不算數。在這個預設下，帶著煩惱怎麼可能修？煩惱沒斷，燈不就等於沒亮？</p>
-<p>卷十八要糾正的正是這個預設。真相是：<strong>破闇是「局部功能成立」。</strong> 見性不是「全屋亮了才算」，而是「只要有一塊被照亮，那一塊裡的照見就真實有效」。這一塊之外仍是黑，不影響這一塊之內的清楚。<strong>迷與悟，不是全有全無的二元；而是一片「哪裡被照到、哪裡就分明」的局部真值。</strong></p>
-<p>一旦把「全域開關」換成「局部功能」，帶業修行的矛盾就當場消解：<strong>你不需要先消滅所有黑暗，才能開始照見；你只需要點亮一塊。</strong></p>
-<hr />
-
-<p class="bk-thread"><b>中觀接榫</b>　燈闇之喻既立——破闇是局部功能——就能寫成模型：光區單調擴大，不需全域開關。</p>
-<h2>三、數學意義：把它寫成一個模型</h2>
-<p>把上面的通則形式化，就得到一個乾淨的模型。設整個心識為一個域 <strong>Ω</strong>；無明，是覆蓋在 Ω 上的黑暗。智慧點燃一盞燈，照亮其中一塊區域 <strong>L</strong>（光的絕對範圍）。定義一個「照見函數」<strong>φ</strong>：在被照到的地方值為「明」，沒照到的地方值為「闇」。於是：</p>
-<p><strong>（1） 成立條件是「L 非空」，不是「L = 全域」。</strong> 見性功能成立的條件，只是<strong>光區 L 不是空的</strong>（有一盞燈亮著）；而<strong>不</strong>要求 L 等於整個 Ω（全明）。全明是佛的極限狀態，不是見性的前提。<br><strong>（2） 容錯：φ 在 L 上的值，與 L 之外的黑暗「不耦合」。</strong> 也就是說，外圍無明再大，都不會反過來扣減 L 之內的「明」。局部的照見，是<strong>自足</strong>的——這是「容錯」的數學核心：黑暗不能否決光已經照到的部分。<br><strong>（3） 動態：修行是光區 L 逐步擴大的單調過程。</strong> L（前燈·菩薩）⊂ 更大的 L ⊂ … ⊂ Ω（後燈·佛）。破闇不是一次跳變，而是光區<strong>單調遞增、趨近全域</strong>的極限；佛，就是這個過程的極限：L = Ω。</p>
-<p>用一句話收攏：<strong>照見是一個「局部有效、可容錯、單調擴張」的函數；它的成立門檻是「有一塊亮」，不是「全部亮」。</strong></p>
-
+<div class="bk-badge" data-wytext="lPmngsTQicya17mJj93Xj6391PLRy/7LkOH574baruiTwcDI7aqe+oVFscRBn6iW0Ljol+3s78HS9/loNiAyOFkcCA=="></div>
+<h1 data-wytext="ksGbg9behcaD2Ziij+7pirjO1NrBy83Slv/yz7GtzOjgheOEnqfenIvnl870mq290abvnfrryPOAk8SihvP+ifmh1YKjgPfQi6jR2dHy"></h1>
+<h2 data-wytext="lPmngNfUh+CX1IOIgN/7j6391PrOyOjyluTSzrG1x//ziMKJkbb0nqrtluXamq281pLyk83YxOG2k8GgjO/zhPyF16GgivT5jq3i1PjTxcPylObxyYuXwdT4iOmkkavznpjwlsPsnoK13LLlkejLyMaAn/qQgun1h/uk1LGojM7rg5Ht1vPYy/39lsXvyK20ytP5iPCFmY37nZDjlsLhkK6Z3KT3nO7Ry/6hkNKmhvPxiPm01ImfjuzCj6361vLQy+bCluzKxb6QyOfkjuygk77YnZbAlfvxnoa63rTskeb5y/O6kdCygPvF"></h2>
+<div class="bk-glance"><p data-wytext="SwpdBB1TAhVMQkoTShYKQVlUD5HlgYLc9IXBrdalklRbHhxMGA9LCl0EHVMCFUxCShNKFgpBXRlCVUfKyd+W+uLEspHN68+L6Yqfp/eWkPmW9smftonegsRUX18CQANXnoLiT1wSCUxfBw==" style="margin:0 0 6px"></p><p data-wytext="n/aEjeXahcGg1pSnjuLaiq7n18/8xP7Flej0yYmzxt/bj+y5lLHjkaXimuTmnKiA3ZPnnO3gyc28n/qQgvbUid+m3oWije/Ni6/M1vLQy+bCm+n+xZa5ye3TivarkbXWkarPlfPGlpG934H8kNPnyPmek8KIg+fKhNaG0rmsjvHKhbv21MnnyOLSlsXSyqu9xt3DhNezn6f8kYH+kPPj" style="margin:0"></p><p data-wytext="SxgNBh8SEgoQE1tJRR8aTg0eQxIfEEcbBxUJXgsWAR8RBBtIGAFOSxhLFBoVEVhTF0cHWwkNVx5YEwxBEB1eUVYSRVhJVZPoxcv1gJL0no382of2vRJKSxodCB8AEUQeHUgWUVMVGF9WXFpVVjIYQgYTSVrK4NqV4sjIvIrG592L471KHhZHEQRTEA0YXkIEDAoTQAdaVBEfC0gDTlEJDVlBShRHWxoJRAFUGUkUV0ZdBhBZWUxMRh0CQ0kXSx8QSRAfBg9UHR4GWgkTUImVwNfS1Mna3ZvA9Q5CXFwBER5BSgNYExxeR1MHAAtKVE0TSisZA11UD1ScldOV1sydkp/Rj+RIQg0TSlBXGkEEAABcW09WFEUfVk0EXxNXSltFEQcDEkMCHk5LAQMIAh1PA0JXSgwHGxQbA1hWAQwVFwREEkQbDENIQ1xeDUxWBMf/84jCiZG29J6q7VAABAtEVEoDDwEECEgFE1cNTBcUFhVED25NQRhWU0/E4baS14mC9PCG/qUNFk9WSAxMThpQBAoQRxEUTBJaExlGGhELUQ8eRQMJXl9cXBYcREZcQFhNX1kDEVgDEVgHXRoOVklQQ0YBEBgAWBgcR1YSERIUXJ6Nhd6qyZL14g4FVAUQSBZeFBQQSVRKDEgADB5KE0VKW3IRHANDRw7WmZqP8MyKtfgNWBgT" style="margin:7px 0 0"></p><nav aria-label="章節導覽" class="bk-toc"><b data-wytext="kNKNgtzz"></b>　</nav></div>
+<hr/>
+<blockquote data-wytext="fUVdW5fOwZ2VvNyR7ZPA5cj+gZHsmYzl4ITIptSUvo3xxYiX2N7L9cvs/pr38siWssn0/4XKppWx9ZCW+5fL4Z62r9ye55Pq5MLKvZLlhYDd8Ib8itSxno/u6YuC8tTr9Mjg1Jzd9cmMmcn9wonUppOBxpqt6ZTp55+vuNym7pDX6s72vJX5uYfz54Tqh9e5u43v9om83tXM9Mv93JfZ+cq4vsfT5Y7sr5GRw5C64pzP7ZyTr92Q7pDV4cvunpPBrYDz+IL5odS8ho7o5Imo3tbz2M7l/pT7/cSnssf/6I7sr0oeB0cn"></blockquote>
+<hr/>
+<p class="lead" data-wytext="nvm0g+vcgvmh0rmkjdDKirTM1M3fxc7lkOHyyoKCy+DjjuygkavznoHJU0JYWcqevs3o9ojhmpO89pyozpTnyZ2Vsdyu45HT5Mr5j5PCjoLp94bshtikjIDY9oSl2tn83MLZ6U8SDV9eV0lWnfrryNiVkP6ugvT7XVZeRUtBBhNTj6301P70yuL7nN3xxb6Qxv7dgtCkn6rhkaXimuTmnKiA3ZPnm9HgyPuKks6fjfDOhvyK1rCHh8j2iZP61vDxwtn7l9ziwo2wyfPVhceVkbTen67UnM/tnK283JDBkvXiycy3lPmvjOTviPSY142wgNLmirXZ0/ftz+XnTxINX15XSVaTzdjE4baQ/YyM7/OC+aHUvIaO7OOPrfsNWApZFxwdBkfCjaPL5ceJ0ZKToN+cseiW9uSflo7QlfmS9/vCyr2S5YWC9PuE/KTWo6qPwfiJnfvW2P3I+f6W5N7CjbXK1umK6JuessqaremU6eefr7jcpu6Q1+rO9ryYxaWC9tSJ36bUloiP79WDkf/S9/vE5eqX2fnKnr7B1PiL5qefse6cre6U6NWRi4vcgOSS5fzL/qGTwa2D0e5dCllDVkAPSoTst5O48EUCFgcBDhdKD9aS5JHr4cv8u5LXroDc2IfxvdWBro305lBeAkMYF0pblebZnICJ34bJkfPnEVlCAwtCCxRNjsWh1qWljszoj6361M/Py8Del97XxZC1zej5juyhkbTen67Ulv7SkaKY36H4l+3hyvSLk8KtjMnPhcGg16GBjdrkiqjG2d7Iwtn/m+H1y6mWy/LAi8yRkLnnnobulOnlmq2z"></p>
+<hr/>
+<h2 data-wytext="k8GthvPyhPyl1qWlgfbOi7bo1vDxwtnpm+n+xKa+y+3FidGimY37ka3pl8nHka6M3qvPk+TF"></h2>
+<p data-wytext="n9K7gcvIhsyL1YOojfHEi7bo1vDxzuXxTxINX15XSVaR5OHK8bmYxaGD69yJ9oTZr4dUWx4YXxlfEEfC2emU5NDLsojJ1+aL3I6fs/Ofn/eV5daetpDWkuSS5OzJzZSS166G8/+J8arYrqmN8dyIkPnS9/TP5eeR4e3KtrHJ8vCI97aToN+dluiV686QlqDetOyb0ffJy7eS5YWA3fCG/IrUsZ6P7umJscbX4cDC2f+W1svKh6rI0PGL1KiQlO2fiP+U9saRi7rdlO6X7e4RBUUFFkMCTZbf9cq2scHU+Iv0gpKM7EUCFgcBDhdKD9aS8pP2zcXdiZD8hIPwwo7FodesmoHi/omc/dTa6cjl/pbf0Mupt8rS8o7srw=="></p>
+<p data-wytext="kvyEgujthv6l1qOqjcPDiaXT3sv1yd3+lv3RzrG1yPT9i96/kK3+nqjCm9Xqnre10a3Vkef3zva8mMWhjfP/hOWFDUpaGhsDCxORtNCRi+6U6eWegrXcsuWRycvIxr5LVl4RARwPHhPSuayN/eCLqv7W7f3I4PqW/fHIgbbN6PWI0qGRtv+et+GW9uicsbncis+W7fjP9qWTxKuA/NmJ36zXoYGN8eSDkfrU69HIy/CU+/3Knr3L9PmI6YqZjfuRi+6U+siet7XcpPec7tHIxoBLClkXHB0GR8iftcvt3IvkvZGa/EUCFgcBDhdKD9aS5JDV4cv/opHztYP60IL5r9i5t43E3Iq12dfizcjl+JXJ2Mivssny8IrEg5Oc55qt5w=="></p>
+<hr/>
+<h2 data-wytext="k8OhhvPyiPm31LCph8j3i43C2OD+y/3ckOH1yIC5x+vciOaynrLKmq3onM/tnZW837bHl+3gyPOZkuayjOX4iO6x0rmj"></h2>
+<p data-wytext="kvylg/n5iPm31LCpgNj2ipXz19LjzuXxl9n5xbmVytLOiNyglbH7kLvulfH+lpG+3o7ck+nNy+6/lPmgg+/6hPmm2KOfgOPii7fy2Nfpxc3enN3jyYqcyerOiMKukKnYnZXllvPqRV5FS0EGE1OJqN7U6ObE8/ia9uURHkpaGhsDCxOUseObrfGb1eCctarcq8CR3OfJzJ+YxaWD++OEyZzehaeHyOGEi/fU7+LI4NuW0PLEiqjB1PyI64yTldyWkeycz+2dlZzQuPuQ1eHK2KaR7JWG8/GE5YXYubeN9OaFjebZ39TJ3fic3fXIiY/G+eOK6YSQssafreuayd2cop7RrdWQ0sLCyq6Q/ISD8MKHy7/Xr5mHyOGLqv7Vz/TI1cKUzPDLp4XI2uaJ1oOZjeg="></p>
+<p data-wytext="kvSagP7yhPyG2Z+vj8fTioDV1u39y8jQlfnWxLGgy+j/hMy9npnamq3nlO/+nraJ37bHm9H2EQVFBRZDAk2Uwc3Epr7I8NuO7KGTgPeQrs2W+f6RrozfpviTxufO9ryU+a9ZXAAVC0JfXhBInMvny/aWk8Ggg+vcgvmh1LyGjcXmiJfY1c3/y+z+lM/uzrG0wdT4heyhkKnYmq3plvzLkYuw37LhkNXsyNe7n9uGgvbUhcOD3oWigfbOiJX21NbzxcbSlPv9yrSexs7/iNycka3onILDle/on7i52q7ll+3uxPaok8GtgNL5hcCm1J24jM/girXZ2Mzowtn/l9n0yIyIx/fLhOy0kon3nIzvl8rqnKiW3rTsktXpy9OrlPmvWQAHExZDVgfG18OF5KqQs+iWkemXy+yftZ7cq8CS8eXI85mQ/YyC6feFw6HUvK2HyPaErfrX79bJ3fOU6P7OsbXL+96Fz4yek9yeqMKW+9GarbDcvcKczs3IxoCS8auD6/2C+aDWo6qNxe2Frt7W6+bI5c+Q4fsRHkpaGhsDCxM="></p>
+<p data-wytext="k8Gtg+TVh/On0rmijfHFibLp2OHyxPLvkOH0y76iyODkjuyhk4D3kK7Nlvn+ka6M2q7lm9HgyM6HkdyAgczdidih1qOqj+v2i7bI1MfIyvDFlsHNy4exxs/XgtC3SkIDC0ILFE2FxI3VgaOB6O2Ei/fU8vHL0/uV2vzLuLnI9P2E17yQq+CWkemV+uyRrozQuOORyufK85af36aKz+iFxI3UtoSB6O2Ei/fYzOfJ392X2fnIkLPN6PZRQ14CQxgXSls="></p>
+<hr/>
+<p class="bk-thread" data-wytext="SxsTgcveid6t17eLjtLGUAIUD5T5rYL0+4juqtWApY3i1oq61Nbc8s/l55Hh7cqRjcf/84v0gpOA95CuzZb5/pGujNuu/Jbt+MjGgJ/6kIDc2IfxvdeRj43q5oOR7NTy8Mjo85b318Wbhsj7wIjIipmN+52V6Jrv4Zyomdyx953758ThrZT5rw=="></p>
+<h2 data-wytext="k8GkhvPyh+yV1JSWjvDii5Pf3svjy+/5ls/6yJ6SyODkidStk7H8n4XElu3q"></h2>
+<p data-wytext="kfOngcv5iOSP1qOqgfT3iaTx1MrbyNn8lu3vwo21y9jFiNK6k7nHnZXllvPqnZSP35nAk/foy96QkuemhvPxidGA16yajfTmiZL12drhyufJl9n5yLGyy/frTVBeAkMYF0pbvdpdVl5FS0EGE1ODke3W89jL/f2c3fXLqZbGzvKF/6aTrd9Z48xTl9nzyqu9x9Pli/a6lbH1n7TflfbGkJav3qnrkNXsyu2vkP6lis//hvyK1YOAjfHbiJXb1c/5yMT5luz5yK6mDlQHGR5CGFZJNRFKAAcTFkNWB8HU/IjppJGr856Y8JbD7J6Ctdyy5ZvR5c72s5LXt4LN2oXBrdS5pYv04Yuo0dnR8sjizpX0wc6xtBIbAB8DQxEPuP8RSgAHExZDVgfB1O6I8IWek9yeqMKW+9Get7XcstiS+9XI9o2Q+5eG8/+H4aPSuaOHyOGKn+TW8t7I7cOU+/3IrYnI/s2I7JGRs82arema5OaarbzaruqS+9DL7p6Yxbc="></p>
+<p data-wytext="SwpZFxwdBkfCjbEfh8jkTMv+oZDSpoPR7oXCm9ehgYv04SANn6zpnoTfkPPslpG93ZblkvXDzva9O1kQRZb2yZyyrtqu5Zft7hFZQgMLQgsUTUGRi7rfrs+R5/PF9YyR8b2C2PiG46nXm7OMz9uDkfrU+NPL/dxPEg1fXldJVpHo5cj7sVc1DYHL/ofhgtaQlI/u6VACBUUFFkMCTZzd8cutsMrQ9Ir3s5G2/52Xy5vi9paRuNaS85zt4BEFRQUWQwJNl9n0ER5KWhobAwsTnpf2n5znUz9BnoC437jUkvjYyPa6V7eEis/7hPyF16Ggh8jkj6301PLRy/39lfnWyYyiyfLwi8mYn6jnnqbllfbqlpG93ZblkvXDxdC6kfmKgun3hPCg17a+i/TvUE8EHklFXhEBHA8eE96Fplqb0eUNk5/OkKHKnM/7tqsR3LLAVCFMyc67kOOpgPPPjsWh2bGpSDhNiJT91NPvyv/3mtroy6uuzej4idSgnrHRnL3tkPPsmq2zBQEbAB8DQxEPV52U+pbD0J+1ntGEwpvR4MjSp5LloIL30ofho9S/o43QyoOR+tj0xMnd/pX9+si+tMfp+onSq5C41J+V/lM/QZ2Uutyrz5P36M72vZHho4bz/oL5r9SIroH3xYu38tby3sXD+Jzd9cuplhIbAB8DQxEPn/6HjcXAXVZeRUtBBhNTi7fy0/ftz+XnmuHgy6mWzej4iMKUn73Ymq3olOnln7iJ3IPQks3UyMmymMW3jMjih+O61YGjgPfQib3Q18bDyOD6ltbLyoeqye3TiOSdkavzkK7Nlvvnmq2zBUwaW1NQXgJDGBdKW5zP6UrCjbAOjf/4iqj93svjydrdm8D1y6mWy+39iOGtVn1XkK31ld7En76F3IrPk/foyOCfn9OSjPL9htGm0rmsVFseGF8ZXxBHDSmcz+mcpLzeqeC22oSi39nh0MLZ+pHr+w3XopqN0MqLt/IRO1nP7/FTg/mLEduk6lSjxcLKuZLHoYL0+6POyYyiwdT9juyvkZHDkLril8vsn7We3ZboksHNxcGCn9enis//ifmh16GBjfHkiaD2DQQNXwodFF+cu5/RhNed7PLI1K+U+ayNxduJxrzUvIaN6/JQAgVFBRZDAk2U+/3LlIzH8eSC0LaSjOyWkemWw9CftZ7QrvGR7efE97+Q0aaC6feH3JjYoL6HyPcgDUsRudDO5fE="></p>
+<p data-wytext="kO2FgcvzhPaI2ZCfjuDbirn53svjERYHAQ4XSg/eq8+cy+fL7p6Twa2A8/iC+aHUiK6B98WKsf/X4vHO5fKW7tbIn4DH5NuO7KyTp9mRh9qV4NWckYTaruWT9+jI8YyR7JWKz+iE167Wo6qO/P2Lhv3Y4fnLz8iV+dbOsbXI9P2J1K2TkP2dl8uQ8+yWkb3dluWS9cPO9r2S/IWM8NuFw4PSuaOL9O9QAgVFBRZDAk0="></p>
 <figure>
-<svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="局部功能成立模型">
-  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="18" font-weight="700">局部功能成立:光區非空即照見,不需全明</text>
-  <rect class="dia-dark" x="150" y="46" width="460" height="150" rx="8"/>
-  <ellipse class="dia-lit" cx="300" cy="121" rx="82" ry="60" opacity="0.92"/>
-  <text class="dia-zh" x="300" y="112" text-anchor="middle" font-size="13" font-weight="700" style="fill:#3a2c10">光區 L</text>
-  <text class="dia-zh" x="300" y="133" text-anchor="middle" font-size="11.5" style="fill:#3a2c10">φ = 明(照見)</text>
-  <text class="dia-zh" x="512" y="86" text-anchor="middle" font-size="12.5" style="fill:#efe3bf">域 Ω(整個心識)</text>
-  <text class="dia-zh" x="512" y="120" text-anchor="middle" font-size="12.5" style="fill:#c3b48f">L 之外:無明</text>
-  <text class="dia-zh" x="512" y="142" text-anchor="middle" font-size="12.5" style="fill:#c3b48f">φ = 闇(未照)</text>
-  <text class="dia-ok" x="253" y="228" text-anchor="middle" font-size="13" font-weight="700">成立條件:L 非空</text>
-  <text class="dia-x" x="512" y="228" text-anchor="middle" font-size="13" font-weight="700">而非 L = 全域 Ω</text>
+<svg aria-label="局部功能成立模型" role="img" viewbox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<text class="dia-zh dia-gold" data-wytext="ksitjPDbhPOy2bqTjvz9i4b9C5L8pID+84jks9aQlI353ouo0dnR8gGBy/6I5a3UvIaO7OM=" font-size="18" font-weight="700" text-anchor="middle" x="380" y="26"></text>
+<rect class="dia-dark" height="150" rx="8" width="460" x="150" y="46"></rect>
+<ellipse class="dia-lit" cx="300" cy="121" opacity="0.92" rx="82" ry="60"></ellipse>
+<text class="dia-zh" data-wytext="kvykgP7zQTU=" font-size="13" font-weight="700" style="fill:#3a2c10" text-anchor="middle" x="300" y="112"></text>
+<text class="dia-zh" data-wytext="uP8NWFOV+fcF1ryJgNLmRQ==" font-size="11.5" style="fill:#3a2c10" text-anchor="middle" x="300" y="133"></text>
+<text class="dia-zh" data-wytext="kuayRb3aSZ+4hdyu45HS78XbqV4=" font-size="12.5" style="fill:#efe3bf" text-anchor="middle" x="512" y="86"></text>
+<text class="dia-zh" data-wytext="O1nJ3PiWxe8X1r2Pjuzj" font-size="12.5" style="fill:#c3b48f" text-anchor="middle" x="512" y="120"></text>
+<text class="dia-zh" data-wytext="uP8NWFOa9v4F16WEj/HKRQ==" font-size="12.5" style="fill:#c3b48f" text-anchor="middle" x="512" y="142"></text>
+<text class="dia-ok" data-wytext="kfG9gtj4h9uw1YKYUjhNhbDo1t7D" font-size="13" font-weight="700" text-anchor="middle" x="253" y="228"></text>
+<text class="dia-x" data-wytext="n/mhjO7tQTUNDBnL7dyI87JW/94=" font-size="13" font-weight="700" text-anchor="middle" x="512" y="228"></text>
 </svg>
-<figcaption>圖一：局部功能成立。域 Ω 是整個心識，無明覆蓋其上；智慧的燈照亮光區 L，照見函數 φ 在 L 內恆為「明」。見性的成立條件只是「L 非空」（有一塊亮），不要求「L = 全域 Ω」（全明）。且 φ 在 L 內的值與外圍黑暗不耦合——黑暗無法否決已照到的部分（容錯）。</figcaption>
+<figcaption data-wytext="kuW7gcvzjsW31IiugffFiafp2fTEy+3jlMryzrG7y/frTaKEVtfv1svwx5bh8siOusbF7ILQoZG11p+165vV55G+utyr3pDV5sLKqpHgl4P21Ibjqda+po/xyoiX2NTy8Mjo81MtlpG93qvPnMvnyPGMkeyVRbz1QZyxmRliSJHoy8v3t5D7l4bz/4fho9K5o4v074SL/df33sr/95Xp6cqassjK6YnXm5O+3Z+1ypDz7TUN2KSwj93Xj6373svxy/n6l9n5yJCzytLagtCkmY37nZXom9Xgn5yz2q7kOE1RDZO035yy+lO9yJqtvNaS4JHoxMvuv5jFpIbz8YXBuRH2qEiR8cQNOhGS/IqC6feE+ZHZsamN0PuJsfvYzOjL/+SX2fTFsZ/L+PyP7LmUseOQlvSV6faeqZDfnf2R/crLx4uSzp+C9tSE8Z3Wo6qB98WJpfDey/HIy8qa7dbCjbDN6PY="></figcaption>
 </figure>
-<hr />
-
-<p class="bk-thread"><b>中觀接榫</b>　模型成立的義理根據正是無自性：煩惱與觀照皆因緣法，比例可改寫——帶業修行由此可能。</p>
-<h2>四、於是「帶業修行 ／ 煩惱即菩提」就成立了</h2>
-<p>有了模型，兩句常被當成口號的話，就變成了定理的推論：</p>
-<p><strong>「帶業修行」成立</strong>：因為成立條件是「L 非空」而非「L = Ω」。你身上的煩惱（外圍黑暗）還在，但只要智慧點亮了一塊，那塊裡的修行與照見就<strong>真實有效、當下計數</strong>。不必等業盡才開始——業未盡，燈照樣能亮、能照。<br><strong>「煩惱即菩提」成立</strong>：因為 L 與「L 之外」共用同一個域 Ω，兩者<strong>共住</strong>。菩提（明）不是在別處另起爐灶，而是<strong>就在煩惱的同一片心地上，被照亮的那一塊</strong>。光與闇同域共存，正是「即」字的數學意思。<br><strong>「容錯」成立</strong>：當下生起的微弱智慧，不會因為外圍無明（煩惱習未盡）而被剝奪其「見性」的功能。黑暗再多，也扣不掉已經照見的分明。</p>
-
+<hr/>
+<p class="bk-thread" data-wytext="SxsTgcveid6t17eLjtLGUAIUD5T5rYPb0oTnptexvo/f5ou38tbJ0Mr19ZXBwMuio8jF14v0gpG11pGqz5XzxpaRq96rwZLu3cX+tp/erYL21Ibjq9Sijo/Dzoqe497L9cvK55ff8si+lsj8zYjDhpSx45ut8ZbL15+InN2RxpzM4MrigJHUiYD83In6kNK5rA=="></p>
+<h2 data-wytext="kuK2hvPyh++R16GBi/ThiZXA19LUydrdm8D1Dd6FoUiT6MXL9YCS9J6N/NqH9r3SuaONxNyKpebW3PLJ3/U="></h2>
+<p data-wytext="keWkgcn1h9GM1Kelh8jhiajf1PjcyN3Lm8PSyqSPyODkiOOOnqjonrfhm9rQlpG93J7ZnMPmy/6hk8OrgN3phumr1qOqjvrFhIbg3svj"></p>
+<p data-wytext="SwpZFxwdBkfOsbXL0MKLyYCSjtmRjOmQ8+yfpaHeheNIQh9ZBF4ZHhOKz+mE4o3Wu5SO/P2Lhv3X1eTJ3sWV+dbOsbViSJ3w8srfi5T5oI3z/4jks9K5oiRUUEzj39L39M7l8Zfc2cWLksrQ/or2qZG03p+u1JzP6ZyJp9yy5Z3W/cvsppjFpIzx94Tlhd6FoozJ64mi3NnR+Mv8yZXk3sSKp8rS2onWq5KJ95yM75zP7ZCvktyP4pzOzcrstZPGg43S/4nxqta8iYDS5omdxw0EDV8KHRRfnrGu3IHOkvHly+O5lPmsgubFhcGm2ZGmjuHVUAIFRQUWQwJNkOH7yYm0y9fxisGkkJTanrbElfrskLu63Injlu34z/alkdyAg+/ZhuKM3oWij/Pli6jR19/axebOl9vXzrG4xuvJiumKlbH1RU8XXE1dCllDVkAPSo7soZG03p+u1Jb+0pGimN+h+Jft4cv+oZDSpllcABULQl9eEIfI94m21tb1ww0pU5vp/s6xtWJIkNTnyNKnlPmggPbChu2F1KmijMztia391OjmDavanN31yLSQxujxUR9ZBF4ZHhOA9sKFxKINFl0cBgICSkjS9/vF6tqV7unCjbHI8PqC0KSSifqftcqW78mcpZTRt/2R4srFw4aQ8b2C8sWOxaHZuaKO7MJQXgJDGBdKW5bD0Jyxmd6rwZLu3crstZLpoYHL84bwqtSGrY3o3YiV/N7L9cXH2JTk3smLl8ny8ITujpKJ95yM709cEg1fXldJVpft7sjzuJ/xqozk9ITpodSmsY3x3ImA7t7L9cvI0JX51s6xtcvlx47soJOc4J634ZXm2ZyAid+q55Lt8c72s0sbX0pNTxINX15XSVaX7eDI2Iie9YKG8/6H8b3WkqVUWx4YXxlfEEfC2emU9M/JibLJ/OuF2ZqRq/Ock8uWz9CftIvfq8+b0eDJzryR5a6A6NOG+5fUnbiN6OCLqdfX7/fC2fuU5NDLsojJ1+aL8IeRqtaWkeyb8+2Rj5rcp/WRyMbI84eU+aGN1fiH+YrSuaOP7umJp+nZ9MTO5fGa2ujLq67L7vmIyLeZjfudlPqV+sKdlbzfoOGR2t7KwKKQ/IqN1fiG46nUsaiO7OOPrfQ="></p>
 <figure>
-<svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="動態單調遞增：破闇無需全明">
-  <text class="dia-zh dia-gold" x="380" y="26" text-anchor="middle" font-size="18" font-weight="700">破闇是動態過程:光區單調擴大,趨近全域</text>
-  <rect class="dia-dark" x="40" y="52" width="200" height="120" rx="8"/>
-  <ellipse class="dia-lit" cx="140" cy="112" rx="34" ry="30" opacity="0.9"/>
-  <text class="dia-zh" x="140" y="116" text-anchor="middle" font-size="11" font-weight="700" style="fill:#3a2c10">L 小</text>
-  <text class="dia-zh dia-mute" x="140" y="190" text-anchor="middle" font-size="12">前燈·菩薩(與闇共住)</text>
-  <text class="dia-gold" x="270" y="118" text-anchor="middle" font-size="22">→</text>
-  <rect class="dia-dark" x="300" y="52" width="200" height="120" rx="8"/>
-  <ellipse class="dia-lit" cx="400" cy="112" rx="62" ry="48" opacity="0.9"/>
-  <text class="dia-zh" x="400" y="116" text-anchor="middle" font-size="11" font-weight="700" style="fill:#3a2c10">L 擴大</text>
-  <text class="dia-zh dia-mute" x="400" y="190" text-anchor="middle" font-size="12">修行中(光區單調遞增)</text>
-  <text class="dia-gold" x="530" y="118" text-anchor="middle" font-size="22">→</text>
-  <rect class="dia-lit" x="560" y="52" width="160" height="120" rx="8" opacity="0.95"/>
-  <text class="dia-zh" x="640" y="116" text-anchor="middle" font-size="11" font-weight="700" style="fill:#3a2c10">L = 全域 Ω</text>
-  <text class="dia-zh dia-mute" x="640" y="190" text-anchor="middle" font-size="12">後燈·佛(盡諸煩惱)</text>
-  <text class="dia-zh dia-mute" x="380" y="222" text-anchor="middle" font-size="12.5">全明(L = Ω)是這個過程的極限,不是起步的門檻;每一階的光區內都已真實照見</text>
+<svg aria-label="動態單調遞增：破闇無需全明" role="img" viewbox="0 0 760 240" xmlns="http://www.w3.org/2000/svg">
+<text class="dia-zh dia-gold" data-wytext="kNmZjOT0h+GC1LK7jvHmhaz41t/yF4D2+oT0rdSvgIDe0oq+wtTT3gGNxduJxrzUvIaN6/I=" font-size="18" font-weight="700" text-anchor="middle" x="380" y="26"></text>
+<rect class="dia-dark" height="120" rx="8" width="200" x="40" y="52"></rect>
+<ellipse class="dia-lit" cx="140" cy="112" opacity="0.9" rx="34" ry="30"></ellipse>
+<text class="dia-zh" data-wytext="O1nI1fw=" font-size="11" font-weight="700" style="fill:#3a2c10" text-anchor="middle" x="140" y="116"></text>
+<text class="dia-zh dia-mute" data-wytext="kvCggvT7o87FvpDG/t1FhKXx2OD+yODCl9z2BA==" font-size="12" text-anchor="middle" x="140" y="190"></text>
+<text class="dia-gold" data-wytext="lf+/" font-size="22" text-anchor="middle" x="270" y="118"></text>
+<rect class="dia-dark" height="120" rx="8" width="200" x="300" y="52"></rect>
+<ellipse class="dia-lit" cx="400" cy="112" opacity="0.9" rx="62" ry="48"></ellipse>
+<text class="dia-zh" data-wytext="O1nL9seWxd4=" font-size="11" font-weight="700" style="fill:#3a2c10" text-anchor="middle" x="400" y="116"></text>
+<text class="dia-zh dia-mute" data-wytext="k8aDjdL/hcGAGdyr4ZHg7Mjgn5/Tkozy7YTbsxg=" font-size="12" text-anchor="middle" x="400" y="190"></text>
+<text class="dia-gold" data-wytext="lf+/" font-size="22" text-anchor="middle" x="530" y="118"></text>
+<rect class="dia-lit" height="120" opacity="0.95" rx="8" width="160" x="560" y="52"></rect>
+<text class="dia-zh" data-wytext="O1kQRZb2yZyyrhngwQ==" font-size="11" font-weight="700" style="fill:#3a2c10" text-anchor="middle" x="640" y="116"></text>
+<text class="dia-zh dia-mute" data-wytext="ksehgvT7o87JjKIGj+/MhIbO1vLQy+bCWg==" font-size="12" text-anchor="middle" x="640" y="190"></text>
+<text class="dia-zh dia-mute" data-wytext="kvyFg+v9STUNDBngwV2L9IKfse6cre6a8u+ehbretOySyNnE76FbnZXolevOkZiG34PNk/foxOCxkdOWXpXc7p2VsdC05pP36MjzuJL0rYD21Ij6kNSOnI/o8omC0Nby3sXD+A==" font-size="12.5" text-anchor="middle" x="380" y="222"></text>
 </svg>
-<figcaption>圖二：破闇是動態單調過程。光區 L 由小（前燈·菩薩，與闇共住）逐步擴大，趨近全域 Ω（後燈·佛，盡諸煩惱，倍復明了）。全明（L = Ω）是極限狀態、不是起步門檻；而過程中每一階，只要光區非空，其範圍內就已真實照見——這就是帶業修行可以當下計數的原因。</figcaption>
+<figcaption data-wytext="kuW7gcn/jsW31pmagePqirXZ1Pzsy+D4lvfXxZuGx+n6isSmlbH1nKjslv7hWWER3rrZkd3jwsq5kvCggvT7o87FvpDG/t2C0KGeufCQuuKW9tCdkL7WkuGd7fzL25SR6pmA19SOxaHZj4aAy/yJqN7U6OYNq9qc3fHIj7XJ7/yv28nLqpjFoYLo0onSlda8h4733IOR+tT39Mjb2pX598mLv8HU/Y7sr5O035+165zP6TUNDBngwZvR5cvunpHcmIzq44byrde8pYv07IiV+9fv1sXQxJXM3MSnucjCz4LQtp6x+5Cs65Tb6p2VnN+B55DV7MTsv5jFoYD82YnfrNS8p4357YWw6Nbew8LZ/5bkz8qevcv0+YjpipOBxpya15Tv/pyCl96rz5zL58/2pZX5uYzz6oTJnNehgY3M24qI29XI18XE/5bu1smKnMn9wonUpp6Z/5+43ZTp5Zyjrty1yJft7g=="></figcaption>
 </figure>
-<hr />
+<hr/>
+<h2 data-wytext="k8O5hvPyhcaD2Ziij+7piYLQ1//Jy+H8ldfMwo2jy+DRiviFlbH7nKjNlevvmq283rvenfvsy9yK"></h2>
+<p data-wytext="nvm0gPP4h9GM1Kelj8vWhIDZ1//pyN/Ul9nzxbm+yP/RiviFmY37n7XKl8vhnpi13JDgkcLKyOqZkOOpg/zjiP+/3oW0"></p>
+<p data-wytext="SwpZFxwdBkfPoJkOjfzIi4D/1PLRyd/dlej0y7iGxsL5heuHk4bGnrHum9Xqmq2zBQEbAB8DQxEPV52QxZXexZylit6695zY28rstZPBrYD79YfUjtSGm4v07IiV9tT//8rg1JvH8sKNtcvn3oXKrJCp2J6x+pTp5Z6oltym2JDX6sLKvZ77joHL84TYp9SJn4/a+oq4ztP37c/l55fZ9Miqmcnqzo7soZC55p6ozJXw0JCvtdyQ4JHJ9s72vJ/5oYHO74TCj9K5rFQWH0MTSkIDC0ILFE2D6IwR3ZblnMvtyuKZlPmhgvbah/qc16+Zj+/Mj6371uLPxPP4lsbyyqu9y+H5i+O9lbH1RQIWBwEOF0oPGcfq14v0gpC7/Z2Q/pTp5Z+IhNC3+JPm7MvzupjFoYz/3InRgNexvo3zzImJ3dbt/cXQxJXM3MSnucjCz4LQoZGE55+z+ZXD2ZCskd2W5ZL4zsXDhpHUiIbz8YfUjtablI/u6YSYwdfa3MTz85XLwsi+k8j0/YnUrZOx/JaR/08AFQtCX14Qjv7ni6r+2MznxfTkT04KWUNWQA9KgtClOhGe5LOC2smOxaTSuaxUFh9DE0pCAwtCCxRNg+iPEd2TyJP36MjBlJPEsYD82YfhgtK5oo7n2YmJ0dTy8Mjo85Dh9MKNtcrQ+Yv0gpWx+5yo7ZXF6Z+WtN+n6JLx5cTNoJT5oIbz8V1WXkVLQQYTU0zJyZ+f2KGC6feH75TUqb+HyOGKtdnZ2eoNKVOW99fFm4bGxv6IyIqUseObrfGW1/ueqJbdlMaQ1ezI/reYxaGAw8KEybzVga6N/OuFlufey+LJ3f6W3vzItLHI4v6E17yQifKehN+cz+2fpLzcqe6cxd3I87iS1LWA79uC+a/UvKeMzO2Il9jey/XE3uKb5tPKtY/L9NyE7o6SifecjO+a8+Gco4raruo="></p>
+<p data-wytext="kfa2gPzWidCc2ZOEh8j3UF4CQxgXSluXzsGdlbzftseX7eDI87mf16eBys2HzoXSua+O/eCFu/3U0PLJ2t2Q4fTCjaLK1dSL9IKVsfudleWa8euclYfRv/+SyMHO9rCTwa2M8fmIwrPZqLmP8+WPrffVz/nE5/mV8s3IlZ7L7f2O7KCVsfVFAhYHAQ4XSg8Zx+jtidSgkKnYnIvAlv71lpG937bHnOXAxf2UkvK4g/b4iPim1YSyj+7pirHa1cn/y83QlszpzrG7"></p>
+<hr/>
+<h2 data-wytext="kMy9jdntjsW32IKwjMzti7bo1vDxwtn/mtroy6uuy9jFhdCVkovxnZXlltLr"></h2>
+<p data-wytext="nu6qgN3Xhv6u1r6mjeLWirH21u77yvzhlPv9yK2JyP7NgtChkKnYnIPmlfnrmq293o7ck+nNy+6/lPmggM3thcGt1YKYgfX0iJX71PjWyOr5lPv9yLSRyPT9iOmFkbXWnInCl8nqlpG90KzskePzy/6hk8GtgPP4XQpZQ1ZAD0qJ0Y2QnNOcpd6Ww9CRrozcr/KX7e3F9r2TwbmC2PiE8ZbWrbGO4eVQAgVFBRZDAk2U+/3IuqzK1eiO7K8="></p>
+<blockquote data-wytext="fUVdW5fL7JyStNyrwJL14sLKvZHwoID82IblptmfpYfI9oWW6Nnm7snd85T658q2scHU+IjwhZOf9J6owpb70Z63tdyy2JL71cLKvZPEjYDDwoTOn9aPvY/u64qv/9T//8nf9ZDh+8W+kMb+3YXkqp+m8Jyo1JfO7pGtvdGt1ZPoy8r/mJX5uYfz54XBoNehgY3vzYuvzNXM78ja/pbu7sSKqMjy44LQoZ6x+5+1ypbowZ6vi92V/pLq7sjIppjFt1kABxMWQ1YHy+39gtChk4/pnZPjlvzLkLGx0YjpkNXsyNe7kNKmjcXAhcCm1KWeh8jhiZ3H2fTEyvnsls7fy7mpycP/juyvSh4EDV8KHRRfRQJBByQ="></blockquote>
+<p data-wytext="kfCtgcjWhPGI1L+jj9nkj6361c7Hy9Lbl9v/yLe0x/7/iMumlbH6mq3nmsj/nqq51pLkk+jLxdC6mMWhg+DHhN2K07m6ivT5hZbn1+3uy8r8m8PSyrSey+DEidStk5D9lpHplsPQn52J0K/IkfHcxcqJkfekjPHQhcGt1Jiki/Tvha3v3sv1yNXClfnWyImPyM3ZidODnpD7nrfhlebZnICJ1pLkkNTzy+6ekteugun3h/yl17uci/Tv"></p>
+<hr/>
+<div class="bk-bridge" data-wytext="SxsTg/rMhPyl1KyxjcrhUAIUD5T5rVkRTYfwktK6lY/YwUwZRRGQ1qpZXBFfm62l2678kcP2xOCxke2bgN3rh++R1q2fj+/ViajT1t7DwtnoleTexKe5x/7/iOGak7T/nIPsmtPynKqQ3IrDk/foxcOGnsKzis/pifGq2K6pjfHciJD52ff1xebOlOTezrG7EgpKi+uklbLMnoHJU0dBnoK2BQEKSo/suZSx45GM6Zrl4Zqtvd6qyZLk7MjIpp/5oY3S/4L5oNajqo3/+Imn7dTawcLZ/5b90cucncvW44jknZO0/pyA3ZT66Z+xndqu6kgJBVtWUhsYXhZOUQMSAF9YWEpKj/utVtfswcjf/JfZ88mJucnH847srUpQVxFfABVOQxFZRUldUltCG0gfRhIXHVxBRk8eREVRWwpaBAMCE0IEGFRIR0BPEVlcVQxWk8HADUICV56C4pDw2pyShN2T85zL7cnOvJ/frI3w/4b/stWBp4357IiX+tbswcLZ7E9OGBPSua6HyfGPrfbX7MHI3/yX2fLJibnJx/OO7K1KUFcRXwAVTkMRWUVJXVJbQhtIH0YSFx1cQUZPHkRFUVsKWgQDAhNCBBhUSEFCTxFZXFUMVpPBwA1EAFeeguKQ8Nqarb3eqsmR1dTO9ryTwaCD69yC+aHVga6N/OqKgM7Y7M/O5f5PThgTEdu43khCCEQADw=="></div>
+<hr/>
+<h2 data-wytext="nvmfgcvzh9SI2K+fgNrt"></h2>
+<p data-wytext="keWBg+X0hP6X2b6Ei/TniYnR1+7DyN/Vm8rvzrGyy+XDiOGsk7Tcm63xkfP1mq29347QkdLvxdCnn9+Xg9vShOem847H//OIwomRtvSequ2Q8+ydlbHegeiX7e7I+K6S/JWA/NyI+b3UtouB4tyEg/bey/XJ3fia/NvEsaDL6P+E7I6RhOefseaU6NWfo5TRvtWR5dzF34OQ1q2Kz+k="></p>
+<p data-wytext="h+a58lNPEg1fXldJVkgMTEUEVBFEDw0HBxEKFx4WWQ0dGglDRghFTAMCGgcJDE8fUEFHEAwWRR9VAhVYC15CWVYOUlFPGAAIHgBHHENUHkdNkOHzyJWeyPHOiNaLnprhmq3ulv7WnKCw3KvDl+3gxOG2kteJgvTwhv6l847Lxs2E4IKRq/Odksub3uiRhqfaruW22kzL25WQ1q2C6MeI+LkNFk9WSEIfWQReGR4ThvPzjsSx0rmuVBVNBF8TV0pbRREHAxJDAh5OSwEDCAIdTwNCV0oMBxsUGwNYVgEMFRcERBJEGwxDSENcQ0fJibnJ8cqI4ZqTtN+fscmUxdORmp7ck/GT2sQRWVBJ"></p>
+<hr/>
+<p data-wytext="SxxAW5v4xJCtqN6B75Hd4cnLkZHlpIDK2ITzhN6FoozM4ImL3tTPz8X05Jrh4Mixssv9+4TNoZ+q1ZC77pzP+52Qkd+y4ZLf/svquJHik4LF4ITijda7lIv04YSLzNTJ7sXi2ZbWyMSzvcrQ+YjIjZKIyZ+azZDz7JGtvdCv2p3s3snOvJHsj43GxIfUiN6FsY7+54+t+tTy0cv9/Zr3+cubgs3o+YvjtpC555qt6ZrI/52Vsd619pPq5M72vJjFoYDD/oXEjdelp47G/4qx/9jb/8nd85bu2suBmsHU61EOX1kPkfqegcnXh8ys1Iatjcr6g5H619rYxdr9lunJDWhWWzwBDwkNn5HMkKz2U08AWUVDXEhVVgUYWQZCTVYCEgQETwBCRE1bChFDD0IbHjcaRQAdFBYcREZcQEcEAh9ZBRNXDUwXFBYVRA9uTUEYVlMsTh5UGR5aABoEBBcN1p2Qj8rJUAIXD1eet+GWw+yfqrjRnNSS++vJzrqQ7LSN2/OJ+KfZuKSL9O9QAhNcSQ=="></p>
+<hr/>
+<p data-wytext="SwpZFxwdBkfLmaDJ2dBRQ14CQxgXSlucz/tFTBFaQgkHHlEPAlAQFQ9FGwEEHxATUVocBB5WAllGEhBaAB1DWEsYH15HHBwYDgMfXlgdTB8bGgUMQURXA1hbUhhMEQyS3YqD6smEw4vZkrhLBwgeRBNCWh5YDBcWElsNRVhcDxEZUQ8pRRgJD1tPEA4dSA8ay8zTi/WXk4vRkYbzT1wCFklUBxJHFVNMERcRFBVMFgBOQw1MVlUMSBwfCUtLEx8NWRUASU5WWlRQWQ0aXVUfQx8QEFkNBhFPEEIeXU8SHAQIWBpEGVQdSkwHAB4Q2bGCgP/IT14TQx4cXkgUBggdSEIbDhwVHwtIAgxVJlkKA1FfRU5eXUtWV4XkgZ660kUCBhwXBEcRHlgQSEgMTE4aUAQKEEcHEgYVDxFRXA0SUE5FAkUHChdKXAQEEFpUVx5RRlhCSh9FHwxPSxocTh1MS1FHDAEBGUNbAVhGWQQUTob8hNe6n4353oSi39f46Q4WFgEIHF4cXlsBEAgfD1ZFFgtKAAdOQyZZXkkMVkgOA0kTD1SeqMyV8NCcoILRocGS4vwRWVIYHUhbT1wARw0NWA4LGAwfXksTAxhKCVFTCQtIVwQMAAAZHF5MHlgOSAwEFg9JFAMMAA8dGQRYFB8eFgIBEgkJEElEVVsGWV1DEgJQEETI3cWVxNTJjpfGyfhOH0gEWBIKAAIGGgUcXhMZWgkGCglZSxMoDUIVUU1dGkJVXBBLkdXay9Ock8aDjdL/XVZOXl1LVkhCDRNWDRZZTgkSABJED0VYSQRWTQRfE1dKW0URBwMSQwIeTksBAwgCHU8DQldKDAcbFBsDWFYBDBUXBEQSRBsMQ0hDXF4NTFYEx//ziMKJkbb0nqrtUAAEC0RUSgMPAQQISAUTVw1MFxQWFUQPbk1BGFZTUE4ZVRJHDozk9ITXida+rY/z5VACFV4THBNZXBJfWRFQGU0EFR4fEFRFFh5BR1MbExxLDBtGHAAdHxdZHgAcRBIWHVFAHwQXSQEABRlPWFgYVkkECRsIHVhdTEBFREJTWRdWSp6N0ZT3wJ+1vxpdDQYECV5bVgIQSQAAUUENTENeSxxJTzNZGUFVRxEGHBcERw7WmZqP8MyKtfgNWBpCARZNXVZMDxkSCVQOAEwFQkpbWQQUH0NZRUNcSFVWBRhZBkJNVgISFhoWHEMBABxdWgoFWR5EFVdEClwXAANFWF1bBAEDQR1ZDgMYSliWwuGQrpncpPec7tEOBVQFEEgWXhQUEElUSgxIAAweShNFSltyERwDQ0cRUlZKDUpOiZz22PTRyO/sm+LEER5aQQwRU1ACFw9XRUxFEB8ACl4MG1oJEwFODR5DEh8QRxsHFQleCxYBHxEEG0gYAU5LGEsUGhURWFMXRwdbCQ1XHlgTDEEQHV5RVhJFWElVkND3yNuJn/Gqg+bLhNSVEkpLGh0IHwARRB4dSBZRUxUYX1ZcWlVWMhhCBhNJRU4KFxZfWsmMosvFzIXkqpCkz5yA3U9cAhZJVAcSRxVTTBEXERQVTBYATkMNTFZVDEgcHwlLSxMfDVkVAElOVlpUUFkNGl1VH0MfEBBZDQYRTxBCHl1PEhwECFgaRBlUHUpMBwAeENWEtY3Z1Yqt69nJ0Q4WFgEIHF4cXlsBEAgfD1ZFFgtKAAdOQyZZXkkMVkgOA0kTD1SdkP6W3tmfrazRkMBIQg9CElRJRQIETVNdGA1SVU8bB1BOWRdWG1sNDQEWB0QPWU1aGAdXQwIBVB4OSAtDSlNMA1ZQWgABD0JEGR4TGFcNGhcUFVhfFB5HSxkNSkvVyuLIyMua98jFn7kNGxEfBUgFHBAMRAEWAENZWVBLSQ0AUE5yAl4HWxNZEBwFHBMS3ZPzkcDUxOCAn9etWVwQDh1IDwUBCUo="></p>
+<hr/>
+<p data-wytext="SxxAW5fO/ZGttNaS8jcFCUMRRhIQWgAdU6PODWhWWzwBDwkNn5HMkKz2U08AWUVDXEhVVgUYWQZCTVYCEgQETwBCRE1bChFDD0IbHjcaRQAdFBYcREZcQEpKLQ9FE18QDkgMBBYPRQJQBw6qw02JgM7Z1urE88Kbz/nKh4vJw+1NUExWWQUcS1hRGxUNXUIDAUcDCAVaE19HQB9QXRQIDUVEWwABG0IITAxZHh1YCQYdTEkCEwdKCQ4FBUkDXQIXAFVPXABHER5cQ1Y="></p>
+<p data-wytext="SxxAW5XvzZ+7tt6s0pft4M72u5LdioPqyYTDi9mSuIv05ouezdT/7s7l/pTN1Q0AAA6P2+qPrfTVz/PJ3fOUzv4N1pWCSEVVTMrZtpjFt1kSUwkLSFcEDAAAGRxeTB5YDkgMBBYPSRQDDAAPHRkEWBQfHhYCAAAAAAAAAAEAAAAAAA9I1Nnjyd3el97Xy7SeyfLwidSkkJPqn6X3ls3qm62l2678nMvWyumUn/mhgcv+hcKm1LyLVFsMUsLLrZPBpoHL84bWqhHegsRUX1wNkZ7wlpH/TxJBEV9UXxNKHBkYXQULWFZaABoEBBcdCAsbRhMEGEUDU1kQQkoWABIYVBwLHkYcGQFBVA+Q+5eByPOIw5HWn4SN2veEm/zXwMjO5fKV6ejFl7LG3v6I95eZjeibrfGR8/Wck6/RiOOR8dzL4Iae76aD+8GJ0rvZt4WO2/mLrvnX4dbK98NPThgTDRZLBUo="></p>
+<script id="bkv3-js">/*BKV3*/(function(){"use strict";function __bkv3(){var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);var tick=false;function upd(){var h=document.documentElement;var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);bar.style.width=(p*100).toFixed(2)+"%";tick=false;}window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();var toc=document.querySelector(".bk-toc");if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}document.documentElement.style.scrollBehavior="smooth";}if(window.__wyReady&&window.__wyReady.then){window.__wyReady.then(function(){setTimeout(__bkv3,150);});}else{__bkv3();}})();</script>
 
-<h2>五、修行的實戰意涵：別用「全明」當門檻</h2>
-<p>這個模型翻譯成座上與日用，是一組很實在的提醒：</p>
-<p><strong>① 別等全亮才承認自己看見。</strong> 你此刻生起的一分正念、一分照見，只要是真的照到了，那一塊就算數——不因為「我煩惱還很多」而作廢。<br><strong>② 不要用「煩惱斷盡」當開始的前提。</strong> 那是把佛的極限狀態，錯設成凡夫的起步門檻，結果永遠不敢起步。正確的起步門檻只有一個：<strong>把燈點著</strong>（L 非空）。<br><strong>③ 你的工作只是「擴大光區」，不是「先消滅所有黑」。</strong> 修行的方向，是讓 L 單調變大——多照亮一分，就少一分黑；不必先把黑清空，才准許光存在。光一亮，黑自然在那一塊退去。</p>
-<p>換句話說：<strong>你不是「先變乾淨、才開始修」；你是「一邊帶著業、一邊點著燈、一邊擴大光」。</strong> 這不是妥協，是般若動態運作的本來樣子。</p>
-<hr />
-
-<h2>結語：點一盞燈，黑暗就輸了一塊</h2>
-<p>闇室燃燈喻最療癒的地方，是它把「破無明」從一件遙不可及的全有全無大事，還原成一個<strong>你此刻就能做、而且立刻生效</strong>的動作。</p>
-<blockquote>
-<p>不必全明，才叫看見；點著一盞燈，在它照到的地方，你就已經皆悉分了。菩薩與闇共住而能照物——不是因為他忍受黑暗，而是因為他懂得：<strong>光，從來只需要一塊立足之地，就能真實成立。</strong></p>
-</blockquote>
-<p>所以別再等「乾淨了再開始」。點燈，照見，擴大——黑暗每被照到一塊，就永遠地輸掉那一塊。這，就是帶業修行的數學，也是它的慈悲。</p>
-<hr />
-
-<div class="bk-bridge"><b>承先啟後</b>　<b>承・第 43 篇</b>——定門收官於由相入空；慧門開卷先安頓凡夫的起點：與闇共住而能照。<b>應・第 4 篇</b>——行門「無所得而行」的動力學，在此得到光學版本。<div class="bk-nav">◀ 書序上一篇　<a href="https://weiwen0925.github.io/essay-43.html">第 43 篇・念佛要不要背熟三十二相？</a>　｜　書序下一篇　<a href="https://weiwen0925.github.io/essay-21.html">第 21 篇・「無常」不是「一切歸零」</a> ▶</div></div>
-<hr />
-<h2>進一步閱讀</h2>
-<p>本文出自《大智度論》卷十八——「核心視覺模型·闇室燃燈」一節。原典可逐句閱讀，下面這個連結會直接落到該節：</p>
-<p>🔗 <strong><a href="https://weiwen0925.github.io/dazhidulun-18/#chapter-1-4-3">《大智度論》卷十八「闇室燃燈·容錯的修證論」· 此節直達</a></strong>　｜　<a href="https://weiwen0925.github.io/dazhidulun-0/">一百卷全本網路彙編</a></p>
-<hr />
-<p><em>若這篇對你有幫助，不妨帶著這個問題離開：你有沒有曾經因為「覺得自己還不夠乾淨」而遲遲不敢起步？把「全明門檻」換成「點一盞燈」，對你有沒有鬆一口氣？<br>想交流心得，歡迎到 YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen/posts" target="_top">@chengweiwen 社群</a> 的對應貼文下留言聊聊。</em></p>
-<hr />
-<p><strong>標籤</strong>：<a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=大智度論#series-guides"><code>#大智度論</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=般若#series-guides"><code>#般若</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=煩惱即菩提#series-guides"><code>#煩惱即菩提</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=帶業修行#series-guides"><code>#帶業修行</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=闇室燃燈#series-guides"><code>#闇室燃燈</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=破無明#series-guides"><code>#破無明</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=局部功能#series-guides"><code>#局部功能</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=佛學與數學#series-guides"><code>#佛學與數學</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=佛學思辨#series-guides"><code>#佛學思辨</code></a> <a class="tagl" target="_top" href="https://weiwen0925.github.io/dazhidulun-0/?tag=佛學閱讀#series-guides"><code>#佛學閱讀</code></a></p>
-<hr />
-<p><em>作者：Chengweiwen · YouTube 頻道 <a href="https://www.youtube.com/@chengweiwen">@chengweiwen</a> · 學術閱讀網站 <a href="https://weiwen0925.github.io/dazhidulun-0/">dazhidulun-0</a></em></p>
-<p><em>本文為「《大智度論》系列」第 19 篇。上一篇 第 18 篇：<a href="https://weiwen0925.github.io/essay-18.html">定中修慧的三條戒律——覺知而不介入</a>｜下一篇 第 20 篇：<a href="https://weiwen0925.github.io/essay-20.html">為什麼禪定越深、我見越固？——從見地斷開戲論莫比烏斯環</a></em></p>
-<script id="bkv3-js">/*BKV3*/(function(){"use strict";var bar=document.createElement("div");bar.id="bkProgress";document.body.appendChild(bar);var tick=false;function upd(){var h=document.documentElement;var p=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);bar.style.width=(p*100).toFixed(2)+"%";tick=false;}window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();var toc=document.querySelector(".bk-toc");if(toc){var hs=[].slice.call(document.querySelectorAll("h2")).filter(function(h){return /^[一二三四五六七八九十]+、/.test(h.textContent.trim());});if(hs.length<2){toc.style.display="none";}else{hs.forEach(function(h,i){if(!h.id)h.id="sec-"+(i+1);var t=h.textContent.trim();var c=t.indexOf("：");if(c>0&&c<=14)t=t.slice(0,c);else if(t.length>14)t=t.slice(0,13)+"…";var a=document.createElement("a");a.href="#"+h.id;a.textContent=t;toc.appendChild(a);});}}if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("bk-focus",e.isIntersecting&&e.intersectionRatio>=0.6);});},{threshold:[0,0.6,1]});[].slice.call(document.querySelectorAll("blockquote")).forEach(function(b){io.observe(b);});}document.documentElement.style.scrollBehavior="smooth";})();</script>
-</body>
+<script id="wy-print-intercept">
+(function(){
+  try{ window.print = function(){}; }catch(e){}
+  document.addEventListener("keydown", function(e){
+    if((e.metaKey||e.ctrlKey) && (e.key==="p"||e.key==="P"||e.keyCode===80)){
+      e.preventDefault(); e.stopPropagation();
+      return false;
+    }
+  }, true);
+})();
+</script>
+<script id="wy-decoder">
+(function(){
+  if(!window.__wyReady) return;
+  var KEY = "wy-essay-19.html-v1";
+  function _dec(b64){
+    try{
+      var raw = atob(b64);
+      var bytes = new Uint8Array(raw.length);
+      for(var i=0;i<raw.length;i++){
+        bytes[i] = (raw.charCodeAt(i) ^ KEY.charCodeAt(i % KEY.length)) & 0xff;
+      }
+      if(typeof TextDecoder !== "undefined"){
+        return new TextDecoder("utf-8").decode(bytes);
+      }
+      var s = "";
+      for(var j=0;j<bytes.length;j++) s += String.fromCharCode(bytes[j]);
+      return decodeURIComponent(escape(s));
+    }catch(e){ return null; }
+  }
+  window.__wyReady.then(function(ok){
+    if(!ok) return;
+    document.querySelectorAll("iframe.ch-frame[data-c]").forEach(function(oldF){
+      var decoded = _dec(oldF.getAttribute("data-c"));
+      if(!decoded) return;
+      var newF = document.createElement("iframe");
+      for(var i=0;i<oldF.attributes.length;i++){
+        var a = oldF.attributes[i];
+        if(a.name === "data-c" || a.name === "srcdoc") continue;
+        try{ newF.setAttribute(a.name, a.value); }catch(e){}
+      }
+      newF.setAttribute("srcdoc", decoded);
+      try{ oldF.parentNode.replaceChild(newF, oldF); }catch(e){ return; }
+      if(typeof window.setupFrame === "function"){
+        try{ window.setupFrame(newF); }catch(e){}
+      }
+    });
+    document.querySelectorAll("[data-wytext]").forEach(function(el){
+      var t = _dec(el.getAttribute("data-wytext"));
+      if(t === null) return;
+      el.innerHTML = t;
+      el.removeAttribute("data-wytext");
+    });
+    if(typeof window.resizeAllFrames === "function"){
+      [150, 800, 2000].forEach(function(ms){
+        setTimeout(function(){ try{ window.resizeAllFrames(); }catch(e){} }, ms);
+      });
+    }
+  });
+})();
+</script>
+<style id="wy-nocopy-css">body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;}a,button,input,textarea,[contenteditable]{-webkit-user-select:auto;user-select:auto;}img,svg{-webkit-user-drag:none;user-drag:none;}</style><script id="wy-nocopy">(function(){function ed(t){try{return !!(t&&t.closest&&t.closest("input,textarea,[contenteditable]"));}catch(e){return false;}}["contextmenu","copy","cut","selectstart","dragstart"].forEach(function(ev){document.addEventListener(ev,function(e){if(ed(e.target))return;e.preventDefault();return false;},true);});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase();if((e.metaKey||e.ctrlKey)&&(k==="c"||k==="x"||k==="a"||k==="s"||k==="u")){if(ed(e.target))return;e.preventDefault();e.stopPropagation();return false;}},true);})();</script></body>
 </html>
