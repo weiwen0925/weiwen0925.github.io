@@ -3,7 +3,7 @@
 # 更新：2026-07-10
 #
 # 一般搜尋引擎（Googlebot、Bingbot、Applebot 蘋果搜尋…）皆允許收錄；
-# 下方逐一封鎖 AI 訓練／抓取／檢索爬蟲（共 137 隻）。
+# 下方逐一封鎖 AI 訓練／抓取／檢索爬蟲（共 157 隻）。
 # 刻意保留未封鎖：Applebot（Apple 搜尋）、facebookexternalhit（社群連結預覽）。
 
 User-agent: *
@@ -11,14 +11,16 @@ Allow: /
 
 Sitemap: https://weiwen0925.github.io/sitemap.xml
 
-# ===== 封鎖 AI 訓練／抓取／檢索爬蟲（2026-07-10 更新，137 隻）=====
+# ===== 封鎖 AI 訓練／抓取／檢索爬蟲（2026-07-10 更新，157 隻）=====
 User-agent: AddSearchBot
 User-agent: AgentTimes
 User-agent: AI2Bot
 User-agent: AI2Bot-DeepResearchEval
 User-agent: Ai2Bot-Dolma
 User-agent: aiHitBot
+User-agent: AIWebIndex
 User-agent: amazon-kendra
+User-agent: amazon-QBusiness
 User-agent: Amazonbot
 User-agent: AmazonBuyForMe
 User-agent: Amzn-SearchBot
@@ -55,8 +57,10 @@ User-agent: CloudVertexBot
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
 User-agent: Cotoyogi
+User-agent: CragCrawler
 User-agent: Crawl4AI
 User-agent: Crawlspace
+User-agent: Cursor
 User-agent: Datenbank Crawler
 User-agent: DeepSeekBot
 User-agent: Devin
@@ -69,6 +73,7 @@ User-agent: FacebookBot
 User-agent: Factset_spyderbot
 User-agent: FirecrawlAgent
 User-agent: FriendlyCrawler
+User-agent: GeistHaus-PageFetcher
 User-agent: Gemini-Deep-Research
 User-agent: Google-Agent
 User-agent: Google-CloudVertexBot
@@ -77,6 +82,7 @@ User-agent: Google-Firebase
 User-agent: Google-Gemini-CLI
 User-agent: Google-NotebookLM
 User-agent: GoogleAgent-Mariner
+User-agent: GoogleAgent-URLContext
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
@@ -84,6 +90,7 @@ User-agent: GPTBot
 User-agent: HenkBot
 User-agent: iAskBot
 User-agent: iaskspider
+User-agent: iaskspider/2.0
 User-agent: IbouBot
 User-agent: ICC-Crawler
 User-agent: ImagesiftBot
@@ -92,10 +99,12 @@ User-agent: img2dataset
 User-agent: ISSCyberRiskCrawler
 User-agent: kagi-fetcher
 User-agent: Kangaroo Bot
+User-agent: Kimi-User
 User-agent: KlaviyoAIBot
 User-agent: KunatoCrawler
 User-agent: laion-huggingface-processor
 User-agent: LAIONDownloader
+User-agent: LCC
 User-agent: LinerBot
 User-agent: Linguee Bot
 User-agent: LinkupBot
@@ -104,6 +113,8 @@ User-agent: meta-externalagent
 User-agent: meta-externalfetcher
 User-agent: meta-webindexer
 User-agent: MistralAI-User
+User-agent: MistralAI-User/1.0
+User-agent: Mozilla-Tabstack
 User-agent: MyCentralAIScraperBot
 User-agent: NagetBot
 User-agent: netEstate Imprint Crawler
@@ -118,6 +129,7 @@ User-agent: opencode
 User-agent: Operator
 User-agent: PanguBot
 User-agent: Panscient
+User-agent: panscient.com
 User-agent: Perplexity-User
 User-agent: PerplexityBot
 User-agent: PetalBot
@@ -125,7 +137,10 @@ User-agent: PhindBot
 User-agent: Poggio-Citations
 User-agent: Poseidon Research Crawler
 User-agent: QualifiedBot
+User-agent: Querit-SearchBot
+User-agent: QueritBot
 User-agent: QuillBot
+User-agent: quillbot.com
 User-agent: SBIntuitionsBot
 User-agent: Scrapy
 User-agent: SemrushBot-OCOB
@@ -135,18 +150,23 @@ User-agent: ShapBot
 User-agent: Sidetrade indexer bot
 User-agent: TavilyBot
 User-agent: Terra Cotta
+User-agent: TerraCotta
 User-agent: Thinkbot
 User-agent: TikTokSpider
 User-agent: Timpibot
+User-agent: TongyiBot
 User-agent: Trae
 User-agent: TwinAgent
+User-agent: UseAI
 User-agent: VelenPublicWebCrawler
+User-agent: WARDBot
 User-agent: Webzio-Extended
 User-agent: wpbot
 User-agent: WRTNBot
 User-agent: YaK
 User-agent: YandexAdditional
 User-agent: YandexAdditionalBot
+User-agent: YiyanBot
 User-agent: YouBot
 User-agent: ZanistaBot
 Disallow: /
