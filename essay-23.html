@@ -850,7 +850,7 @@ function fabShow(){fab.classList.toggle('show',window.scrollY>250);fabPlace();}
 setInterval(fabPlace,1500);
 window.addEventListener('scroll',fabShow,{passive:true});
 setTimeout(fabShow,600);setTimeout(fabShow,2000);
-sres.addEventListener('click',function(ev){var c=ev.target&&ev.target.closest?ev.target.closest('.wys-chip'):null;if(!c)return;ev.preventDefault();ev.stopPropagation();try{sin.value=c.getAttribute('data-w')||'';render();sin.focus();}catch(e2){}});
+sres.addEventListener('click',function(ev){var c=ev.target&&ev.target.closest?ev.target.closest('.wys-chip'):null;if(!c)return;var w=c.getAttribute('data-w');if(!w)return;/*WY-CHIPW*/ev.preventDefault();ev.stopPropagation();try{sin.value=w;render();sin.focus();}catch(e2){}});
 })();
 </script></body>
 </html>
