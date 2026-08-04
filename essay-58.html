@@ -783,11 +783,20 @@ out.push('<a class="wys-row" target="_blank" rel="noopener" href="https://weiwen
 +'<span class="wys-tag wys-tag6">譬喻</span><span class="wys-t">'+esc(tt)+' － '+esc(dd.slice(0,34))+'</span></a>');}
 if(!out.length)return "";
 return '<div class="wys-head">譬喻藏 <span class="wys-hint">613 喻 · 點卡直達</span></div>'+out.join("");}
+/*wy-dz-layer*/var DZX=null;try{fetch('https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/search-dz.json').then(function(r){return r.ok?r.json():[];}).then(function(j){DZX=ixmap(j)||[];}).catch(function(){});}catch(e){}
+function dzLayer(q,ts){if(!DZX||!DZX.length)return "";var out=[];
+for(var i=0;i<DZX.length&&out.length<6;i++){var it=DZX[i];var tx=it.x||"";
+if(!matchAll(tx,ts))continue;var p=tx.indexOf("｜");
+var tt=p>0?tx.slice(0,p):tx,dd=p>0?tx.slice(p+1):"";
+out.push('<a class="wys-row" target="_blank" rel="noopener" href="https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/daozang.html'+it.u+'">'
++'<span class="wys-tag wys-tag6">刀藏</span><span class="wys-t">'+esc(tt)+' － '+esc(dd.replace(/｜/g," · ").slice(0,34))+'</span></a>');}
+if(!out.length)return "";
+return '<div class="wys-head">刀藏 <span class="wys-hint">四門十八刀 × 二十七品環讀 · 點列直達</span></div>'+out.join("");}
 function render(){
   var q=(sin.value||'').trim();
   if(!q){renderStarter();return;}
   if(EXP.q!==q){EXP.q=q;EXP.p=0;EXP.n=0;EXP.e=0;EXP.z=0;EXP.b=0;EXP.f=0;}
-  var ts=terms(q),h='';h+=wysSmart(q,ts);h+=ykLayer(q,ts);
+  var ts=terms(q),h='';h+=wysSmart(q,ts);h+=ykLayer(q,ts);h+=dzLayer(q,ts);
   var pure=/^[\d\s]+$/.test(q);
   if(!IDX){sres.innerHTML='<div class="wys-head">索引載入中…</div>';loadIdx();return;}
   var vols=IDX.vols||{};
