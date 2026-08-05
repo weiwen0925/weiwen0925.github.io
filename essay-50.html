@@ -834,5 +834,20 @@ window.addEventListener('scroll',fabShow,{passive:true});
 setTimeout(fabShow,600);setTimeout(fabShow,2000);
 sres.addEventListener('click',function(ev){var c=ev.target&&ev.target.closest?ev.target.closest('.wys-chip'):null;if(!c)return;var w=c.getAttribute('data-w');if(!w)return;/*WY-CHIPW*/ev.preventDefault();ev.stopPropagation();try{sin.value=w;render();sin.focus();}catch(e2){}});
 })();
-</script></body>
+</script><!--WY-ESEEN--><script id="wy-eseen-js">(function(){try{
+var m=(location.pathname||"").match(/essay-\d+/);
+if(!m)return;
+var slug=m[0],K="wyEssayTick:"+slug,DK="wyEssayDone:"+slug,N=40,t=0;
+try{t=parseInt(localStorage.getItem(K)||"0",10)||0}catch(e){}
+var hid=false;
+document.addEventListener("visibilitychange",function(){hid=document.hidden;});
+var iv=setInterval(function(){
+ if(hid)return;
+ t++;
+ try{
+   if(t%4===0)localStorage.setItem(K,String(t));
+   if(t>=N){localStorage.setItem(K,String(t));localStorage.setItem(DK,"1");clearInterval(iv);}
+ }catch(e){}
+},1500);
+}catch(e){}})();</script><!--/WY-ESEEN--></body>
 </html>
