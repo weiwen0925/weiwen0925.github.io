@@ -1010,4 +1010,23 @@
   <url><loc>https://weiwen0925.github.io/essay-63.html</loc><lastmod>2026-07-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://weiwen0925.github.io/essay-64.html</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://weiwen0925.github.io/essay-65.html</loc><lastmod>2026-08-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- 首楞嚴三昧經站／刀藏／譬喻藏（2026-08-06 補列） -->
+  <url>
+    <loc>https://weiwen0925.github.io/surangama-samadhi-sutra/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://weiwen0925.github.io/nagarjuna-mulamadhyamakakarika/daozang.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://weiwen0925.github.io/dazhidulun-0/yuku.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
